@@ -6,6 +6,7 @@ The repository contains two static, browser-readable books:
 
 - `guide.html` - campaign and game guide
 - `rules.html` - rules, army lists, characters, and scenarios
+- `downloads/WHFB-End-Times-8.5.pdf` - fan-compiled complete WFB 8.5 End Times supplement
 
 Open `index.html` locally or visit the [GitHub Pages site](https://jeremyglebe.com/mallobaude-english-edition/).
 
