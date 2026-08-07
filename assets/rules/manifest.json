@@ -1,0 +1,1051 @@
+{
+  "source": "The-Revolt-of-Mallobaude-Rules-WFB8-English.pdf",
+  "pages": [
+    {
+      "page": 1,
+      "images": [
+        {
+          "file": "page-01-image-01.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.1
+          ],
+          "sha256": "db35037e2a1637f140520d29b6652b289ca45346554d449cb558679a9ed3767b"
+        }
+      ],
+      "text_lines": 9
+    },
+    {
+      "page": 2,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-02-image-02.png",
+          "bbox": [
+            200.9,
+            260.27,
+            393.85,
+            566.42
+          ],
+          "sha256": "8034381d76f51ffb03dc5e25cf7ea650c28c0402527ead1bc9fbfb70e3bab6e6"
+        }
+      ],
+      "text_lines": 11
+    },
+    {
+      "page": 3,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 103
+    },
+    {
+      "page": 4,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 72
+    },
+    {
+      "page": 5,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 75
+    },
+    {
+      "page": 6,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 82
+    },
+    {
+      "page": 7,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-07-image-02.jpg",
+          "bbox": [
+            196.5,
+            191.05,
+            524.15,
+            722.77
+          ],
+          "sha256": "ee6c32af52ff260550f43566cdc1bcb8be5736d483a805331ca57d9e97d8dbea"
+        }
+      ],
+      "text_lines": 56
+    },
+    {
+      "page": 8,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 47
+    },
+    {
+      "page": 9,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 46
+    },
+    {
+      "page": 10,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 46
+    },
+    {
+      "page": 11,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 135
+    },
+    {
+      "page": 12,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 90
+    },
+    {
+      "page": 13,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 89
+    },
+    {
+      "page": 14,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 99
+    },
+    {
+      "page": 15,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 90
+    },
+    {
+      "page": 16,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 104
+    },
+    {
+      "page": 17,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 101
+    },
+    {
+      "page": 18,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-18-image-02.jpg",
+          "bbox": [
+            71.25,
+            461.92,
+            373.45,
+            701.44
+          ],
+          "sha256": "3bf6d7769b733097e6b8c45d38a2e508efaa1882125f75f293bda509b5e225b4"
+        }
+      ],
+      "text_lines": 93
+    },
+    {
+      "page": 19,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 141
+    },
+    {
+      "page": 20,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 154
+    },
+    {
+      "page": 21,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 70
+    },
+    {
+      "page": 22,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-22-image-02.png",
+          "bbox": [
+            281.25,
+            586.271,
+            549.7,
+            769.621
+          ],
+          "sha256": "4f1e0b74b356231d4c844e9728902c9b29263d13921de31d5bb0ceb5be8416c9"
+        }
+      ],
+      "text_lines": 90
+    },
+    {
+      "page": 23,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-23-image-02.jpg",
+          "bbox": [
+            1.5,
+            1.2,
+            272.99,
+            840.0
+          ],
+          "sha256": "2651ddfc89c5cda5d5a13ae0a98a27422095686bcb4d6d82f8bb7e4371df5c82"
+        }
+      ],
+      "text_lines": 40
+    },
+    {
+      "page": 24,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-24-image-02.png",
+          "bbox": [
+            81.025,
+            459.267,
+            273.425,
+            756.867
+          ],
+          "sha256": "3dc3b5d685f2231b8d301948ddfb557e14e999be10b242f0b17a0156d6e785d2"
+        }
+      ],
+      "text_lines": 104
+    },
+    {
+      "page": 25,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 61
+    },
+    {
+      "page": 26,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 39
+    },
+    {
+      "page": 27,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-27-image-02.jpg",
+          "bbox": [
+            315.35,
+            357.82,
+            525.35,
+            526.22
+          ],
+          "sha256": "5204a3784b5f242fde1c5f04f614da3c531884ae1d179127bcc8a5f08e94f733"
+        }
+      ],
+      "text_lines": 47
+    },
+    {
+      "page": 28,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-28-image-02.png",
+          "bbox": [
+            315.24,
+            332.64,
+            499.38,
+            496.14
+          ],
+          "sha256": "d89f5a2fcf8fd342602cfe869fdb4079b2266cecfb42dd15b143170bacc367ae"
+        }
+      ],
+      "text_lines": 55
+    },
+    {
+      "page": 29,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-29-image-02.jpg",
+          "bbox": [
+            318.07,
+            346.86,
+            514.55,
+            534.36
+          ],
+          "sha256": "ed9ed98bf6d6c1bf096abd5462332dc5df45c2e9d1321c5a2a6ba94e79b57e6b"
+        },
+        {
+          "file": "page-29-image-03.png",
+          "bbox": [
+            338.8,
+            586.569,
+            500.95,
+            750.039
+          ],
+          "sha256": "a6c3ce3b98d09872131f8734ec01ed4f4bea4c6cf4c9dd52714eb8b397e7fbf2"
+        }
+      ],
+      "text_lines": 58
+    },
+    {
+      "page": 30,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-30-image-02.jpg",
+          "bbox": [
+            315.35,
+            225.8,
+            524.45,
+            508.25
+          ],
+          "sha256": "044f52015c05980b6130b7869be7d4c5e8b9b5825ee87ec5a6d3b14d6d19f319"
+        }
+      ],
+      "text_lines": 89
+    },
+    {
+      "page": 31,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 78
+    },
+    {
+      "page": 32,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 81
+    },
+    {
+      "page": 33,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-33-image-02.jpg",
+          "bbox": [
+            238.8,
+            120.97,
+            515.0,
+            524.17
+          ],
+          "sha256": "1f896e77c6584f9770af0d792b716655d28c99bbf4fe64f7086008648857d057"
+        }
+      ],
+      "text_lines": 74
+    },
+    {
+      "page": 34,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 161
+    },
+    {
+      "page": 35,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 117
+    },
+    {
+      "page": 36,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 140
+    },
+    {
+      "page": 37,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 92
+    },
+    {
+      "page": 38,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-38-image-02.jpg",
+          "bbox": [
+            72.675,
+            308.9,
+            277.775,
+            718.86
+          ],
+          "sha256": "d777afc2c568c4beab36e1c6e5b7c66810de49478d81d852c15f06dd4cb0a6d4"
+        }
+      ],
+      "text_lines": 58
+    },
+    {
+      "page": 39,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-39-image-02.png",
+          "bbox": [
+            186.96,
+            530.64,
+            408.18,
+            726.3
+          ],
+          "sha256": "9eb455d0258ca16d2213c622d973218d252885858a9209bebe7bad6b3670ea6c"
+        }
+      ],
+      "text_lines": 51
+    },
+    {
+      "page": 40,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 142
+    },
+    {
+      "page": 41,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 71
+    },
+    {
+      "page": 42,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 56
+    },
+    {
+      "page": 43,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 44
+    },
+    {
+      "page": 44,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 146
+    },
+    {
+      "page": 45,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 80
+    },
+    {
+      "page": 46,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 33
+    },
+    {
+      "page": 47,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 56
+    },
+    {
+      "page": 48,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 35
+    },
+    {
+      "page": 49,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 47
+    },
+    {
+      "page": 50,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 62
+    },
+    {
+      "page": 51,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 5
+    },
+    {
+      "page": 52,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 32
+    },
+    {
+      "page": 53,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 73
+    },
+    {
+      "page": 54,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ],
+      "text_lines": 75
+    },
+    {
+      "page": 55,
+      "images": [
+        {
+          "file": "paper-texture.jpg",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "file": "page-55-image-02.png",
+          "bbox": [
+            102.38,
+            506.192,
+            492.93,
+            752.692
+          ],
+          "sha256": "8369351d079c86aed8e35c624d7c290395638e0761b041ec74d6a8b103ebeb17"
+        }
+      ],
+      "text_lines": 56
+    },
+    {
+      "page": 56,
+      "images": [
+        {
+          "file": "page-56-image-01.png",
+          "bbox": [
+            0.0,
+            0.0,
+            595.32,
+            841.92
+          ],
+          "sha256": "7242a10c07c3a1e873aa425bead603c98251a7233a811a1ad3722b288fcd55f2"
+        }
+      ],
+      "text_lines": 15
+    }
+  ]
+}

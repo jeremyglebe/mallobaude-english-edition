@@ -1,0 +1,108 @@
+.rules-book {
+  counter-reset: rules-page;
+}
+
+.rules-book .rules-page {
+  width: 595.32pt;
+  height: 841.92pt;
+  padding: 0;
+  overflow: hidden;
+  background: #f7f3e7;
+  isolation: isolate;
+}
+
+.rules-page .page-art {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  max-width: none;
+  object-fit: fill;
+}
+
+.rules-page .page-background {
+  z-index: 0;
+}
+
+.page-vectors {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.rules-text {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #111;
+}
+
+.pdf-line {
+  position: absolute;
+  overflow: visible;
+  white-space: nowrap;
+  line-height: 1;
+  transform-origin: left top;
+}
+
+.pdf-line > span {
+  position: absolute;
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1;
+  white-space: pre;
+}
+
+.rules-semantic {
+  position: absolute;
+  color: #111;
+  font-family: Georgia, "Times New Roman", serif;
+  text-align: left;
+}
+
+.rules-semantic p {
+  margin: 0 0 0.34em;
+}
+
+.rules-semantic ul {
+  margin: 0.12em 0 0;
+  padding: 0 0 0 1.05em;
+}
+
+.rules-semantic li {
+  margin: 0 0 0.12em;
+  padding: 0;
+}
+
+.pdf-line.vertical-up {
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 900px) {
+  .rules-book {
+    display: grid;
+    gap: 12px;
+    justify-content: start;
+    padding: 12px;
+    overflow-x: auto;
+  }
+
+  .rules-book .rules-page {
+    width: 595.32pt;
+    height: 841.92pt;
+    min-height: 841.92pt;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media print {
+  .rules-book .rules-page {
+    width: 210mm;
+    height: 297mm;
+  }
+}

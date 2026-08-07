@@ -1,0 +1,764 @@
+.cover {
+  padding: 0;
+  color: white;
+  background-image:
+    linear-gradient(to bottom, transparent 53%, rgba(8, 13, 17, 0.18) 68%, rgba(8, 13, 17, 0.84) 100%),
+    url("../assets/guide/page-01-image-02.jpg");
+  background-position: 59% center;
+  background-size: auto 100%;
+}
+
+.cover-copy {
+  position: absolute;
+  right: 18mm;
+  bottom: 23mm;
+  left: 18mm;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.cover-brand {
+  margin-bottom: 2mm;
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 27pt;
+  letter-spacing: 0.025em;
+}
+
+.cover-series {
+  margin-bottom: 2mm;
+  font-size: 17pt;
+  font-variant: small-caps;
+  letter-spacing: 0.035em;
+}
+
+.cover-title {
+  max-width: 130mm;
+  font-size: 27pt;
+  font-weight: 600;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.cover-note {
+  position: absolute;
+  right: 17mm;
+  bottom: 24mm;
+  width: 55mm;
+  font-size: 10pt;
+  line-height: 1.25;
+  text-align: right;
+}
+
+.plate-page {
+  padding-top: 25mm;
+}
+
+.plate-page .figure {
+  margin-bottom: 8mm;
+}
+
+.plate-page .figure img {
+  max-height: 105mm;
+  object-fit: cover;
+  border: 0.4mm solid #111;
+}
+
+.title-page {
+  text-align: center;
+}
+
+.title-page .prelude {
+  margin-top: 2mm;
+  font-size: 14pt;
+}
+
+.title-page h1 {
+  margin-top: 4mm;
+  font-size: 24pt;
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+}
+
+.title-page .part {
+  margin-top: 6mm;
+  font-size: 14pt;
+}
+
+.title-page .byline {
+  margin-top: 12mm;
+  font-size: 11pt;
+}
+
+.title-page .crest {
+  width: 47mm;
+  margin: 13mm auto 0;
+}
+
+.legal {
+  position: absolute;
+  right: 23mm;
+  bottom: 18mm;
+  left: 23mm;
+  font-size: 7.4pt;
+  line-height: 1.25;
+  text-align: justify;
+}
+
+.contents {
+  margin-top: 2mm;
+}
+
+.contents-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4mm 12mm;
+  font-size: 9.5pt;
+  font-weight: 600;
+}
+
+.contents-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contents-list li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1.5mm;
+  margin-bottom: 2mm;
+  align-items: end;
+}
+
+.contents-list li.sub {
+  padding-left: 6mm;
+}
+
+.contents-list .dots {
+  min-width: 5mm;
+  border-bottom: 1px dotted #5d554d;
+  transform: translateY(-1.2mm);
+}
+
+.version-note {
+  position: absolute;
+  bottom: 24mm;
+  left: 24mm;
+  font-size: 8.5pt;
+  line-height: 1.6;
+}
+
+.intro-page .chapter-title {
+  margin-bottom: 4mm;
+}
+
+.intro-page .section-title {
+  margin-top: 5mm;
+}
+
+.history-page .prose,
+.mallobaude-page .prose {
+  font-size: 8.85pt;
+  line-height: 1.19;
+}
+
+.history-page .chapter-title,
+.mallobaude-page .chapter-title {
+  margin-bottom: 4mm;
+}
+
+.civil-war {
+  margin-top: 5mm;
+}
+
+.civil-war .figure img {
+  max-height: 58mm;
+  object-fit: contain;
+}
+
+.mallobaude-photo img {
+  width: 43mm;
+  border: 0.4mm solid #111;
+}
+
+.heraldry-photo img {
+  width: 39mm;
+  border: 0.4mm solid #6b4b24;
+}
+
+.campaign-overview .prose {
+  font-size: 9pt;
+  line-height: 1.22;
+}
+
+.campaign-map {
+  display: block;
+  width: 100%;
+  height: 146mm;
+  margin: 6mm auto 2mm;
+}
+
+.campaign-map .node {
+  stroke: #171717;
+  stroke-width: 2;
+  rx: 8;
+}
+
+.campaign-map .node-dark {
+  fill: #343434;
+}
+
+.campaign-map .node-blue {
+  fill: #9ec3ef;
+}
+
+.campaign-map .node-pale {
+  fill: #c8dcf5;
+}
+
+.campaign-map text {
+  fill: #fff;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  text-anchor: middle;
+}
+
+.campaign-map .dark-text {
+  fill: #202020;
+}
+
+.campaign-map .path-dark,
+.campaign-map .path-blue,
+.campaign-map .path-dotted {
+  fill: none;
+  stroke-width: 3;
+}
+
+.campaign-map .path-dark {
+  stroke: #171717;
+  marker-end: url("#arrow-dark");
+}
+
+.campaign-map .path-blue {
+  stroke: #497fb7;
+  marker-end: url("#arrow-blue");
+}
+
+.campaign-map .path-dotted {
+  stroke: #497fb7;
+  stroke-dasharray: 4 6;
+  marker-end: url("#arrow-blue");
+}
+
+.campaign-note {
+  margin-top: 2mm;
+  padding: 3mm;
+  border: 0.35mm solid #2b2825;
+  font-size: 8pt;
+  font-style: italic;
+  line-height: 1.25;
+}
+
+.campaign-stage .chapter-title {
+  margin-bottom: 5mm;
+}
+
+.campaign-stage-grid {
+  display: grid;
+  grid-template-columns: 1.75fr 0.9fr;
+  gap: 7mm;
+}
+
+.campaign-stage .main-copy {
+  padding-right: 1mm;
+}
+
+.campaign-stage .prose {
+  font-size: 8.65pt;
+  line-height: 1.2;
+}
+
+.campaign-sidebar {
+  padding-left: 6mm;
+  border-left: 0.5mm solid #201d1a;
+  font-size: 8.25pt;
+  line-height: 1.25;
+}
+
+.campaign-sidebar p,
+.campaign-sidebar ul {
+  margin: 0 0 5mm;
+}
+
+.campaign-sidebar ul {
+  padding-left: 4.5mm;
+}
+
+.campaign-sidebar li {
+  margin-bottom: 2mm;
+}
+
+.campaign-sidebar .aside-heading {
+  display: block;
+  margin-bottom: 1.5mm;
+  font-style: italic;
+}
+
+.source-note {
+  font-size: 7.2pt;
+  font-style: italic;
+}
+
+.dukes-page {
+  padding-top: 17mm;
+}
+
+.dukes-box {
+  padding: 4mm;
+  border: 0.5mm solid #1d1a18;
+}
+
+.dukes-page .chapter-title {
+  margin-bottom: 3mm;
+}
+
+.dukes-intro {
+  margin-bottom: 4mm;
+  font-size: 8.4pt;
+  line-height: 1.2;
+}
+
+.duke-roster {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 7mm;
+  font-size: 7.85pt;
+  line-height: 1.18;
+}
+
+.duke-entry {
+  margin-bottom: 2.4mm;
+}
+
+.duke-entry strong {
+  display: block;
+}
+
+.translation-note {
+  margin: 2mm 0 0;
+  font-size: 7pt;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.corruption-rules {
+  margin-top: 3mm;
+  padding-top: 3mm;
+  border-top: 0.35mm solid #2a2622;
+  font-size: 7.8pt;
+  line-height: 1.2;
+}
+
+.corruption-rules ul {
+  column-count: 2;
+  column-gap: 8mm;
+  margin: 2mm 0 0;
+  padding-left: 4.5mm;
+}
+
+.corruption-rules li {
+  margin-bottom: 2mm;
+  break-inside: avoid;
+}
+
+.compact-prose {
+  font-size: 8.05pt !important;
+  line-height: 1.16 !important;
+}
+
+.compact-prose p {
+  margin-bottom: 2.1mm;
+}
+
+.compact-sidebar {
+  font-size: 7.55pt;
+  line-height: 1.18;
+}
+
+.compact-sidebar p,
+.compact-sidebar ul {
+  margin-bottom: 3mm;
+}
+
+.compact-sidebar li {
+  margin-bottom: 1.3mm;
+}
+
+.rule-panel {
+  margin-bottom: 3mm;
+  padding: 3mm;
+  background: rgba(168, 151, 122, 0.14);
+  border: 0.35mm solid #8d7b65;
+}
+
+.portrait-float {
+  float: right;
+  width: 37mm;
+  margin: 0 0 3mm 4mm;
+}
+
+.fay-art img {
+  width: 30mm;
+  max-height: 45mm;
+  object-fit: contain;
+}
+
+.duchy-map img {
+  width: 74mm;
+  max-height: 93mm;
+  object-fit: contain;
+}
+
+.map-stage .campaign-note {
+  padding: 2.4mm;
+  font-size: 7.5pt;
+}
+
+.revelation-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.56fr 0.98fr;
+  gap: 5mm;
+}
+
+.revelation-art {
+  align-self: center;
+  margin: 0;
+}
+
+.revelation-art img {
+  width: 100%;
+  max-height: 205mm;
+  object-fit: contain;
+}
+
+.revelation-page .campaign-sidebar {
+  padding-left: 4mm;
+}
+
+.red-duke-art img {
+  width: 46mm;
+  max-height: 62mm;
+  object-fit: cover;
+  object-position: top;
+}
+
+.asrai-emblem img {
+  width: 32mm;
+  opacity: 0.82;
+}
+
+.road-art img {
+  width: 62mm;
+  max-height: 49mm;
+  object-fit: cover;
+}
+
+.theodoric-art img {
+  width: 29mm;
+  max-height: 32mm;
+  object-fit: contain;
+}
+
+.couronne-art img {
+  width: 53mm;
+  max-height: 88mm;
+  object-fit: cover;
+  object-position: top;
+}
+
+.unreliable-allies {
+  position: absolute;
+  right: 24mm;
+  bottom: 19mm;
+  left: 24mm;
+  padding: 3mm 4mm;
+  background: rgba(168, 151, 122, 0.14);
+  border: 0.4mm solid #786a5b;
+  font-size: 7.2pt;
+  line-height: 1.17;
+  text-align: justify;
+}
+
+.unreliable-allies h3,
+.conclusion-rules h3,
+.servant-rule h3,
+.defeated-rule h3,
+.alternate-block h3,
+.back-cover-copy h3 {
+  margin: 0 0 1.5mm;
+  font-size: 10pt;
+  font-variant: small-caps;
+  letter-spacing: 0.025em;
+}
+
+.unreliable-allies p {
+  margin: 0;
+}
+
+.unreliable-allies > p {
+  margin-bottom: 2mm;
+}
+
+.flight-page .campaign-stage-grid {
+  padding-bottom: 47mm;
+}
+
+.siege-art {
+  position: absolute;
+  right: 24mm;
+  bottom: 17mm;
+  left: 24mm;
+}
+
+.siege-art img {
+  height: 47mm;
+  object-fit: cover;
+}
+
+.siege-page .campaign-stage-grid {
+  padding-bottom: 55mm;
+}
+
+.conclusion-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 7mm;
+}
+
+.conclusion-rules {
+  padding-left: 5mm;
+  border-left: 0.5mm solid #201d1a;
+  font-size: 7.2pt;
+  line-height: 1.14;
+}
+
+.conclusion-rules section {
+  margin-bottom: 3mm;
+}
+
+.conclusion-rules ul,
+.servant-rule ul,
+.defeated-rule ul {
+  margin: 0;
+  padding-left: 4.5mm;
+}
+
+.conclusion-rules li,
+.servant-rule li,
+.defeated-rule li {
+  margin-bottom: 1.4mm;
+}
+
+.oath-page {
+  background-image: url("../assets/guide/page-29-image-02.jpg");
+}
+
+.oath-page .chapter-title {
+  margin-bottom: 3.5mm;
+  text-align: center;
+}
+
+.oath-columns {
+  column-count: 2;
+  column-gap: 9mm;
+  text-align: justify;
+}
+
+.oath-columns p {
+  break-inside: avoid;
+}
+
+.oath-columns .quote {
+  margin: 1.5mm 2mm 2mm;
+}
+
+.oath-columns .proclamation {
+  font-size: 7.4pt;
+}
+
+.vampire-king-art img {
+  width: 65mm;
+  max-height: 48mm;
+  object-fit: cover;
+}
+
+.throne-copy {
+  font-size: 7.75pt !important;
+}
+
+.throne-page {
+  padding-bottom: 66mm;
+}
+
+.servant-rule {
+  position: absolute;
+  right: 24mm;
+  bottom: 20mm;
+  left: 24mm;
+  padding: 3mm 4mm;
+  background: rgba(111, 24, 27, 0.08);
+  border: 0.4mm solid #6f181b;
+  font-size: 7.25pt;
+  line-height: 1.16;
+}
+
+.defeated-page {
+  padding-bottom: 72mm;
+}
+
+.defeated-grid {
+  font-size: 8.1pt;
+}
+
+.mousillon-shield img {
+  width: 29mm;
+}
+
+.defeated-rule {
+  position: absolute;
+  right: 24mm;
+  bottom: 20mm;
+  left: 24mm;
+  padding: 3mm 4mm;
+  background: rgba(168, 151, 122, 0.14);
+  border: 0.4mm solid #786a5b;
+  font-size: 7.35pt;
+  line-height: 1.16;
+}
+
+.chronology-page {
+  padding: 15mm 15mm 14mm;
+}
+
+.chronology-page .chapter-title {
+  margin-bottom: 2mm;
+}
+
+.chronology-note {
+  margin: 0 0 3mm;
+  font-size: 7.4pt;
+  font-style: italic;
+}
+
+.chronology-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.92fr;
+  gap: 5mm;
+  font-size: 6.55pt;
+  line-height: 1.14;
+  text-align: justify;
+}
+
+.timeline-entry {
+  margin-bottom: 2.25mm;
+  break-inside: avoid;
+}
+
+.timeline-entry b {
+  display: block;
+  margin-bottom: 0.45mm;
+  font-size: 6.8pt;
+}
+
+.timeline-entry p {
+  margin: 0;
+}
+
+.alternate-block {
+  margin-bottom: 4mm;
+  padding: 3mm;
+  background: rgba(91, 124, 163, 0.13);
+  border: 0.35mm solid #6e8299;
+}
+
+.dark-alternate {
+  background: rgba(111, 24, 27, 0.1);
+  border-color: #8d5557;
+}
+
+.gallery-page {
+  padding: 17mm 19mm;
+}
+
+.gallery-wide img {
+  height: 113mm;
+  object-fit: cover;
+}
+
+.gallery-knight {
+  margin-top: 9mm;
+}
+
+.gallery-knight img {
+  width: 67mm;
+  height: 111mm;
+  object-fit: cover;
+}
+
+.back-cover {
+  padding: 0;
+  color: #211812;
+  background-image: url("../assets/guide/page-36-image-02.png");
+  background-size: 100% 100%;
+}
+
+.back-cover-copy {
+  position: absolute;
+  top: 137mm;
+  right: 24mm;
+  left: 24mm;
+  padding: 4mm 5mm;
+  font-size: 7.75pt;
+  line-height: 1.16;
+  text-align: justify;
+  background: rgba(247, 242, 228, 0.9);
+  border: 0.35mm solid rgba(82, 58, 42, 0.42);
+}
+
+.back-cover-copy h2 {
+  margin-bottom: 3mm;
+  font-size: 19pt;
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+}
+
+.back-cover-copy p,
+.back-cover-copy ul {
+  margin: 0 0 2.5mm;
+}
+
+.back-cover-copy ul {
+  padding-left: 5mm;
+}
+
+.back-cover-branding {
+  position: absolute;
+  right: 24mm;
+  bottom: 15mm;
+  left: 24mm;
+  text-align: center;
+}
+
+.back-cover-branding .warhammer-logo {
+  width: 66mm;
+  margin-bottom: 1.5mm;
+}
+
+.back-cover-branding p {
+  margin: 0 0 1.5mm;
+  font-size: 7.5pt;
+  line-height: 1.2;
+}
+
+.back-cover-branding .compatibility {
+  font-style: italic;
+}

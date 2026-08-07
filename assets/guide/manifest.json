@@ -1,0 +1,1148 @@
+{
+  "source": "Mallobaude-Guide-v1.8-VERRAH.pdf",
+  "pages": [
+    {
+      "page": 1,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image12.jpg",
+          "file": "page-01-image-02.jpg",
+          "size": [
+            1920,
+            1296
+          ],
+          "sha256": "32da3186036a08d61be8330020e59e6bbad01ce833a2859dcc2dae14e1c1db8b"
+        },
+        {
+          "source_name": "Image13.png",
+          "file": "page-01-image-03.png",
+          "size": [
+            600,
+            172
+          ],
+          "sha256": "e9e394876f76c77aba9049224c20f3299cf31247a55a5330d7df28dc9b38a171"
+        },
+        {
+          "source_name": "Image15.png",
+          "file": "page-01-image-04.png",
+          "size": [
+            747,
+            91
+          ],
+          "sha256": "3ec0175ea872bd2333af4bf2f5198aa5d4460c663fc887e901a0f0ae650216f2"
+        },
+        {
+          "source_name": "Image17.png",
+          "file": "page-01-image-05.png",
+          "size": [
+            749,
+            74
+          ],
+          "sha256": "3ccab03a1daf2ebb5bfed0bbc60a1d4c135f4aeb14ed7cdde45df10db089765b"
+        },
+        {
+          "source_name": "Image19.png",
+          "file": "page-01-image-06.png",
+          "size": [
+            638,
+            157
+          ],
+          "sha256": "7bb3cb348de5062c4f124dee3979bf12b1b4a2ac97b9af156e0104221b69e0c8"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image27.jpg",
+          "file": "page-02-image-02.jpg",
+          "size": [
+            533,
+            433
+          ],
+          "sha256": "fb7894ddf9431e62e726a4ae5620f22c3139004cd68ec6782ab072617abd4a2d"
+        },
+        {
+          "source_name": "Image28.jpg",
+          "file": "page-02-image-03.jpg",
+          "size": [
+            700,
+            400
+          ],
+          "sha256": "c1ce74964b72e6ac787a8a62b324ff0a9f9d40c70eca0f45e096fea9a515aadc"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image39.png",
+          "file": "page-03-image-02.png",
+          "size": [
+            300,
+            476
+          ],
+          "sha256": "f8af966cdd08d4015f0c2bac74c95c8022da2438966c0736d3eb055fdebc6893"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image105.jpg",
+          "file": "page-07-image-02.jpg",
+          "size": [
+            533,
+            554
+          ],
+          "sha256": "2089a3d6484880218edafb233bed31565c007b7b66f464b644212020d926149f"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image113.jpg",
+          "file": "page-08-image-02.jpg",
+          "size": [
+            542,
+            709
+          ],
+          "sha256": "2f687f4c3aad5910eee3e11c69394f2cca41fb574e0e8c6d8854576a4261804f"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image116.jpg",
+          "file": "page-10-image-02.jpg",
+          "size": [
+            129,
+            162
+          ],
+          "sha256": "bac2f8d00b916a010c5004f7802a4d011594a28e8f1c8c3b2bf60383533657b2"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image118.png",
+          "file": "page-11-image-02.png",
+          "size": [
+            204,
+            50
+          ],
+          "sha256": "ba3e77fe38a7fbe707d00969dffe3fd13d7cd24f09a59db19c2b4486c793dd38"
+        },
+        {
+          "source_name": "Image120.png",
+          "file": "page-11-image-03.png",
+          "size": [
+            194,
+            30
+          ],
+          "sha256": "fbc48361d7dcadf516c5a88fec1606e25f5b0bc1a705f5cb39abd7eb0dc87646"
+        },
+        {
+          "source_name": "Image128.png",
+          "file": "page-11-image-04.png",
+          "size": [
+            369,
+            41
+          ],
+          "sha256": "9e8160e299fd106e2b257bbded0b40c3076155c71169f941f2ca48dc66077c1f"
+        },
+        {
+          "source_name": "Image135.png",
+          "file": "page-11-image-05.png",
+          "size": [
+            204,
+            48
+          ],
+          "sha256": "58e497aec3a7c2c3b144a3d3d750e914e2f294244aa94cb51fca4ce1bf504725"
+        },
+        {
+          "source_name": "Image137.png",
+          "file": "page-11-image-06.png",
+          "size": [
+            195,
+            28
+          ],
+          "sha256": "398940a4528bd5626f265e5ac4d0cb4c913648059e92088d6bee3a370a63ba92"
+        },
+        {
+          "source_name": "Image145.png",
+          "file": "page-11-image-07.png",
+          "size": [
+            370,
+            37
+          ],
+          "sha256": "c510eac1fd463134b30621f13a3ebe1d34a4c7744045695a18a2e1e27e348b4f"
+        },
+        {
+          "source_name": "Image147.png",
+          "file": "page-11-image-08.png",
+          "size": [
+            203,
+            50
+          ],
+          "sha256": "eb3a364624a03fa8521d97a5eec4bf9f41f673c5465807da153b72f36140d01d"
+        },
+        {
+          "source_name": "Image149.png",
+          "file": "page-11-image-09.png",
+          "size": [
+            193,
+            30
+          ],
+          "sha256": "09faac15b430e052f72ca200e7b24db0b4b45e2b5cf6d8d334f21291aee987f9"
+        },
+        {
+          "source_name": "Image157.png",
+          "file": "page-11-image-10.png",
+          "size": [
+            367,
+            41
+          ],
+          "sha256": "ff4c0ec8a889935237e8226e9de00b865e0e9f429e7b2e4cb0c9f497cb78f3ab"
+        },
+        {
+          "source_name": "Image159.png",
+          "file": "page-11-image-11.png",
+          "size": [
+            202,
+            51
+          ],
+          "sha256": "2cd278073a222d454d6159c3dea9ab8ee77cc5458a4c0cf51dfefe5e2e6bbbc4"
+        },
+        {
+          "source_name": "Image161.png",
+          "file": "page-11-image-12.png",
+          "size": [
+            192,
+            31
+          ],
+          "sha256": "0c826a377797e16e619d27e8ac81d385032071b4b03f94a3ffba2e5d5751574e"
+        },
+        {
+          "source_name": "Image169.png",
+          "file": "page-11-image-13.png",
+          "size": [
+            365,
+            42
+          ],
+          "sha256": "e6992eb47651ba6a65c3ff52026037f66797a7a9952de4f5d3a5dee8110ed959"
+        },
+        {
+          "source_name": "Image171.png",
+          "file": "page-11-image-14.png",
+          "size": [
+            206,
+            55
+          ],
+          "sha256": "2725334070b5b4b5478fc049af67429a945c8cde66da9f5bbd7606e4f34c918e"
+        },
+        {
+          "source_name": "Image173.png",
+          "file": "page-11-image-15.png",
+          "size": [
+            196,
+            37
+          ],
+          "sha256": "240faf4488542937b48df61c5cfdbb2b5a23d0744614a70f25d3b5cb0954fb86"
+        },
+        {
+          "source_name": "Image181.png",
+          "file": "page-11-image-16.png",
+          "size": [
+            372,
+            54
+          ],
+          "sha256": "b3417c77a3327599756837861d20d8bbaf2107d8adc652475ff6953285950f8b"
+        },
+        {
+          "source_name": "Image183.png",
+          "file": "page-11-image-17.png",
+          "size": [
+            208,
+            47
+          ],
+          "sha256": "5b94da17fa0c5e8b72a5b94c2740a79d257798390cd0734fc48ab5022bf27c58"
+        },
+        {
+          "source_name": "Image185.png",
+          "file": "page-11-image-18.png",
+          "size": [
+            199,
+            28
+          ],
+          "sha256": "1d2cc4fe8f01d197fac0cfe600857a307960dde948bb43453e61c8a9a8d70812"
+        },
+        {
+          "source_name": "Image193.png",
+          "file": "page-11-image-19.png",
+          "size": [
+            378,
+            36
+          ],
+          "sha256": "958f0934495723b492f3fb1b8353a9a094518e543808300bdf53fd194bb182ee"
+        },
+        {
+          "source_name": "Image195.png",
+          "file": "page-11-image-20.png",
+          "size": [
+            213,
+            48
+          ],
+          "sha256": "30fd6656ce2cde77cda9e8521b9b13a726ce6301286988e42440088134a745ee"
+        },
+        {
+          "source_name": "Image197.png",
+          "file": "page-11-image-21.png",
+          "size": [
+            203,
+            28
+          ],
+          "sha256": "9a961ea62b206f1453486111c0bf57dfeb6aa737d6ab9e5278d4d228d0d2b6f2"
+        },
+        {
+          "source_name": "Image205.png",
+          "file": "page-11-image-22.png",
+          "size": [
+            386,
+            37
+          ],
+          "sha256": "d8fb1f5225e5059bb49dfd9b5eb597b2234b12b9b031e7f94e560bd8820f3cf5"
+        },
+        {
+          "source_name": "Image207.png",
+          "file": "page-11-image-23.png",
+          "size": [
+            211,
+            57
+          ],
+          "sha256": "72e4171111281d6716958e805582d4c6bc512cb5003a002a97be8a866593114f"
+        },
+        {
+          "source_name": "Image209.png",
+          "file": "page-11-image-24.png",
+          "size": [
+            200,
+            41
+          ],
+          "sha256": "8a00584635473b5e42fbb9efcad7af520afd7291f58d99694bb6bebc7b621f0c"
+        },
+        {
+          "source_name": "Image217.png",
+          "file": "page-11-image-25.png",
+          "size": [
+            381,
+            62
+          ],
+          "sha256": "48cd27d28641c6d6c79800c4351d6c0349c015a896faa21c16c24275473c2d9a"
+        },
+        {
+          "source_name": "Image219.png",
+          "file": "page-11-image-26.png",
+          "size": [
+            208,
+            48
+          ],
+          "sha256": "da1257e9103d8ffd1d86d7e2a57d015bfea7e8478ea31e82004cf32b9a465562"
+        },
+        {
+          "source_name": "Image221.png",
+          "file": "page-11-image-27.png",
+          "size": [
+            199,
+            29
+          ],
+          "sha256": "9ce47cb0e4c3f01e18c28c5502b19fd10579363f31e1be73fae86fba02a18c19"
+        },
+        {
+          "source_name": "Image229.png",
+          "file": "page-11-image-28.png",
+          "size": [
+            378,
+            38
+          ],
+          "sha256": "721e12ebdebf434693827dcfae4aaac43bd0c6175119ada43573053a7f704b7d"
+        },
+        {
+          "source_name": "Image231.png",
+          "file": "page-11-image-29.png",
+          "size": [
+            215,
+            50
+          ],
+          "sha256": "d6e85a431d7471d91ee2b513d4203c767fc6cc11e994f12b1543aec84e3c408b"
+        },
+        {
+          "source_name": "Image233.png",
+          "file": "page-11-image-30.png",
+          "size": [
+            205,
+            30
+          ],
+          "sha256": "ba8544301897c413aec1978b0f5455c4d9a48eace011bb1f9eea8ca3af1450e8"
+        },
+        {
+          "source_name": "Image241.png",
+          "file": "page-11-image-31.png",
+          "size": [
+            390,
+            41
+          ],
+          "sha256": "1a0fb57adf70d5ca5fd6bf57f52dc7bc18ef54382900dddc15434915ad1e9767"
+        },
+        {
+          "source_name": "Image243.png",
+          "file": "page-11-image-32.png",
+          "size": [
+            203,
+            53
+          ],
+          "sha256": "e91e3c893097b2fed6b96dd2c107f99fe8e51a9d33d6bbeec5cad76e051ac17b"
+        },
+        {
+          "source_name": "Image245.png",
+          "file": "page-11-image-33.png",
+          "size": [
+            193,
+            33
+          ],
+          "sha256": "a5e9fc9410bb7016281295987fcf2b4812c37b6e9f587407d4fa996616fbe529"
+        },
+        {
+          "source_name": "Image253.png",
+          "file": "page-11-image-34.png",
+          "size": [
+            367,
+            45
+          ],
+          "sha256": "c6875c9192c8b72edd351063b2dbc4fa24c769352c6165183889e218ce33ed5b"
+        },
+        {
+          "source_name": "Image255.png",
+          "file": "page-11-image-35.png",
+          "size": [
+            121,
+            51
+          ],
+          "sha256": "413a31329d89185370fb09d8bde3fb67356022380b5540ee085715ba41d6f9f6"
+        },
+        {
+          "source_name": "Image257.png",
+          "file": "page-11-image-36.png",
+          "size": [
+            111,
+            31
+          ],
+          "sha256": "897272b701a103f442c36abea8c5a7f4c74706570d175c36774948c32a5d339a"
+        },
+        {
+          "source_name": "Image265.png",
+          "file": "page-11-image-37.png",
+          "size": [
+            202,
+            42
+          ],
+          "sha256": "db0842ec8818a8c1bade542be983eedc25382f3ac6dd83ace9fb085e84ec8850"
+        },
+        {
+          "source_name": "Image267.png",
+          "file": "page-11-image-38.png",
+          "size": [
+            156,
+            66
+          ],
+          "sha256": "d1fc76db4ecf79d60c84793a6041ade6d1550e6cf867343e5ef4623b952a9245"
+        },
+        {
+          "source_name": "Image269.png",
+          "file": "page-11-image-39.png",
+          "size": [
+            145,
+            47
+          ],
+          "sha256": "7fc223d49dc1ceb6604d6d8b0a80e614720de10f74f880a29e744cacaf2bd1b9"
+        },
+        {
+          "source_name": "Image277.png",
+          "file": "page-11-image-40.png",
+          "size": [
+            270,
+            75
+          ],
+          "sha256": "b7ce0e91380f22c12d70334b2d7d587e07898ac3e9b419535de34995bf95d451"
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image304.jpg",
+          "file": "page-15-image-02.jpg",
+          "size": [
+            564,
+            702
+          ],
+          "sha256": "6bb4191ab70b5f8b0de44f1934748dd05f0e620f30ef7d07f24912f5832957c0"
+        },
+        {
+          "source_name": "Image305.jp2",
+          "file": "page-15-image-03.jp2",
+          "size": [
+            352,
+            479
+          ],
+          "sha256": "12469c5113a5e81b32dbdc39149c96d615525d8c1e5c61f3d9f52cf28f069e5d"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image316.png",
+          "file": "page-17-image-02.png",
+          "size": [
+            462,
+            578
+          ],
+          "sha256": "d307452df689a8290b09a066988f0ded9b9bdc2f9164deae07048ffbc3b239c4"
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image319.jp2",
+          "file": "page-18-image-02.jp2",
+          "size": [
+            494,
+            1543
+          ],
+          "sha256": "43ec8bedd6678ecd796d458dd412aa8b6d68cf9cdd763a6a23c0ea5ad8ab21ef"
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image326.jpg",
+          "file": "page-19-image-02.jpg",
+          "size": [
+            600,
+            811
+          ],
+          "sha256": "044f52015c05980b6130b7869be7d4c5e8b9b5825ee87ec5a6d3b14d6d19f319"
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image328.jp2",
+          "file": "page-20-image-02.jp2",
+          "size": [
+            517,
+            517
+          ],
+          "sha256": "c4ef47662370618d01c0940b76358cee1b3801a968ac71893d1bb9d53b327598"
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image339.jpg",
+          "file": "page-22-image-02.jpg",
+          "size": [
+            578,
+            458
+          ],
+          "sha256": "3bf6d7769b733097e6b8c45d38a2e508efaa1882125f75f293bda509b5e225b4"
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image343.jp2",
+          "file": "page-23-image-02.jp2",
+          "size": [
+            293,
+            318
+          ],
+          "sha256": "b6baf68eacdb4f48790047068d34e49e6809eca619aeefaa84d5595505c78de0"
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image352.jpg",
+          "file": "page-25-image-02.jpg",
+          "size": [
+            579,
+            953
+          ],
+          "sha256": "85f041bdef53f962305ced65954e09606baf6bce925e8396b55c008955f74fbb"
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image358.jpg",
+          "file": "page-27-image-02.jpg",
+          "size": [
+            1380,
+            711
+          ],
+          "sha256": "8df44fc04e8cbb7cbba043f833d8cea206da0fcde515b340fd6355120e7dc928"
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image361.jpg",
+          "file": "page-29-image-02.jpg",
+          "size": [
+            640,
+            1040
+          ],
+          "sha256": "40eab4a6adadd0ead4c57d8cf64603b3abdf5fce680d53200173b0c5d51a7950"
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image366.jpg",
+          "file": "page-31-image-02.jpg",
+          "size": [
+            650,
+            537
+          ],
+          "sha256": "6e53e29c221e42b90c67b35ae1a1396f3adb7899fcf13de03aad9ce923f0b211"
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image361.jpg",
+          "file": "page-29-image-02.jpg",
+          "size": [
+            640,
+            1040
+          ],
+          "sha256": "40eab4a6adadd0ead4c57d8cf64603b3abdf5fce680d53200173b0c5d51a7950"
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image369.jp2",
+          "file": "page-33-image-02.jp2",
+          "size": [
+            256,
+            256
+          ],
+          "sha256": "4901a0014bf11d472c26c73c2a25d6ef4a2863d643128afa70806ea5a2f589e4"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image374.jpg",
+          "file": "page-35-image-02.jpg",
+          "size": [
+            1258,
+            618
+          ],
+          "sha256": "eb168ce01def4485e235a5f94d615b9818c9822defc41a6a013772e7911e1e07"
+        },
+        {
+          "source_name": "Image375.jpg",
+          "file": "page-35-image-03.jpg",
+          "size": [
+            485,
+            641
+          ],
+          "sha256": "0a5472669f4edfd4eaacf2506077606e52fc9c54b26947c08d340704b847d2d7"
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "images": [
+        {
+          "source_name": "Image5.jpg",
+          "file": "paper-texture.jpg",
+          "size": [
+            794,
+            1122
+          ],
+          "sha256": "6b954987c2f1a4283b3d661b55dddaf609996981695a9b7aeef931b32459197a"
+        },
+        {
+          "source_name": "Image378.jp2",
+          "file": "page-36-image-02.jp2",
+          "size": [
+            793,
+            1123
+          ],
+          "sha256": "bdbf4c6624ead8a3d088127fb65e6240648c4a9cbaf549216e8c3e2645de5035"
+        },
+        {
+          "source_name": "Image380.jp2",
+          "file": "page-36-image-03.jp2",
+          "size": [
+            483,
+            62
+          ],
+          "sha256": "8d3d087c0cadaadfb66cdbe33ec39a570333b8342df7b58fe8a0cd5228899ce0"
+        },
+        {
+          "source_name": "Image382.png",
+          "file": "page-36-image-04.png",
+          "size": [
+            138,
+            161
+          ],
+          "sha256": "b31d683db70b17ab942f3b788dee5439b6b798c32bf5dc8d9c24c6db7861f58e"
+        },
+        {
+          "source_name": "Image384.png",
+          "file": "page-36-image-05.png",
+          "size": [
+            436,
+            76
+          ],
+          "sha256": "3eb9804d88d98807bf1cc1280c27b20d4f742d1c8af5507796f979c2e6a00809"
+        },
+        {
+          "source_name": "Image402.png",
+          "file": "page-36-image-06.png",
+          "size": [
+            442,
+            39
+          ],
+          "sha256": "b46787b09dce454d107918190d35d68afad72e61944a6c03e577b7175499e788"
+        }
+      ]
+    }
+  ]
+}
