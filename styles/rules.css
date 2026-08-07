@@ -78,6 +78,106 @@
   padding: 0;
 }
 
+#rules-page-04 .rules-text > .pdf-line,
+#rules-page-05 .rules-text > .pdf-line,
+#rules-page-06 .rules-text > .pdf-line,
+#rules-page-07 .rules-text > .pdf-line,
+#rules-page-08 .rules-text > .pdf-line,
+#rules-page-09 .rules-text > .pdf-line,
+#rules-page-10 .rules-text > .pdf-line,
+#rules-page-11 .rules-text > .pdf-line {
+  display: none;
+}
+
+.editorial-title {
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.editorial-block {
+  line-height: 1.18;
+}
+
+.editorial-block p {
+  margin: 0 0 0.65em;
+}
+
+.editorial-block h3 {
+  margin: 0 0 0.65em;
+  font-size: 1em;
+  line-height: 1.1;
+}
+
+.editorial-block ul {
+  margin: 0.2em 0 0.75em;
+  padding-left: 1.2em;
+}
+
+.editorial-block li {
+  margin-bottom: 0.2em;
+}
+
+.editorial-page-number {
+  color: #333;
+  font-size: 7.2pt;
+  line-height: 1;
+}
+
+.civil-table {
+  line-height: 1.12;
+}
+
+.civil-heading {
+  display: grid;
+  grid-template-columns: 34pt 1fr;
+  gap: 8pt;
+  padding: 0 9pt 4pt;
+  font-size: 10.4pt;
+  font-weight: 700;
+}
+
+.civil-row {
+  display: grid;
+  grid-template-columns: 34pt 1fr;
+  gap: 8pt;
+  padding: 4pt 9pt 4.5pt;
+}
+
+.civil-row.shaded {
+  background: rgba(188, 188, 188, 0.62);
+}
+
+.civil-roll {
+  padding-top: 0.1em;
+  text-align: center;
+}
+
+.civil-entry h3 {
+  margin: 0;
+  font-size: 1em;
+  line-height: inherit;
+}
+
+.civil-entry p {
+  margin: 0;
+}
+
+.civil-entry .flavour {
+  font-style: italic;
+}
+
+.reward-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28pt;
+  line-height: 1.22;
+}
+
+.reward-columns p {
+  margin: 0 0 0.85em;
+}
+
 .pdf-line.vertical-up {
   transform: rotate(-90deg);
 }
