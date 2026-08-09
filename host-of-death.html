@@ -5569,16 +5569,29 @@ a {
   const summonUnitGroups = {
     infantry: [
       { name: "Zombies", faction: "Vampire Counts", type: "Infantry", points: 3, min: 20 },
+      { name: "Zombies", displayName: "20 Zombies — Musician & Standard", configuration: "zombies-command", faction: "Vampire Counts", type: "Infantry", points: 80, min: 1, fixed: true, modelCount: 20 },
       { name: "Skeleton Warriors", faction: "Vampire Counts", type: "Infantry", points: 5, min: 10 },
+      { name: "Skeleton Warriors", displayName: "20 Skeleton Warriors — Shieldwall Command", configuration: "vc-skeleton-shieldwall", faction: "Vampire Counts", type: "Infantry", points: 130, min: 1, fixed: true, modelCount: 20 },
+      { name: "Skeleton Warriors", displayName: "20 Skeleton Warriors — Spear Command", configuration: "vc-skeleton-spears", faction: "Vampire Counts", type: "Infantry", points: 130, min: 1, fixed: true, modelCount: 20 },
       { name: "Crypt Ghouls", faction: "Vampire Counts", type: "Infantry", points: 10, min: 10 },
+      { name: "Crypt Ghouls", displayName: "10 Crypt Ghouls — Crypt Ghast", configuration: "crypt-ghouls-ghast", faction: "Vampire Counts", type: "Infantry", points: 110, min: 1, fixed: true, modelCount: 10 },
       { name: "Grave Guard", faction: "Vampire Counts", type: "Infantry", points: 11, min: 10 },
+      { name: "Grave Guard", displayName: "10 Grave Guard — Shieldwall Command", configuration: "grave-guard-shields", faction: "Vampire Counts", type: "Infantry", points: 140, min: 1, fixed: true, modelCount: 10 },
+      { name: "Grave Guard", displayName: "10 Grave Guard — Great Weapon Command", configuration: "grave-guard-great-weapons", faction: "Vampire Counts", type: "Infantry", points: 150, min: 1, fixed: true, modelCount: 10 },
       { name: "Cairn Wraiths", faction: "Vampire Counts", type: "Infantry", points: 50, min: 3 },
+      { name: "Cairn Wraiths", displayName: "3 Cairn Wraiths — Tomb Banshee", configuration: "cairn-wraiths-banshee", faction: "Vampire Counts", type: "Infantry", points: 175, min: 1, fixed: true, modelCount: 3 },
       { name: "Skeleton Warriors", faction: "Tomb Kings", type: "Infantry", points: 4, min: 10 },
+      { name: "Skeleton Warriors", displayName: "20 Skeleton Warriors — Shieldwall Command", configuration: "tk-skeleton-shieldwall", faction: "Tomb Kings", type: "Infantry", points: 110, min: 1, fixed: true, modelCount: 20 },
+      { name: "Skeleton Warriors", displayName: "20 Skeleton Warriors — Armoured Spear Command", configuration: "tk-skeleton-spears", faction: "Tomb Kings", type: "Infantry", points: 150, min: 1, fixed: true, modelCount: 20 },
       { name: "Skeleton Archers", faction: "Tomb Kings", type: "Infantry", points: 6, min: 10 },
-      { name: "Tomb Guard", faction: "Tomb Kings", type: "Infantry", points: 11, min: 10 }
+      { name: "Skeleton Archers", displayName: "10 Skeleton Archers — Musician", configuration: "skeleton-archers-musician", faction: "Tomb Kings", type: "Infantry", points: 70, min: 1, fixed: true, modelCount: 10 },
+      { name: "Tomb Guard", faction: "Tomb Kings", type: "Infantry", points: 11, min: 10 },
+      { name: "Tomb Guard", displayName: "10 Tomb Guard — Shieldwall Command", configuration: "tomb-guard-shields", faction: "Tomb Kings", type: "Infantry", points: 140, min: 1, fixed: true, modelCount: 10 },
+      { name: "Tomb Guard", displayName: "10 Tomb Guard — Halberd Command", configuration: "tomb-guard-halberds", faction: "Tomb Kings", type: "Infantry", points: 160, min: 1, fixed: true, modelCount: 10 }
     ],
     "war-beasts": [
       { name: "Dire Wolves", faction: "Vampire Counts", type: "War Beast", points: 8, min: 5 },
+      { name: "Dire Wolves", displayName: "5 Dire Wolves — Doom Wolf", configuration: "dire-wolves-doom-wolf", faction: "Vampire Counts", type: "War Beast", points: 50, min: 1, fixed: true, modelCount: 5 },
       { name: "Fell Bats", faction: "Vampire Counts", type: "War Beast", points: 16, min: 2 },
       { name: "Bat Swarms", faction: "Vampire Counts", type: "Swarm", points: 35, min: 2 },
       { name: "Spirit Hosts", faction: "Vampire Counts", type: "Swarm", points: 45, min: 1 },
@@ -5629,25 +5642,47 @@ a {
     ],
     engines: [
       { name: "Corpse Cart", faction: "Vampire Counts", type: "Chariot", points: 90, min: 1, fixed: true },
+      { name: "Corpse Cart", displayName: "Corpse Cart — Balefire", configuration: "corpse-cart-balefire", faction: "Vampire Counts", type: "Chariot", points: 105, min: 1, fixed: true },
+      { name: "Corpse Cart", displayName: "Corpse Cart — Unholy Lodestone", configuration: "corpse-cart-lodestone", faction: "Vampire Counts", type: "Chariot", points: 120, min: 1, fixed: true },
       { name: "Varghulf", faction: "Vampire Counts", type: "Monster", points: 175, min: 1, fixed: true },
       { name: "Black Coach", faction: "Vampire Counts", type: "Chariot", points: 195, min: 1, fixed: true },
       { name: "Mortis Engine", faction: "Vampire Counts", type: "Chariot", points: 220, min: 1, fixed: true },
+      { name: "Mortis Engine", displayName: "Mortis Engine — Blasphemous Tome", configuration: "mortis-engine-tome", faction: "Vampire Counts", type: "Chariot", points: 240, min: 1, fixed: true },
       { name: "Terrorgheist", faction: "Vampire Counts", type: "Monster", points: 225, min: 1, fixed: true },
+      { name: "Terrorgheist", displayName: "Terrorgheist — Infested", configuration: "terrorgheist-infested", faction: "Vampire Counts", type: "Monster", points: 235, min: 1, fixed: true },
+      { name: "Terrorgheist", displayName: "Terrorgheist — Rancid Maw", configuration: "terrorgheist-rancid-maw", faction: "Vampire Counts", type: "Monster", points: 240, min: 1, fixed: true },
       { name: "Screaming Skull Catapult", faction: "Tomb Kings", type: "War Machine", points: 90, min: 1, fixed: true },
+      { name: "Screaming Skull Catapult", displayName: "Screaming Skull Catapult — Skulls of the Foe", configuration: "screaming-skull-skulls-of-foe", faction: "Tomb Kings", type: "War Machine", points: 120, min: 1, fixed: true },
       { name: "Casket of Souls", faction: "Tomb Kings", type: "War Machine", points: 135, min: 1, fixed: true },
       { name: "Necrolith Colossus", faction: "Tomb Kings", type: "Monster", points: 170, min: 1, fixed: true },
+      { name: "Necrolith Colossus", displayName: "Necrolith Colossus — Additional Hand Weapon", configuration: "colossus-additional-hand-weapon", faction: "Tomb Kings", type: "Monster", points: 175, min: 1, fixed: true },
+      { name: "Necrolith Colossus", displayName: "Necrolith Colossus — Great Weapon", configuration: "colossus-great-weapon", faction: "Tomb Kings", type: "Monster", points: 180, min: 1, fixed: true },
+      { name: "Necrolith Colossus", displayName: "Necrolith Colossus — Bow of the Desert", configuration: "colossus-bow-of-the-desert", faction: "Tomb Kings", type: "Monster", points: 190, min: 1, fixed: true },
       { name: "Hierotitan", faction: "Tomb Kings", type: "Monster", points: 175, min: 1, fixed: true },
       { name: "Khemrian Warsphinx", faction: "Tomb Kings", type: "Monster", points: 210, min: 1, fixed: true },
-      { name: "Necrosphinx", faction: "Tomb Kings", type: "Monster", points: 225, min: 1, fixed: true }
+      { name: "Khemrian Warsphinx", displayName: "Khemrian Warsphinx — Fiery Roar", configuration: "warsphinx-fiery-roar", faction: "Tomb Kings", type: "Monster", points: 230, min: 1, fixed: true },
+      { name: "Khemrian Warsphinx", displayName: "Khemrian Warsphinx — Roar & Envenomed Sting", configuration: "warsphinx-roar-sting", faction: "Tomb Kings", type: "Monster", points: 240, min: 1, fixed: true },
+      { name: "Necrosphinx", faction: "Tomb Kings", type: "Monster", points: 225, min: 1, fixed: true },
+      { name: "Necrosphinx", displayName: "Necrosphinx — Envenomed Sting", configuration: "necrosphinx-envenomed-sting", faction: "Tomb Kings", type: "Monster", points: 235, min: 1, fixed: true }
     ],
     riders: [
       { name: "Black Knights", faction: "Vampire Counts", type: "Cavalry", points: 21, min: 5 },
+      { name: "Black Knights", displayName: "5 Black Knights — Barding & Lances", configuration: "black-knights-five-lances", faction: "Vampire Counts", type: "Cavalry", points: 130, min: 1, fixed: true, modelCount: 5 },
+      { name: "Black Knights", displayName: "5 Black Knights — Armoured Full Command", configuration: "black-knights-five-command", faction: "Vampire Counts", type: "Cavalry", points: 160, min: 1, fixed: true, modelCount: 5 },
+      { name: "Black Knights", displayName: "10 Black Knights — Armoured Full Command", configuration: "black-knights-ten-command", faction: "Vampire Counts", type: "Cavalry", points: 290, min: 1, fixed: true, modelCount: 10 },
       { name: "Hexwraiths", faction: "Vampire Counts", type: "Cavalry", points: 30, min: 5 },
+      { name: "Hexwraiths", displayName: "5 Hexwraiths — Hellwraith", configuration: "hexwraiths-hellwraith", faction: "Vampire Counts", type: "Cavalry", points: 160, min: 1, fixed: true, modelCount: 5 },
       { name: "Blood Knights", faction: "Vampire Counts", type: "Cavalry", points: 50, min: 4 },
+      { name: "Blood Knights", displayName: "4 Blood Knights — Full Command", configuration: "blood-knights-command", faction: "Vampire Counts", type: "Cavalry", points: 235, min: 1, fixed: true, modelCount: 4 },
       { name: "Skeleton Horsemen", faction: "Tomb Kings", type: "Cavalry", points: 12, min: 5 },
+      { name: "Skeleton Horsemen", displayName: "5 Skeleton Horsemen — Armoured Full Command", configuration: "skeleton-horsemen-command", faction: "Tomb Kings", type: "Cavalry", points: 100, min: 1, fixed: true, modelCount: 5 },
       { name: "Skeleton Horse Archers", faction: "Tomb Kings", type: "Cavalry", points: 14, min: 5 },
+      { name: "Skeleton Horse Archers", displayName: "5 Skeleton Horse Archers — Musician", configuration: "horse-archers-musician", faction: "Tomb Kings", type: "Cavalry", points: 80, min: 1, fixed: true, modelCount: 5 },
       { name: "Skeleton Chariots", faction: "Tomb Kings", type: "Chariot", points: 55, min: 3 },
-      { name: "Necropolis Knights", faction: "Tomb Kings", type: "Monstrous Cavalry", points: 65, min: 3 }
+      { name: "Skeleton Chariots", displayName: "3 Skeleton Chariots — Full Command", configuration: "skeleton-chariots-command", faction: "Tomb Kings", type: "Chariot", points: 195, min: 1, fixed: true, modelCount: 3 },
+      { name: "Necropolis Knights", faction: "Tomb Kings", type: "Monstrous Cavalry", points: 65, min: 3 },
+      { name: "Necropolis Knights", displayName: "3 Necropolis Knights — Entombed", configuration: "necropolis-knights-entombed", faction: "Tomb Kings", type: "Monstrous Cavalry", points: 210, min: 1, fixed: true, modelCount: 3 },
+      { name: "Necropolis Knights", displayName: "3 Necropolis Knights — Full Command", configuration: "necropolis-knights-command", faction: "Tomb Kings", type: "Monstrous Cavalry", points: 225, min: 1, fixed: true, modelCount: 3 }
     ]
   };
 
@@ -5753,6 +5788,341 @@ a {
   };
 
   const summonConfigurations = {
+    "zombies-command": {
+      role: "A minimum twenty-model tarpit with both sources of static combat utility available to Zombies.",
+      equipment: "Twenty Zombies; one is a musician and one is a standard bearer.",
+      optionLabel: "Purchased upgrades",
+      options: [
+        { name: "Musician", points: 10 },
+        { name: "Standard bearer", points: 10 }
+      ],
+      rules: ["Musician", "Standard Bearer"],
+      breakdown: "20 × 3 base + 10 musician + 10 standard bearer = 80 points."
+    },
+    "vc-skeleton-shieldwall": {
+      role: "A compact defensive block that keeps hand weapons and shields for parry saves and brings a complete command group.",
+      equipment: "Twenty Skeleton Warriors with hand weapons, light armour and shields; 5+ armour and a 6+ parry save in eligible frontal combats.",
+      optionLabel: "Purchased upgrades",
+      options: [{ name: "Full command", points: 30 }],
+      rules: ["Full Command", "Parry Save"],
+      breakdown: "20 × 5 base + 30 full command = 130 points."
+    },
+    "vc-skeleton-spears": {
+      role: "A compact spear block that trades the hand-weapon parry for attacks from an additional rank when it did not charge.",
+      equipment: "Twenty Skeleton Warriors with spears, light armour and shields; 5+ armour save. Spears are a free replacement option.",
+      optionLabel: "Selected options",
+      options: [
+        { name: "Spears", points: 0 },
+        { name: "Full command", points: 30 }
+      ],
+      rules: ["Spear", "Full Command"],
+      breakdown: "20 × 5 base + free spears + 30 full command = 130 points."
+    },
+    "crypt-ghouls-ghast": {
+      role: "The minimum Ghoul unit with a champion for one additional Poisoned Attack and challenge utility.",
+      equipment: "Ten Crypt Ghouls; one is promoted to a Crypt Ghast.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Crypt Ghast", points: 10 }],
+      rules: ["Champion"],
+      breakdown: "10 × 10 base + 10 Crypt Ghast = 110 points."
+    },
+    "grave-guard-shields": {
+      role: "The defensive Grave Guard setup: Toughness 4, heavy armour, parry saves and full command for holding a key position.",
+      equipment: "Ten Grave Guard with hand weapons, heavy armour and shields; 4+ armour and a 6+ parry save in eligible frontal combats.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Full command", points: 30 }],
+      rules: ["Full Command", "Parry Save"],
+      breakdown: "10 × 11 base + 30 full command = 140 points.",
+      guideUrl: "https://www.vampirecounts.net/articles/vampire-counts-8th-edition-handbook-by-sunny-najo.4/page/special.5/",
+      guideLabel: "Vampire Counts unit guide"
+    },
+    "grave-guard-great-weapons": {
+      role: "The offensive Grave Guard setup, landing exactly at the standard 150-point infantry cap with Strength 6 Killing Blow attacks.",
+      equipment: "Ten Grave Guard with great weapons and heavy armour; 5+ armour save. Great weapons grant +2 Strength and Require Two Hands.",
+      optionLabel: "Purchased upgrades",
+      options: [
+        { name: "Great weapons", points: 10 },
+        { name: "Full command", points: 30 }
+      ],
+      rules: ["Always Strikes Last", "Full Command"],
+      breakdown: "10 × 11 base + 10 great weapons + 30 full command = 150 points.",
+      guideUrl: "https://www.vampirecounts.net/articles/vampire-counts-8th-edition-handbook-by-sunny-najo.4/page/special.5/",
+      guideLabel: "Vampire Counts unit guide"
+    },
+    "cairn-wraiths-banshee": {
+      role: "A minimum Ethereal unit with one Wraith exchanged for a Tomb Banshee, adding a Ghostly Howl without increasing the model count.",
+      equipment: "Two Cairn Wraiths with great weapons and one Tomb Banshee with a hand weapon.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Tomb Banshee", points: 25 }],
+      rules: ["Ghostly Howl"],
+      breakdown: "3 × 50 base + 25 Tomb Banshee = 175 points."
+    },
+    "tk-skeleton-shieldwall": {
+      role: "A twenty-model defensive block with shields, parry saves and full command while remaining inexpensive.",
+      equipment: "Twenty Skeleton Warriors with hand weapons and shields; 6+ armour and a 6+ parry save in eligible frontal combats.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Full command", points: 30 }],
+      rules: ["Full Command", "Parry Save"],
+      breakdown: "20 × 4 base + 30 full command = 110 points."
+    },
+    "tk-skeleton-spears": {
+      role: "A fully equipped twenty-model spear block that lands exactly at the standard 150-point infantry cap.",
+      equipment: "Twenty Skeleton Warriors with spears, shields and light armour; 5+ armour save.",
+      optionLabel: "Purchased upgrades",
+      options: [
+        { name: "Spears", points: 20 },
+        { name: "Light armour", points: 20 },
+        { name: "Full command", points: 30 }
+      ],
+      rules: ["Spear", "Full Command"],
+      breakdown: "20 × 4 base + 20 spears + 20 light armour + 30 full command = 150 points."
+    },
+    "skeleton-archers-musician": {
+      role: "A minimum scouting or bunker-sized archer unit with the most useful command upgrade for rallying and swift reforms.",
+      equipment: "Ten Skeleton Archers with hand weapons and bows; one is a musician.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Musician", points: 10 }],
+      rules: ["Musician"],
+      breakdown: "10 × 6 base + 10 musician = 70 points."
+    },
+    "tomb-guard-shields": {
+      role: "The defensive Tomb Guard setup, retaining shields and parry saves while adding full command.",
+      equipment: "Ten Tomb Guard with hand weapons, light armour and shields; 5+ armour and a 6+ parry save in eligible frontal combats.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Full command", points: 30 }],
+      rules: ["Full Command", "Parry Save"],
+      breakdown: "10 × 11 base + 30 full command = 140 points.",
+      guideUrl: "https://2d4chan.org/wiki/Warhammer/Tactics/8th_Edition/Tomb_Kings",
+      guideLabel: "Tomb Kings tactics guide"
+    },
+    "tomb-guard-halberds": {
+      role: "The offensive Tomb Guard setup, using Strength 5 Killing Blow attacks and a complete command group.",
+      equipment: "Ten Tomb Guard with hand weapons, halberds, light armour and shields; 5+ against shooting and 6+ while using the halberds in combat. Halberds grant +1 Strength and Require Two Hands.",
+      optionLabel: "Purchased upgrades",
+      options: [
+        { name: "Halberds", points: 20 },
+        { name: "Full command", points: 30 }
+      ],
+      rules: ["Halberd", "Full Command"],
+      breakdown: "10 × 11 base + 20 halberds + 30 full command = 160 points.",
+      guideUrl: "https://2d4chan.org/wiki/Warhammer/Tactics/8th_Edition/Tomb_Kings",
+      guideLabel: "Tomb Kings tactics guide"
+    },
+    "dire-wolves-doom-wolf": {
+      role: "A five-model redirector with a Doom Wolf to accept a challenge or add one Attack while staying under the basic 75-point beast cap.",
+      equipment: "Five Dire Wolves; one is promoted to a Doom Wolf.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Doom Wolf", points: 10 }],
+      rules: ["Champion"],
+      breakdown: "5 × 8 base + 10 Doom Wolf = 50 points."
+    },
+    "corpse-cart-balefire": {
+      role: "An anti-magic support Cart that penalises enemy casting within 24 inches while retaining Vigour Mortis.",
+      equipment: "Corpse Cart with Balefire; the Corpsemaster retains his hand weapon.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Balefire", points: 15 }],
+      rules: ["Balefire"],
+      breakdown: "90 base + 15 Balefire = 105 points."
+    },
+    "corpse-cart-lodestone": {
+      role: "An Invocation support Cart that improves the reliability of restoring nearby infantry units.",
+      equipment: "Corpse Cart with Unholy Lodestone; the Corpsemaster retains his hand weapon.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Unholy Lodestone", points: 30 }],
+      rules: ["Unholy Lodestone"],
+      breakdown: "90 base + 30 Unholy Lodestone = 120 points."
+    },
+    "mortis-engine-tome": {
+      role: "A high-risk Lore of the Vampires casting amplifier layered onto the Engine's regeneration aura and Banshee attack.",
+      equipment: "Mortis Engine with Blasphemous Tome; armour save 5+.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Blasphemous Tome", points: 20 }],
+      rules: ["Blasphemous Tome"],
+      breakdown: "220 base + 20 Blasphemous Tome = 240 points."
+    },
+    "terrorgheist-infested": {
+      role: "A disposable disruption variant that damages every unit in base contact when the Terrorgheist dies.",
+      equipment: "Terrorgheist with the Infested upgrade.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Infested", points: 10 }],
+      rules: ["Infested"],
+      breakdown: "225 base + 10 Infested = 235 points."
+    },
+    "terrorgheist-rancid-maw": {
+      role: "The melee upgrade variant, adding Poisoned Attacks to the Terrorgheist's normal Attacks but not its Thunderstomp.",
+      equipment: "Terrorgheist with Rancid Maw.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Rancid Maw", points: 15 }],
+      rules: ["Rancid Maw"],
+      breakdown: "225 base + 15 Rancid Maw = 240 points."
+    },
+    "screaming-skull-skulls-of-foe": {
+      role: "The leadership-pressure Catapult, making Panic tests caused by its shooting one point harder to pass.",
+      equipment: "Screaming Skull Catapult with Skulls of the Foe; crew retain hand weapons and light armour.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Skulls of the Foe", points: 30 }],
+      rules: ["Skulls of the Foe"],
+      breakdown: "90 base + 30 Skulls of the Foe = 120 points."
+    },
+    "colossus-additional-hand-weapon": {
+      role: "The maximum-volume melee Colossus, adding one Attack that can help start an Unstoppable Assault chain on the charge.",
+      equipment: "Necrolith Colossus with an additional hand weapon, for five Attacks before Unstoppable Assault and Thunderstomp.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Additional hand weapon", points: 5 }],
+      rules: ["Extra Attack"],
+      breakdown: "170 base + 5 additional hand weapon = 175 points."
+    },
+    "colossus-great-weapon": {
+      role: "The heavy melee Colossus, attacking at Strength 8 at the cost of Always Strikes Last.",
+      equipment: "Necrolith Colossus with a great weapon; +2 Strength, Requires Two Hands and Always Strikes Last.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Great weapon", points: 10 }],
+      rules: ["Always Strikes Last"],
+      breakdown: "170 base + 10 great weapon = 180 points."
+    },
+    "colossus-bow-of-the-desert": {
+      role: "The ranged Colossus, adding a mobile 48-inch Strength 6 bolt thrower before it reaches combat.",
+      equipment: "Bow of the Desert: 48-inch range, Strength 6, Multiple Wounds (D3), no armour saves; may fire after moving.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Bow of the Desert", points: 20 }],
+      rules: ["Bow of the Desert"],
+      breakdown: "170 base + 20 Bow of the Desert = 190 points."
+    },
+    "warsphinx-fiery-roar": {
+      role: "The common infantry-clearing Warsphinx variant, adding a Strength 4 Flaming Breath Weapon to Thundercrush and Thunderstomp.",
+      equipment: "Khemrian Warsphinx with Fiery Roar and four Tomb Guard crew with mounted spears.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Fiery Roar", points: 20 }],
+      rules: ["Fiery Roar"],
+      breakdown: "210 base + 20 Fiery Roar = 230 points.",
+      guideUrl: "https://2d4chan.org/wiki/Warhammer/Tactics/8th_Edition/Tomb_Kings",
+      guideLabel: "Tomb Kings tactics guide"
+    },
+    "warsphinx-roar-sting": {
+      role: "The fully upgraded Warsphinx, combining its Flaming Breath Weapon with Poisoned normal Attacks.",
+      equipment: "Khemrian Warsphinx with Fiery Roar, Envenomed Sting and four Tomb Guard crew with mounted spears.",
+      optionLabel: "Purchased upgrades",
+      options: [
+        { name: "Fiery Roar", points: 20 },
+        { name: "Envenomed Sting", points: 10 }
+      ],
+      rules: ["Fiery Roar", "Envenomed Sting"],
+      breakdown: "210 base + 20 Fiery Roar + 10 Envenomed Sting = 240 points."
+    },
+    "necrosphinx-envenomed-sting": {
+      role: "The only mundane Necrosphinx upgrade, adding Poisoned Attacks to the monster's Attacks without affecting its Thunderstomp.",
+      equipment: "Necrosphinx with Envenomed Sting.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Envenomed Sting", points: 10 }],
+      rules: ["Envenomed Sting"],
+      breakdown: "225 base + 10 Envenomed Sting = 235 points."
+    },
+    "black-knights-five-lances": {
+      role: "A minimum five-model armoured flanker that lands at 130 points with a 2+ save and Strength 6 lance attacks on the charge.",
+      equipment: "Five Black Knights with hand weapons, lances, heavy armour, shields and barding; 2+ armour save.",
+      optionLabel: "Purchased upgrades",
+      options: [
+        { name: "Barding", points: 15 },
+        { name: "Lances", points: 10 }
+      ],
+      rules: ["Lance"],
+      breakdown: "5 × 21 base + 15 barding + 10 lances = 130 points.",
+      guideUrl: "https://www.vampirecounts.net/articles/vampire-counts-8th-edition-handbook-by-sunny-najo.4/page/special.5/",
+      guideLabel: "Vampire Counts unit guide"
+    },
+    "black-knights-five-command": {
+      role: "The minimum fully equipped Black Knight unit, adding full command to barding and lances.",
+      equipment: "Five Black Knights with hand weapons, lances, heavy armour, shields and barding; 2+ armour save and full command.",
+      optionLabel: "Purchased upgrades",
+      options: [
+        { name: "Barding", points: 15 },
+        { name: "Lances", points: 10 },
+        { name: "Full command", points: 30 }
+      ],
+      rules: ["Lance", "Full Command"],
+      breakdown: "5 × 21 base + 15 barding + 10 lances + 30 full command = 160 points."
+    },
+    "black-knights-ten-command": {
+      role: "A compact version of the traditional Black Knight bus: ten fully armoured lancers with full command and no magic banner.",
+      equipment: "Ten Black Knights with hand weapons, lances, heavy armour, shields and barding; 2+ armour save and full command.",
+      optionLabel: "Purchased upgrades",
+      options: [
+        { name: "Barding", points: 30 },
+        { name: "Lances", points: 20 },
+        { name: "Full command", points: 30 }
+      ],
+      rules: ["Lance", "Full Command"],
+      breakdown: "10 × 21 base + 30 barding + 20 lances + 30 full command = 290 points.",
+      guideUrl: "https://www.vampirecounts.net/articles/vampire-counts-8th-edition-handbook-by-sunny-najo.4/page/special.5/",
+      guideLabel: "Vampire Counts unit guide"
+    },
+    "hexwraiths-hellwraith": {
+      role: "The minimum Hexwraith unit with a Hellwraith for one additional no-armour-save close-combat Attack.",
+      equipment: "Five Hexwraiths with great weapons; one is promoted to a Hellwraith.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Hellwraith", points: 10 }],
+      rules: ["Champion"],
+      breakdown: "5 × 30 base + 10 Hellwraith = 160 points."
+    },
+    "blood-knights-command": {
+      role: "A minimum Blood Knight hammer with musician, standard bearer and Kastellan, but no magic weapon or magic banner.",
+      equipment: "Four Blood Knights with hand weapons, lances, heavy armour, shields and barding; 2+ armour save and full command.",
+      optionLabel: "Purchased upgrades",
+      options: [
+        { name: "Musician", points: 10 },
+        { name: "Standard bearer", points: 10 },
+        { name: "Kastellan", points: 15 }
+      ],
+      rules: ["Full Command"],
+      breakdown: "4 × 50 base + 10 musician + 10 standard bearer + 15 Kastellan = 235 points."
+    },
+    "skeleton-horsemen-command": {
+      role: "A minimum armoured cavalry unit with full command for charge support, rallying and static combat resolution.",
+      equipment: "Five Skeleton Horsemen with hand weapons, spears, shields and light armour; 4+ armour save and full command.",
+      optionLabel: "Purchased upgrades",
+      options: [
+        { name: "Light armour", points: 10 },
+        { name: "Full command", points: 30 }
+      ],
+      rules: ["Mounted Spear", "Full Command"],
+      breakdown: "5 × 12 base + 10 light armour + 30 full command = 100 points."
+    },
+    "horse-archers-musician": {
+      role: "A minimum scouting Fast Cavalry unit with a musician for improved rallying and swift reforms.",
+      equipment: "Five Skeleton Horse Archers with hand weapons and bows; one is a musician.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Musician", points: 10 }],
+      rules: ["Musician"],
+      breakdown: "5 × 14 base + 10 musician = 80 points."
+    },
+    "skeleton-chariots-command": {
+      role: "A minimum chariot unit with full command, adding combat resolution and a Master of Chariots' extra Attack.",
+      equipment: "Three Skeleton Chariots with spear-and-bow crews and full command; each chariot has a 5+ armour save.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Full command", points: 30 }],
+      rules: ["Full Command"],
+      breakdown: "3 × 55 base + 30 full command = 195 points."
+    },
+    "necropolis-knights-entombed": {
+      role: "A minimum Necropolis Knight unit able to enter using Entombed Beneath the Sands instead of deploying normally.",
+      equipment: "Three Necropolis Knights with mounted spears and the Entombed Beneath the Sands upgrade; 3+ armour save.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Entombed Beneath the Sands", points: 15 }],
+      rules: ["Entombed Beneath the Sands"],
+      breakdown: "3 × 65 base + 15 Entombed Beneath the Sands = 210 points.",
+      guideUrl: "https://2d4chan.org/wiki/Warhammer/Tactics/8th_Edition/Tomb_Kings",
+      guideLabel: "Tomb Kings tactics guide"
+    },
+    "necropolis-knights-command": {
+      role: "A minimum heavy-cavalry block with musician, standard bearer and Necropolis Captain.",
+      equipment: "Three Necropolis Knights with mounted spears, 3+ armour saves and full command.",
+      optionLabel: "Purchased upgrade",
+      options: [{ name: "Full command", points: 30 }],
+      rules: ["Full Command"],
+      breakdown: "3 × 65 base + 30 full command = 225 points.",
+      guideUrl: "https://2d4chan.org/wiki/Warhammer/Tactics/8th_Edition/Tomb_Kings",
+      guideLabel: "Tomb Kings tactics guide"
+    },
     "necromancer-master-of-the-dead": {
       role: "A low-cost Lore of the Vampires support caster that can grow Skeleton Warrior units beyond their starting size.",
       wizard: "Level 1 — Lore of the Vampires",
@@ -5994,48 +6364,62 @@ a {
     "Animated Construct": "Provides a 5+ armour save and reduces Unstable or Hierophant-death losses by one Wound, stacking with the battle standard.",
     "Arrows of Asaph": "Ignore every positive and negative To Hit modifier when shooting.",
     "Aura of Dark Majesty": "Enemy units within 6 inches suffer -1 Leadership. Multiple copies of this power do not stack with each other, but other Leadership modifiers still apply.",
+    "Balefire": "Enemy Wizards suffer -1 to casting rolls while one or more Balefire models are within 24 inches; multiple Balefires do not increase the penalty.",
     "Banshee Swarm": "The Mortis Engine may make a Ghostly Howl attack.",
     "Beguile": "At the start of each close-combat round, choose one model in base contact. It must pass a Leadership test at -3 or re-roll successful To Hit rolls against the Vampire that phase.",
     "Bestial Fury": "Enemies gain no combat-result bonus for attacking the Varghulf in the flank or rear.",
+    "Blasphemous Tome": "All Wizards within 12 inches add +2 when casting Lore of the Vampires spells; a Wizard who miscasts there rolls twice on the Miscast table and the opponent chooses the result.",
+    "Bow of the Desert": "A mobile 48-inch Strength 6 bolt thrower with Multiple Wounds (D3); Wounds allow no armour saves.",
     "Chariot of Legions": "Skeleton Chariots need only three models per rank, and add their rank bonus to the Strength of their Impact Hits.",
     "Chariots": "Uses a split crew, beast and chassis profile; cannot march, has Swiftstride and Impact Hits (D6), and uses the chassis Wounds, Toughness and fixed save.",
     "Chill Grasp": "Exchange all close-combat Attacks for one Attack. If it hits, it wounds automatically and permits no armour save.",
+    "Champion": "The promoted model uses the champion profile and can issue or accept challenges; excess Wounds normally carry over to its unit except during a challenge.",
     "Cloud of Horror": "Enemy units in base contact with a Bat Swarm have Always Strikes Last.",
     "Covenant of Power": "At the start of your Magic phase, one or more Caskets of Souls add D3 power dice to the pool.",
     "Death Shriek": "An 8-inch magical shooting attack usable after marching, charging or in combat: roll 2D6 plus remaining Wounds; the target loses one Wound per point above Leadership, with no armour saves.",
     "Decapitating Strike": "Nominate one Attack before rolling To Hit. It is resolved at Strength 10 with Heroic Killing Blow.",
     "Dark Acolyte": "After successfully casting Invocation of Nehek, add D3 to its casting total regardless of the casting value used.",
     "Entombed Beneath the Sands": "May arrive using its special marker-and-scatter Ambushers procedure, with a mishap on a misfire or failed placement; it may instead deploy normally if declared before deployment.",
+    "Envenomed Sting": "The monster's Attacks have Poisoned Attacks; this does not affect crew, mounted characters, Thundercrush Attacks or Thunderstomps.",
     "Ethereal": "Moves through terrain and obstructions without slowing, has magical close-combat attacks, and can only be wounded by magical attacks, spells or magic weapons.",
     "Evocation of Death": "Each 6 rolled on the power pool gives one permanent cumulative step: +1 Impact Hit; +1 crew/steed Strength; Killing Blow and Flaming Attacks; Magic Resistance (2) and Strider; Ethereal; then Fly.",
+    "Extra Attack": "An additional hand weapon grants +1 Attack in close combat while fighting on foot, provided both weapons are used.",
     "Fast Cavalry": "Has Vanguard, free reforms while moving, Feigned Flight, and may shoot after marching or reforming; a non-Fast-Cavalry character suppresses the rule.",
     "Fear Incarnate": "Enemy units must re-roll successful Fear tests caused by the Vampire or its unit. An enemy battle standard's Hold Your Ground cancels this re-roll.",
     "Flammable": "Each unsaved Wound from a Flaming Attack is doubled.",
     "Fly": "May fly 10 inches or march-fly 20, ignores intervening terrain and units, and has Swiftstride; multi-model flying units are also Skirmishers.",
     "Frenzy": "Grants +1 Attack and Immune to Psychology, can force charges and pursuit, prevents parry saves, and is lost after the unit is beaten in combat.",
+    "Full Command": "Includes a champion, musician and standard bearer: the champion uses its upgraded profile, the musician aids rallying and reforms, and the standard adds +1 combat result.",
     "Ghostly Howl": "An 8-inch magical shooting attack usable after marching, charging or in combat: roll 2D6+2; the target loses one Wound per point above Leadership, with no armour saves.",
     "Hatred": "Re-roll failed To Hit rolls in the first round of close combat against the hated foe.",
+    "Halberd": "Grants +1 Strength in close combat and Requires Two Hands.",
     "Hover": "Uses the Fly rules but cannot march.",
     "Howdah Crew (Tomb Kings)": "Four Tomb Guard crew and the Warsphinx fight with their own combat characteristics but form one model using the monster's movement, Toughness, Wounds and save.",
     "Icon of Ptra": "Bound Spell, power level 3: Shem's Burning Gaze from the Lore of Light.",
     "Infinite Hatred": "The Ghoul King re-rolls failed To Hit rolls in every close-combat round, not only the first.",
+    "Infested": "When the Terrorgheist is removed as a casualty, every friendly or enemy unit in base contact suffers 3D6 Strength 2 hits.",
     "Killing Blow": "An unmodified 6 To Wound in close combat slays eligible Infantry, Cavalry or War Beasts outright; armour and Regeneration cannot save it.",
     "Large Target": "Cannot claim obstacle cover. A Large Target General or battle standard extends the relevant command range from 12 to 18 inches.",
+    "Lance": "A mounted model gains +2 Strength in a turn in which it charges; otherwise it fights with its hand weapon.",
     "Light of Death": "Innate Bound Spell, power level 5, range 48 inches: target tests Leadership on 3D6 and suffers the failure margin as no-armour Wounds; on 3+ it jumps to another eligible unit within 6 inches.",
     "Magic Resistance": "Improves a ward save against spell damage by the listed value, or creates one if needed; use only the highest Magic Resistance present.",
     "Martial Honour": "Unless a friendly character of equal or higher Leadership is present, the Kastellan must issue and accept challenges; without one, a Blood Knight may answer.",
     "Master of the Dead": "Invocation of Nehek may increase Skeleton Warrior units beyond their starting size.",
+    "Mounted Spear": "A mounted model gains +1 Strength in a turn in which it charges.",
+    "Musician": "Adds +1 to rally attempts, enables swift reforms, and breaks a tied combat result in its unit's favour unless both sides have a musician.",
     "My Will Be Done": "A joined Nehekharan Undead unit uses the character's unmodified Weapon Skill; mounts and other characters retain their own values.",
     "Nehekharan Undead": "Unbreakable, Unstable and causes Fear; can never march and may only Hold as a charge reaction.",
     "Poisoned Attacks": "A natural 6 To Hit wounds automatically, unless the attack required 7+ To Hit or hit automatically; normal Strength still modifies armour saves.",
     "Parry Save": "A model fighting on foot with a hand weapon and shield gains a 6+ ward save in close combat against attacks to its front, unless Frenzied.",
     "Quickblood": "The Vampire has Always Strikes First. With a great weapon, Always Strikes First and Always Strikes Last cancel, so the Vampire strikes in Initiative order without ASF re-rolls.",
     "Random Attacks": "Roll the stated dice when the model fights to determine its number of Attacks, then resolve those Attacks normally.",
+    "Rancid Maw": "The Terrorgheist's normal Attacks have Poisoned Attacks; its Thunderstomp does not.",
     "Red Fury": "Each unsaved close-combat Wound immediately grants one additional Attack. Attacks generated by Red Fury cannot generate further Red Fury Attacks.",
     "Regeneration": "After failing armour, take the listed Regeneration save instead of a ward save. Flaming Wounds cannot regenerate and suppress the rule for the rest of the phase.",
     "Scales of Usirian": "Bound Spell, power level 4: Spirit Leech from the Lore of Death.",
     "Scouts": "Deploy after normal units, either in your deployment zone or more than 12 inches from enemies; forward-deployed Scouts cannot charge on the first turn if their side goes first.",
     "Screaming Skulls": "Catapult shots are magical and Flaming; any unit suffering a casualty from one must take a Panic test as though it lost 25 percent.",
+    "Skulls of the Foe": "Panic tests caused by the Catapult's shooting suffer a -1 Leadership penalty.",
     "Skirmishers": "Use a loose formation, may make free reforms while moving, receive the normal skirmisher shooting protections, and cannot claim rank bonus.",
     "Slavering Charge": "Dire and Doom Wolves gain +1 Strength in a turn in which they successfully charge.",
     "Soul Reapers": "Hexwraith close-combat Attacks are magical and Flaming, and allow no armour saves.",
@@ -6043,6 +6427,8 @@ a {
     "Spectral Hunters": "After passing through enemy units in Remaining Moves, choose one: it suffers one Strength 5 magical Flaming hit per passing Hexwraith, with no armour saves.",
     "Spectral Steeds": "The mounted or drawn model is Ethereal for movement and ignores barding's movement penalty; a character lacking this rule or Ethereal suppresses it for the unit.",
     "Spirit Conduit": "A friendly Nehekharan Undead Wizard within 12 inches adds D3 to each casting result, rolled separately for every spell.",
+    "Spear": "Infantry fighting to the front can fight with one additional rank when they did not charge that turn.",
+    "Standard Bearer": "Adds +1 combat result; the standard can also be captured for victory points if the unit is destroyed in close combat or breaks and flees.",
     "Stone Hide": "Necropolis Knights have a total 3+ armour save from their mounts, armour and elevated position.",
     "Stone Shaper": "Animated Constructs within 12 inches of the Necrotect gain Regeneration (6+).",
     "Stomp": "After normal Attacks, inflict one automatic hit at the model's Strength against an eligible Infantry, War Beast or Swarm unit in base contact.",
@@ -6053,11 +6439,13 @@ a {
     "The Hunger": "After the character kills one or more models in close combat, a 6 at phase end restores one previously lost Wound.",
     "The Newly Dead": "Zombies may exceed starting size; Invocation of Nehek restores an additional D6 Wounds to a Zombie unit.",
     "The Reliquary": "At each friendly turn start, 2D6 plus turn number sets the aura range: enemies take D6 hits at Strength equal to the turn, while friendly Undead improve Regeneration by one. Doubles wound the Engine; its destruction blasts every unit within 12 inches plus the turn number.",
+    "Fiery Roar": "Grants the Warsphinx a Strength 4 Breath Weapon with Flaming Attacks.",
     "Thundercrush Attack": "After crew attacks, exchange all Warsphinx Attacks for one roll To Hit; on success, the small template causes Strength 3 hits, with a Strength 9 Multiple Wounds (D3) hit under the centre.",
     "Thunderstomp": "After normal Attacks, inflict D6 automatic hits at the monster's Strength against an eligible Infantry, War Beast or Swarm unit in base contact.",
     "Transmogrifying Gaze": "Roll one artillery die per Stalker for automatic magical hits; wound against the target's Initiative instead of Toughness with no armour saves, and each misfire inflicts D3 no-armour Wounds on the Stalkers.",
     "Tomb Kings Battle Standard": "In addition to the normal battle-standard rules, Nehekharan Undead within 12 inches suffer one fewer Wound from Unstable or the Hierophant's death.",
     "Undead": "Unbreakable, Unstable and causes Fear; may march only within 12 inches of the General or when Vampiric, and may only Hold as a charge reaction.",
+    "Unholy Lodestone": "When a friendly Wizard within 6 inches successfully casts Invocation of Nehek, re-roll one D6 used to determine restored Wounds for each eligible infantry unit.",
     "Unleashed Souls": "When the Casket is destroyed, every unit within 12 inches suffers D6 Strength 6 magical hits with no armour saves on a 4+.",
     "Unstoppable Assault": "On the charge, every unsaved close-combat Wound immediately grants another Attack; these extra Attacks can generate more, but Thunderstomps cannot.",
     "Vampiric": "Ignores losses caused by the General's death and may march normally unless joined to a non-Vampiric unit.",
@@ -6096,6 +6484,11 @@ a {
     ...(configuration?.rules || []),
     ...(configuration?.powers || []).map(power => power.name)
   ];
+  const summonModelCount = unit => Math.max(1, Number(unit.modelCount) || 1);
+  const summonModelCountLabel = unit => {
+    const count = summonModelCount(unit);
+    return `${count} ${count === 1 ? "model" : "models"}`;
+  };
 
   const summonConfigurationSearchText = configuration => configuration
     ? [
@@ -6105,7 +6498,7 @@ a {
         summonConfigurationOptions(configuration).map(option => `${option.name} ${option.points} points`).join(" "),
         summonConfigurationRules(configuration).join(" "),
         configuration.breakdown,
-        "no magic items no mounts"
+        "no magic items no mounts no magic standards"
       ].join(" ")
     : "";
 
@@ -6134,11 +6527,11 @@ a {
         <strong>${summonEscapeHtml(unit.displayName || unit.name)}</strong>
         <p>${summonEscapeHtml(configuration.role)}</p>
         <dl>
-          <div><dt>Wizard</dt><dd>${summonEscapeHtml(configuration.wizard)}</dd></div>
+          ${configuration.wizard ? `<div><dt>Wizard</dt><dd>${summonEscapeHtml(configuration.wizard)}</dd></div>` : ""}
           <div><dt>${summonEscapeHtml(configuration.optionLabel || "Vampiric Powers")}</dt><dd>${summonConfigurationOptions(configuration).map(option => `${summonEscapeHtml(option.name)} (${option.points} pts)`).join(", ")}</dd></div>
           <div><dt>Points</dt><dd>${summonEscapeHtml(configuration.breakdown)}</dd></div>
         </dl>
-        <p class="summon-configuration__restriction">${summonEscapeHtml(configuration.restriction || "No magic items or mounts are included.")}</p>
+        <p class="summon-configuration__restriction">${summonEscapeHtml(configuration.restriction || (unit.type === "Character" ? "No magic items or mounts are included." : "No magic standards are included."))}</p>
       </div>` : "";
     const armyListSource = unit.faction === "Tomb Kings"
       ? "https://assets.ctfassets.net/a45zzxj8cyka/6xINB1tawTYDZd3uRZz8XN/89194ed636fefc32958ee0dc4b6dadcd/tomb_kings.pdf"
@@ -6196,7 +6589,7 @@ a {
       preset.querySelector(".summon-preset__name").textContent = unit.displayName || unit.name;
       preset.querySelector(".summon-preset__faction").textContent = unit.faction;
       preset.querySelector(".summon-preset__meta").textContent = unit.configuration
-        ? `1 model · ${unit.points} pts configured · ${unit.type}`
+        ? `${summonModelCountLabel(unit)} · ${unit.points} pts configured · ${unit.type}`
         : unit.fixed
         ? `1 model · ${unit.points} pts base · ${unit.type}`
         : `Minimum ${unit.min} (${unit.min * unit.points} pts) · ${unit.points} pts/model · ${unit.type}`;
@@ -6264,7 +6657,7 @@ a {
 
         if (legal) {
           const modelLabel = maximumModels === 1 ? "model" : "models";
-          result.textContent = unit.fixed ? `1 model · ${unit.points} pts` : `${maximumModels} ${modelLabel} · ${presetCost} pts`;
+          result.textContent = unit.fixed ? `${summonModelCountLabel(unit)} · ${unit.points} pts` : `${maximumModels} ${modelLabel} · ${presetCost} pts`;
           status.textContent = `${effectiveCap - presetCost} pts spare`;
           visibleLegal += 1;
         } else {
