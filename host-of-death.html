@@ -992,6 +992,54 @@ a {
   color: var(--ref-ink);
 }
 
+.summon-configuration {
+  background: color-mix(in srgb, var(--ref-accent-soft) 62%, white);
+  border: 1px solid var(--ref-border);
+  border-radius: 7px;
+  font-size: .66rem;
+  line-height: 1.4;
+  margin: 9px 0;
+  padding: 8px;
+}
+
+.summon-configuration > strong {
+  color: var(--ref-accent-strong);
+  display: block;
+  font-size: .72rem;
+  margin-bottom: 3px;
+}
+
+.summon-configuration > p {
+  margin: 0 0 7px;
+}
+
+.summon-configuration dl {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+}
+
+.summon-configuration dl > div {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: minmax(92px, 25%) 1fr;
+}
+
+.summon-configuration dt {
+  color: var(--ref-ink);
+  font-weight: 700;
+}
+
+.summon-configuration dd {
+  margin: 0;
+}
+
+.summon-configuration__restriction {
+  color: var(--ref-muted);
+  font-style: italic;
+  margin-top: 7px !important;
+}
+
 .summon-unit-detail h4 {
   font-size: .7rem;
   margin: 10px 0 6px;
@@ -1436,6 +1484,10 @@ a {
   .summon-preset__details > summary small {
     flex: 1 0 100%;
     padding-left: 23px;
+  }
+
+  .summon-configuration dl > div {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -5543,9 +5595,16 @@ a {
       { name: "Wight King", faction: "Vampire Counts", type: "Character", points: 85, min: 1, fixed: true },
       { name: "Tomb Banshee", faction: "Vampire Counts", type: "Character", points: 95, min: 1, fixed: true },
       { name: "Vampire", faction: "Vampire Counts", type: "Character", points: 105, min: 1, fixed: true },
+      { name: "Vampire", displayName: "Vampire — Quickblood Great Weapon", configuration: "vampire-quickblood-great-weapon", faction: "Vampire Counts", type: "Character", points: 149, min: 1, fixed: true },
+      { name: "Vampire", displayName: "Vampire — Fear Bomb", configuration: "vampire-fear-bomb", faction: "Vampire Counts", type: "Character", points: 156, min: 1, fixed: true },
+      { name: "Vampire", displayName: "Vampire — Red Fury Mini-Blender", configuration: "vampire-red-fury", faction: "Vampire Counts", type: "Character", points: 162, min: 1, fixed: true },
+      { name: "Vampire", displayName: "Vampire — Level 2 Dark Acolyte", configuration: "vampire-level-2-dark-acolyte", faction: "Vampire Counts", type: "Character", points: 169, min: 1, fixed: true },
       { name: "Master Necromancer", faction: "Vampire Counts", type: "Character", points: 165, min: 1, fixed: true },
       { name: "Vampire Lord", faction: "Vampire Counts", type: "Character", points: 220, min: 1, fixed: true },
+      { name: "Vampire Lord", displayName: "Vampire Lord — Level 1 Blender", configuration: "vampire-lord-level-1-blender", faction: "Vampire Counts", type: "Character", points: 319, min: 1, fixed: true },
+      { name: "Vampire Lord", displayName: "Vampire Lord — Level 4 Blender", configuration: "vampire-lord-level-4-blender", faction: "Vampire Counts", type: "Character", points: 439, min: 1, fixed: true },
       { name: "Strigoi Ghoul King", faction: "Vampire Counts", type: "Character", points: 260, min: 1, fixed: true },
+      { name: "Strigoi Ghoul King", displayName: "Strigoi Ghoul King — Red Fury Fear King", configuration: "strigoi-red-fury-fear-king", faction: "Vampire Counts", type: "Character", points: 355, min: 1, fixed: true },
       { name: "Tomb Herald", faction: "Tomb Kings", type: "Character", points: 60, min: 1, fixed: true },
       { name: "Necrotect", faction: "Tomb Kings", type: "Character", points: 60, min: 1, fixed: true },
       { name: "Liche Priest", faction: "Tomb Kings", type: "Character", points: 70, min: 1, fixed: true },
@@ -5678,6 +5737,72 @@ a {
     "zombie": "No weapons or armour are listed on the supplied card."
   };
 
+  const summonConfigurations = {
+    "vampire-quickblood-great-weapon": {
+      role: "A fast foot fighter that uses Quickblood to cancel the great weapon's Always Strikes Last and attack at Initiative 6.",
+      wizard: "Level 1 — Lore of the Vampires",
+      equipment: "Great weapon, heavy armour and shield. The shield improves protection against shooting but cannot be used in close combat while the great weapon is in use.",
+      powers: [{ name: "Quickblood", points: 30 }],
+      breakdown: "105 base + 8 great weapon + 4 heavy armour + 2 shield + 30 Quickblood = 149 points."
+    },
+    "vampire-fear-bomb": {
+      role: "A Leadership debuffer for a unit built around Fear, screams, or Doom and Darkness.",
+      wizard: "Level 1 — Lore of Death",
+      equipment: "Hand weapon, heavy armour and shield; includes a parry save while fighting on foot with the hand weapon.",
+      powers: [
+        { name: "Aura of Dark Majesty", points: 25 },
+        { name: "Fear Incarnate", points: 20 }
+      ],
+      breakdown: "105 base + 4 heavy armour + 2 shield + 25 Aura of Dark Majesty + 20 Fear Incarnate = 156 points."
+    },
+    "vampire-red-fury": {
+      role: "A compact mini-blender that turns unsaved Wounds into additional Attacks.",
+      wizard: "Level 1 — Lore of the Vampires",
+      equipment: "Two hand weapons and heavy armour.",
+      powers: [{ name: "Red Fury", points: 50 }],
+      breakdown: "105 base + 3 additional hand weapon + 4 heavy armour + 50 Red Fury = 162 points."
+    },
+    "vampire-level-2-dark-acolyte": {
+      role: "A support caster focused on stronger Invocation of Nehek attempts while remaining inexpensive enough for a summoned character.",
+      wizard: "Level 2 — Lore of the Vampires",
+      equipment: "Hand weapon and heavy armour.",
+      powers: [{ name: "Dark Acolyte", points: 25 }],
+      breakdown: "105 base + 35 Level 2 upgrade + 4 heavy armour + 25 Dark Acolyte = 169 points."
+    },
+    "vampire-lord-level-1-blender": {
+      role: "The stripped-down version of the classic blender Lord: Red Fury supplies extra Attacks and Quickblood keeps the great weapon striking at Initiative.",
+      wizard: "Level 1 — Lore of the Vampires",
+      equipment: "Great weapon, heavy armour and shield. The shield cannot be used in close combat while the great weapon is in use.",
+      powers: [
+        { name: "Red Fury", points: 50 },
+        { name: "Quickblood", points: 30 }
+      ],
+      breakdown: "220 base + 10 great weapon + 6 heavy armour + 3 shield + 50 Red Fury + 30 Quickblood = 319 points."
+    },
+    "vampire-lord-level-4-blender": {
+      role: "A no-magic-item version of the standard all-in blender Lord, combining Level 4 casting with maximum melee pressure and Beguile for protection.",
+      wizard: "Level 4 — Lore of the Vampires",
+      equipment: "Great weapon, heavy armour and shield. The shield cannot be used in close combat while the great weapon is in use.",
+      powers: [
+        { name: "Red Fury", points: 50 },
+        { name: "Quickblood", points: 30 },
+        { name: "Beguile", points: 15 }
+      ],
+      breakdown: "220 base + 105 for three wizard levels + 10 great weapon + 6 heavy armour + 3 shield + 50 Red Fury + 30 Quickblood + 15 Beguile = 439 points."
+    },
+    "strigoi-red-fury-fear-king": {
+      role: "A self-contained Strigoi damage and Leadership build: Infinite Hatred already supplies re-rolls, leaving the power allowance for Red Fury and Fear support.",
+      wizard: "Level 1 — Lore of the Vampires",
+      equipment: "Hand weapon. The Strigoi cannot purchase mundane armour and retains Regeneration (5+).",
+      powers: [
+        { name: "Red Fury", points: 50 },
+        { name: "Aura of Dark Majesty", points: 25 },
+        { name: "Fear Incarnate", points: 20 }
+      ],
+      breakdown: "260 base + 50 Red Fury + 25 Aura of Dark Majesty + 20 Fear Incarnate = 355 points."
+    }
+  };
+
   const summonRuleDisplayNames = {
     "strigoi-ghoul-king": { "Regeneration": "Regeneration (5+)" },
     "corpse-cart": { "Regeneration": "Regeneration (4+)" },
@@ -5697,7 +5822,9 @@ a {
     "Always Strikes Last": "Strike after models without this rule, regardless of Initiative. Always Strikes First cancels it; two models with this rule strike simultaneously.",
     "Animated Construct": "Provides a 5+ armour save and reduces Unstable or Hierophant-death losses by one Wound, stacking with the battle standard.",
     "Arrows of Asaph": "Ignore every positive and negative To Hit modifier when shooting.",
+    "Aura of Dark Majesty": "Enemy units within 6 inches suffer -1 Leadership. Multiple copies of this power do not stack with each other, but other Leadership modifiers still apply.",
     "Banshee Swarm": "The Mortis Engine may make a Ghostly Howl attack.",
+    "Beguile": "At the start of each close-combat round, choose one model in base contact. It must pass a Leadership test at -3 or re-roll successful To Hit rolls against the Vampire that phase.",
     "Bestial Fury": "Enemies gain no combat-result bonus for attacking the Varghulf in the flank or rear.",
     "Chariot of Legions": "Skeleton Chariots need only three models per rank, and add their rank bonus to the Strength of their Impact Hits.",
     "Chariots": "Uses a split crew, beast and chassis profile; cannot march, has Swiftstride and Impact Hits (D6), and uses the chassis Wounds, Toughness and fixed save.",
@@ -5706,10 +5833,12 @@ a {
     "Covenant of Power": "At the start of your Magic phase, one or more Caskets of Souls add D3 power dice to the pool.",
     "Death Shriek": "An 8-inch magical shooting attack usable after marching, charging or in combat: roll 2D6 plus remaining Wounds; the target loses one Wound per point above Leadership, with no armour saves.",
     "Decapitating Strike": "Nominate one Attack before rolling To Hit. It is resolved at Strength 10 with Heroic Killing Blow.",
+    "Dark Acolyte": "After successfully casting Invocation of Nehek, add D3 to its casting total regardless of the casting value used.",
     "Entombed Beneath the Sands": "May arrive using its special marker-and-scatter Ambushers procedure, with a mishap on a misfire or failed placement; it may instead deploy normally if declared before deployment.",
     "Ethereal": "Moves through terrain and obstructions without slowing, has magical close-combat attacks, and can only be wounded by magical attacks, spells or magic weapons.",
     "Evocation of Death": "Each 6 rolled on the power pool gives one permanent cumulative step: +1 Impact Hit; +1 crew/steed Strength; Killing Blow and Flaming Attacks; Magic Resistance (2) and Strider; Ethereal; then Fly.",
     "Fast Cavalry": "Has Vanguard, free reforms while moving, Feigned Flight, and may shoot after marching or reforming; a non-Fast-Cavalry character suppresses the rule.",
+    "Fear Incarnate": "Enemy units must re-roll successful Fear tests caused by the Vampire or its unit. An enemy battle standard's Hold Your Ground cancels this re-roll.",
     "Flammable": "Each unsaved Wound from a Flaming Attack is doubled.",
     "Fly": "May fly 10 inches or march-fly 20, ignores intervening terrain and units, and has Swiftstride; multi-model flying units are also Skirmishers.",
     "Frenzy": "Grants +1 Attack and Immune to Psychology, can force charges and pursuit, prevents parry saves, and is lost after the unit is beaten in combat.",
@@ -5728,7 +5857,9 @@ a {
     "My Will Be Done": "A joined Nehekharan Undead unit uses the character's unmodified Weapon Skill; mounts and other characters retain their own values.",
     "Nehekharan Undead": "Unbreakable, Unstable and causes Fear; can never march and may only Hold as a charge reaction.",
     "Poisoned Attacks": "A natural 6 To Hit wounds automatically, unless the attack required 7+ To Hit or hit automatically; normal Strength still modifies armour saves.",
+    "Quickblood": "The Vampire has Always Strikes First. With a great weapon, Always Strikes First and Always Strikes Last cancel, so the Vampire strikes in Initiative order without ASF re-rolls.",
     "Random Attacks": "Roll the stated dice when the model fights to determine its number of Attacks, then resolve those Attacks normally.",
+    "Red Fury": "Each unsaved close-combat Wound immediately grants one additional Attack. Attacks generated by Red Fury cannot generate further Red Fury Attacks.",
     "Regeneration": "After failing armour, take the listed Regeneration save instead of a ward save. Flaming Wounds cannot regenerate and suppress the rule for the rest of the phase.",
     "Scales of Usirian": "Bound Spell, power level 4: Spirit Leech from the Lore of Death.",
     "Scouts": "Deploy after normal units, either in your deployment zone or more than 12 inches from enemies; forward-deployed Scouts cannot charge on the first turn if their side goes first.",
@@ -5782,11 +5913,23 @@ a {
 
   const getSummonDetail = unit => {
     const slug = summonDetailSlugs[`${unit.faction}|${unit.name}`];
-    return { slug, detail: summonUnitDetails[slug] };
+    const configuration = summonConfigurations[unit.configuration] || null;
+    return { slug, detail: summonUnitDetails[slug], configuration };
   };
 
+  const summonConfigurationSearchText = configuration => configuration
+    ? [
+        configuration.role,
+        configuration.wizard,
+        configuration.equipment,
+        configuration.powers.map(power => `${power.name} ${power.points} points`).join(" "),
+        configuration.breakdown,
+        "no magic items no mounts"
+      ].join(" ")
+    : "";
+
   const summonDetailsMarkup = unit => {
-    const { slug, detail } = getSummonDetail(unit);
+    const { slug, detail, configuration } = getSummonDetail(unit);
     if (!detail) return "";
 
     const profileRows = detail.profiles.map(profile => `
@@ -5794,14 +5937,30 @@ a {
         <th scope="row">${summonEscapeHtml(profile.name)}</th>
         ${profile.stats.map(value => `<td>${summonEscapeHtml(value)}</td>`).join("")}
       </tr>`).join("");
-    const ruleNames = [...new Set([...(detail.rules || []), ...(summonDerivedRules[unit.type] || [])])];
+    const configurationRules = configuration?.powers.map(power => power.name) || [];
+    const ruleNames = [...new Set([...(detail.rules || []), ...configurationRules, ...(summonDerivedRules[unit.type] || [])])];
     const ruleRows = ruleNames.map(ruleName => {
       const displayName = summonRuleDisplayNames[slug]?.[ruleName] || ruleName;
       const summary = summonRuleSummaries[ruleName] || "Use the standard 8th-edition rule for this ability.";
       return `<li><strong>${summonEscapeHtml(displayName)}</strong><span>${summonEscapeHtml(summary)}</span></li>`;
     }).join("");
-    const equipment = summonEquipment[slug]
-      ? `<p class="summon-unit-equipment"><strong>Equipment and saves</strong><span>${summonEscapeHtml(summonEquipment[slug])}</span></p>`
+    const equipmentText = configuration?.equipment || summonEquipment[slug];
+    const equipment = equipmentText
+      ? `<p class="summon-unit-equipment"><strong>Equipment and saves</strong><span>${summonEscapeHtml(equipmentText)}</span></p>`
+      : "";
+    const configurationMarkup = configuration ? `
+      <div class="summon-configuration">
+        <strong>${summonEscapeHtml(unit.displayName || unit.name)}</strong>
+        <p>${summonEscapeHtml(configuration.role)}</p>
+        <dl>
+          <div><dt>Wizard</dt><dd>${summonEscapeHtml(configuration.wizard)}</dd></div>
+          <div><dt>Vampiric Powers</dt><dd>${configuration.powers.map(power => `${summonEscapeHtml(power.name)} (${power.points} pts)`).join(", ")}</dd></div>
+          <div><dt>Points</dt><dd>${summonEscapeHtml(configuration.breakdown)}</dd></div>
+        </dl>
+        <p class="summon-configuration__restriction">No magic items or mounts are included.</p>
+      </div>` : "";
+    const configurationSource = configuration
+      ? ` Build costs use the <a href="https://assets.ctfassets.net/a45zzxj8cyka/4Wrk2YKmdRXR3dCOFqemiS/ee20ce8baefcae8cc4bad22534b6ea51/vampire_counts.pdf" target="_blank" rel="noopener">8th-edition army-list options</a>; archetypes follow the <a href="https://www.vampirecounts.net/articles/vampire-counts-8th-edition-handbook-by-sunny-najo.4/page/vampiric-powers.7/" target="_blank" rel="noopener">Vampire Counts handbook</a>.`
       : "";
 
     return `
@@ -5814,10 +5973,11 @@ a {
               <tbody>${profileRows}</tbody>
             </table>
           </div>
+          ${configurationMarkup}
           ${equipment}
           <h4>Rules at a glance</h4>
           <ul class="summon-rule-list">${ruleRows}</ul>
-          <p class="summon-unit-source">Profile and rule check: <a href="${summonEscapeHtml(detail.url)}" target="_blank" rel="noopener">8th Edition Index</a>. Optional upgrades are excluded unless the preset says otherwise.</p>
+          <p class="summon-unit-source">Profile and rule check: <a href="${summonEscapeHtml(detail.url)}" target="_blank" rel="noopener">8th Edition Index</a>. Optional upgrades are excluded unless the preset says otherwise.${configurationSource}</p>
         </div>
       </details>`;
   };
@@ -5840,18 +6000,21 @@ a {
         <div class="summon-preset__status"></div>
         <div class="summon-preset__meta"></div>
         ${summonDetailsMarkup(unit)}`;
-      preset.querySelector(".summon-preset__name").textContent = unit.name;
+      preset.querySelector(".summon-preset__name").textContent = unit.displayName || unit.name;
       preset.querySelector(".summon-preset__faction").textContent = unit.faction;
-      preset.querySelector(".summon-preset__meta").textContent = unit.fixed
+      preset.querySelector(".summon-preset__meta").textContent = unit.configuration
+        ? `1 model · ${unit.points} pts configured · ${unit.type}`
+        : unit.fixed
         ? `1 model · ${unit.points} pts base · ${unit.type}`
         : `Minimum ${unit.min} (${unit.min * unit.points} pts) · ${unit.points} pts/model · ${unit.type}`;
-      const { slug, detail } = getSummonDetail(unit);
+      const { slug, detail, configuration } = getSummonDetail(unit);
       const detailRuleNames = detail
-        ? [...new Set([...(detail.rules || []), ...(summonDerivedRules[unit.type] || [])])]
+        ? [...new Set([...(detail.rules || []), ...(configuration?.powers.map(power => power.name) || []), ...(summonDerivedRules[unit.type] || [])])]
         : [];
       preset.dataset.detailSlug = slug || "";
+      preset.dataset.configuration = unit.configuration || "";
       preset.dataset.detailSearchText = normalize(detail
-        ? `${detail.profiles.map(profile => `${profile.name} ${profile.stats.join(" ")}`).join(" ")} ${detailRuleNames.map(ruleName => `${ruleName} ${summonRuleSummaries[ruleName] || ""}`).join(" ")} ${summonEquipment[slug] || ""}`
+        ? `${unit.displayName || unit.name} ${detail.profiles.map(profile => `${profile.name} ${profile.stats.join(" ")}`).join(" ")} ${detailRuleNames.map(ruleName => `${ruleName} ${summonRuleSummaries[ruleName] || ""}`).join(" ")} ${configuration?.equipment || summonEquipment[slug] || ""} ${summonConfigurationSearchText(configuration)}`
         : "");
       grid.append(preset);
       summonEntries.push({ preset, unit, variant });
@@ -5918,7 +6081,7 @@ a {
             : `${minimumCost - effectiveCap} pts short`;
         }
 
-        preset.dataset.searchText = normalize(`${unit.name} ${unit.faction} ${unit.type} ${minimumCost} points ${variant.dataset.searchText} ${preset.dataset.detailSearchText}`);
+        preset.dataset.searchText = normalize(`${unit.displayName || unit.name} ${unit.faction} ${unit.type} ${minimumCost} points ${variant.dataset.searchText} ${preset.dataset.detailSearchText}`);
       });
 
       const noOptions = variant.querySelector(".summon-no-options");
