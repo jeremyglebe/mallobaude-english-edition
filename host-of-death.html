@@ -523,6 +523,34 @@ a {
   outline-offset: 2px;
 }
 
+.stat-profile-scroll {
+  max-width: 100%;
+}
+
+.section.cards .formation-rule-badge {
+  border-color: color-mix(in srgb, var(--ref-accent) 70%, var(--ref-border));
+}
+
+.section.cards .formation-modified-stat .data {
+  color: var(--ref-accent-strong);
+  font-weight: 800;
+}
+
+.formation-stat-note {
+  background: var(--ref-accent-soft);
+  border: 1px solid var(--ref-border);
+  border-radius: 999px;
+  color: var(--ref-accent-strong);
+  display: inline-block;
+  font-size: .54rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  margin-left: 4px;
+  padding: 1px 4px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
 .section.unit-rules {
   background: var(--ref-surface);
   border: 1px solid var(--ref-border);
@@ -584,6 +612,55 @@ a {
   to {
     box-shadow: 0 0 0 7px var(--ref-accent-soft);
   }
+}
+
+.rule-users {
+  align-items: flex-start;
+  border-top: 1px dashed var(--ref-border);
+  display: flex;
+  gap: 9px;
+  margin-top: 11px;
+  padding-top: 9px;
+}
+
+.rule-users__label {
+  color: var(--ref-muted);
+  flex: 0 0 auto;
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  padding-top: 4px;
+  text-transform: uppercase;
+}
+
+.rule-users__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.rule-unit-badge {
+  background: var(--ref-accent-soft);
+  border: 1px solid var(--ref-border);
+  border-radius: 999px;
+  color: var(--ref-accent-strong);
+  display: inline-flex;
+  font-size: .68rem;
+  font-weight: 750;
+  line-height: 1.2;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+.rule-unit-badge:hover {
+  background: var(--ref-accent);
+  border-color: var(--ref-accent-strong);
+  color: white;
+}
+
+.rule-unit-badge:focus-visible {
+  outline: 2px solid var(--ref-accent-strong);
+  outline-offset: 2px;
 }
 
 .section.unit-rules .rule-definition:first-of-type {
@@ -1352,6 +1429,81 @@ a {
 
   .section.cards .profile-group td.name::before,
   .section.cards .profile-group td.is-empty-cell {
+    display: none !important;
+  }
+
+  .stat-profile-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
+  }
+
+  .section.cards .stat-profile-table {
+    border-collapse: collapse;
+    display: table;
+    font-size: .72rem;
+    min-width: 650px;
+    width: 100%;
+  }
+
+  .section.cards .stat-profile-table thead {
+    display: table-header-group;
+  }
+
+  .section.cards .stat-profile-table tbody {
+    display: table-row-group;
+  }
+
+  .section.cards .stat-profile-table tr.profile.row {
+    background: var(--ref-surface) !important;
+    border: 0;
+    display: table-row;
+    padding: 0;
+  }
+
+  .section.cards .stat-profile-table tbody tr.profile.row:nth-child(even) {
+    background: var(--ref-surface-soft) !important;
+  }
+
+  .section.cards .stat-profile-table td,
+  .section.cards .stat-profile-table td.is-empty-cell {
+    border: 1px solid var(--ref-border) !important;
+    display: table-cell !important;
+    min-width: 34px !important;
+    padding: 5px 6px !important;
+    text-align: center;
+    white-space: nowrap !important;
+  }
+
+  .section.cards .stat-profile-table thead td {
+    background: var(--ref-accent-soft);
+    color: var(--ref-ink);
+    font-weight: 750;
+  }
+
+  .section.cards .stat-profile-table td.name {
+    background: var(--ref-surface-strong);
+    border-radius: 0;
+    grid-column: auto;
+    left: 0;
+    margin: 0;
+    min-width: 145px !important;
+    position: sticky;
+    text-align: left;
+    white-space: normal !important;
+    z-index: 1;
+  }
+
+  .section.cards .stat-profile-table thead td.name {
+    z-index: 2;
+  }
+
+  .section.cards .stat-profile-table td::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  .section.cards .stat-profile-table td.is-empty-column {
     display: none !important;
   }
 
@@ -4047,6 +4199,28 @@ a {
     section.classList.add("reference-section");
   });
 
+  const hostFormationRules = [
+    {
+      name: "First Disciple",
+      text: "As long as Nagash is alive and on the battlefield, Arkhan the Black receives a +3 bonus to each of his casting results."
+    },
+    {
+      name: "The Doomed Legion",
+      text: "The Grave Guard and Black Knights in this Formation have Weapon Skill 5. Furthermore, they suffer two Wounds fewer than normal due to the Unstable special rule. This is in addition to any other modifiers that apply."
+    }
+  ];
+
+  hostFormationRules.forEach(rule => {
+    const definition = document.createElement("div");
+    definition.className = "profile rule-definition formation-rule-definition";
+    definition.innerHTML = `
+      <div><span class="rule-name"></span></div>
+      <div><span class="rule-text"><span class="data"><p></p></span></span></div>`;
+    definition.querySelector(".rule-name").textContent = `${rule.name}:`;
+    definition.querySelector("p").textContent = rule.text;
+    rulesSection.append(definition);
+  });
+
   const addSectionLabel = (target, title, detail) => {
     const heading = document.createElement("h2");
     heading.className = "reference-section-label";
@@ -4061,12 +4235,45 @@ a {
   overviewLabel.id = "overview";
   overviewLabel.classList.add("reference-section");
 
+  const profileLabelAliases = {
+    "ArmourSave": "Armour",
+    "WardSave": "Ward"
+  };
   const profileTables = [...document.querySelectorAll("table.profile-group")];
   profileTables.forEach(table => {
-    const labels = [...table.querySelectorAll("thead tr:first-child > td")]
-      .map(cell => cell.textContent.replace(/\s+/g, " ").trim());
+    const headerCells = [...table.querySelectorAll("thead tr:first-child > td")];
+    const labels = headerCells.map(cell => {
+      const original = cell.textContent.replace(/\s+/g, " ").trim();
+      const label = profileLabelAliases[original] || original;
+      const value = cell.querySelector(".value");
+      if (value && label !== original) value.textContent = label;
+      return label;
+    });
+    const normalizedLabels = labels.map(label => label.toUpperCase());
+    const isStatTable = ["M", "WS", "BS", "S", "T", "W", "I", "A", "LD"]
+      .every(label => normalizedLabels.includes(label));
+    const rows = [...table.querySelectorAll("tbody tr")];
 
-    [...table.querySelectorAll("tbody tr")].forEach(row => {
+    if (isStatTable) {
+      table.classList.add("stat-profile-table");
+      headerCells.forEach((cell, index) => {
+        if (index === 0) return;
+        const columnHasValue = rows.some(row => row.children[index]?.textContent.trim());
+        if (!columnHasValue) {
+          cell.classList.add("is-empty-column");
+          rows.forEach(row => row.children[index]?.classList.add("is-empty-column"));
+        }
+      });
+      const scroll = document.createElement("div");
+      scroll.className = "stat-profile-scroll";
+      scroll.setAttribute("role", "region");
+      scroll.setAttribute("aria-label", `${labels[0] || "Model"} characteristics; scroll horizontally to see all values`);
+      scroll.tabIndex = 0;
+      table.before(scroll);
+      scroll.append(table);
+    }
+
+    rows.forEach(row => {
       [...row.children].forEach((cell, index) => {
         cell.dataset.label = labels[index] || "Value";
         if (!cell.classList.contains("name") && !cell.textContent.trim()) {
@@ -4076,10 +4283,60 @@ a {
     });
   });
 
+  const unitCardWrappers = [...cardsSection.querySelectorAll(".unit.card-wrapper")];
+  const cardTitle = wrapper => wrapper.querySelector(".card-header .name")?.textContent.replace(/\s+/g, " ").trim() || "";
+  const addFormationRuleBadge = (wrapper, ruleName) => {
+    const badges = wrapper.querySelector(".card-rules .secondaries");
+    if (!badges || [...badges.querySelectorAll(".name")].some(badge => normalize(badge.textContent) === normalize(ruleName))) return;
+    const badge = document.createElement("span");
+    badge.className = "name formation-rule-badge";
+    badge.textContent = ruleName;
+    badges.append(badge);
+  };
+  const setFormationStat = (wrapper, profileName, characteristic, value, ruleName) => {
+    [...wrapper.querySelectorAll(".stat-profile-table")].forEach(table => {
+      const labels = [...table.querySelectorAll("thead tr:first-child > td")]
+        .map(cell => cell.textContent.replace(/\s+/g, " ").trim().toUpperCase());
+      const column = labels.indexOf(characteristic.toUpperCase());
+      if (column < 0) return;
+
+      [...table.querySelectorAll("tbody tr")].forEach(row => {
+        if (!normalize(row.children[0]?.textContent).startsWith(normalize(profileName))) return;
+        const cell = row.children[column];
+        const valueElement = cell?.querySelector(".value p") || cell?.querySelector(".value") || cell;
+        if (!cell || !valueElement) return;
+        const baseValue = valueElement.textContent.trim();
+        valueElement.textContent = value;
+        cell.classList.add("formation-modified-stat");
+        cell.dataset.baseValue = baseValue;
+        cell.title = `Base ${characteristic} ${baseValue}; ${value} in The Host of Death because of ${ruleName}.`;
+        const note = document.createElement("small");
+        note.className = "formation-stat-note";
+        note.textContent = "Host";
+        note.setAttribute("aria-label", `modified by ${ruleName}`);
+        cell.append(note);
+      });
+    });
+  };
+
+  unitCardWrappers.forEach(wrapper => {
+    const title = cardTitle(wrapper);
+    if (title === "Arkhan the Black, Mortarch of Sacrament") {
+      addFormationRuleBadge(wrapper, "First Disciple");
+    }
+    if (title === "Black Knights") {
+      addFormationRuleBadge(wrapper, "The Doomed Legion");
+      setFormationStat(wrapper, "Black Knight", "WS", "5", "The Doomed Legion");
+    }
+    if (title === "Grave Guard") {
+      addFormationRuleBadge(wrapper, "The Doomed Legion");
+      setFormationStat(wrapper, "Grave Guard", "WS", "5", "The Doomed Legion");
+    }
+  });
+
   const unitCards = [];
-  [...cardsSection.querySelectorAll(".unit.card-wrapper")].forEach((wrapper, index) => {
-    const titleElement = wrapper.querySelector(".card-header .name");
-    const title = titleElement?.textContent.replace(/\s+/g, " ").trim();
+  unitCardWrappers.forEach((wrapper, index) => {
+    const title = cardTitle(wrapper);
 
     if (!title || title === "- Army Size") {
       wrapper.classList.add("is-export-noise");
@@ -4199,9 +4456,33 @@ a {
     });
   };
 
+  const goToUnit = unit => {
+    if (!unit) return;
+    if (searchInput.value) {
+      searchInput.value = "";
+      applySearch("");
+    }
+    unit.setCollapsed(false);
+    window.history.pushState(null, "", `#${unit.wrapper.id}`);
+    window.requestAnimationFrame(() => {
+      unit.wrapper.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+        block: "start"
+      });
+      unit.toggle.focus({ preventScroll: true });
+    });
+  };
+
+  const ruleUnits = new Map();
   [...cardsSection.querySelectorAll(".card-rules .secondaries .name")].forEach(badge => {
     const target = ruleTargets.get(normalize(badge.textContent)) || ruleTargets.get(ruleNameKey(badge.textContent));
     if (!target) return;
+    const unit = unitCards.find(entry => entry.wrapper.contains(badge));
+
+    if (unit) {
+      if (!ruleUnits.has(target)) ruleUnits.set(target, new Map());
+      ruleUnits.get(target).set(unit.wrapper.id, unit);
+    }
 
     const link = document.createElement("a");
     [...badge.attributes].forEach(attribute => link.setAttribute(attribute.name, attribute.value));
@@ -4214,6 +4495,26 @@ a {
       goToRule(target);
     });
     badge.replaceWith(link);
+  });
+
+  ruleUnits.forEach((units, target) => {
+    const container = document.createElement("div");
+    container.className = "rule-users";
+    container.innerHTML = `<span class="rule-users__label">Used by</span><span class="rule-users__links"></span>`;
+    const links = container.querySelector(".rule-users__links");
+    [...units.values()].forEach(unit => {
+      const link = document.createElement("a");
+      link.className = "rule-unit-badge";
+      link.href = `#${unit.wrapper.id}`;
+      link.textContent = unit.title;
+      link.title = `Jump to ${unit.title}`;
+      link.addEventListener("click", event => {
+        event.preventDefault();
+        goToUnit(unit);
+      });
+      links.append(link);
+    });
+    target.append(container);
   });
 
   const summonUnitDetails = {
@@ -7019,16 +7320,24 @@ a {
     }
   });
 
-  const revealRuleFromHash = () => {
+  const revealReferenceFromHash = () => {
     const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
-    if (!target?.classList.contains("rule-link-target")) return;
-    setRulesSectionExpanded();
-    window.requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
+    if (!target) return;
+    if (target.classList.contains("rule-link-target")) {
+      setRulesSectionExpanded();
+      window.requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
+      return;
+    }
+    const unit = unitCards.find(entry => entry.wrapper === target);
+    if (unit) {
+      unit.setCollapsed(false);
+      window.requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
+    }
   };
 
-  window.addEventListener("hashchange", revealRuleFromHash);
+  window.addEventListener("hashchange", revealReferenceFromHash);
   applySearch("");
-  revealRuleFromHash();
+  revealReferenceFromHash();
 })();
 </script>
 </body>
