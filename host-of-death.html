@@ -505,6 +505,24 @@ a {
   content: none !important;
 }
 
+.section.cards .card-rules .secondaries a.name {
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color .16s ease, border-color .16s ease, box-shadow .16s ease, color .16s ease;
+}
+
+.section.cards .card-rules .secondaries a.name:hover {
+  background: var(--ref-accent);
+  border-color: var(--ref-accent-strong);
+  color: white;
+}
+
+.section.cards .card-rules .secondaries a.name:focus-visible {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ref-accent) 32%, transparent);
+  outline: 2px solid var(--ref-accent-strong);
+  outline-offset: 2px;
+}
+
 .section.unit-rules {
   background: var(--ref-surface);
   border: 1px solid var(--ref-border);
@@ -546,6 +564,26 @@ a {
   border-top: 1px solid var(--ref-border);
   margin-top: 14px;
   padding-top: 14px;
+}
+
+.section.unit-rules .rule-definition.rule-link-target {
+  border-radius: 8px;
+  scroll-margin-top: calc(var(--ref-toolbar-offset) + 12px);
+}
+
+.section.unit-rules .rule-definition.rule-link-target:target {
+  animation: rule-target-pulse 1.6s ease-out;
+  background: var(--ref-accent-soft);
+  box-shadow: 0 0 0 7px var(--ref-accent-soft);
+}
+
+@keyframes rule-target-pulse {
+  from {
+    box-shadow: 0 0 0 12px color-mix(in srgb, var(--ref-accent) 28%, transparent);
+  }
+  to {
+    box-shadow: 0 0 0 7px var(--ref-accent-soft);
+  }
 }
 
 .section.unit-rules .rule-definition:first-of-type {
@@ -4108,7 +4146,75 @@ a {
   };
 
   addSectionToggle(spellsSection, "the Lore of Undeath");
-  addSectionToggle(rulesSection, "rules");
+  const rulesSectionToggle = addSectionToggle(rulesSection, "rules");
+
+  const ruleNameKey = value => normalize(value)
+    .replace(/:\s*$/, "")
+    .replace(/\s*\((?:brb|ab)-\d+\)\s*$/, "")
+    .trim();
+
+  const ruleTargets = new Map();
+  [...rulesSection.querySelectorAll(".rule-definition")].forEach((definition, index) => {
+    const heading = definition.querySelector(".rule-name");
+    const names = heading?.textContent
+      .replace(/:\s*$/, "")
+      .split(/\s+\/\s+/)
+      .map(name => name.trim())
+      .filter(Boolean) || [];
+
+    if (!names.length) return;
+
+    definition.id = `rule-${slugify(ruleNameKey(names[0])) || index + 1}`;
+    definition.classList.add("rule-link-target");
+    definition.tabIndex = -1;
+    names.forEach(name => {
+      ruleTargets.set(normalize(name), definition);
+      ruleTargets.set(ruleNameKey(name), definition);
+    });
+  });
+
+  const setRulesSectionExpanded = () => {
+    rulesSection.classList.remove("section-collapsed");
+    if (rulesSectionToggle) {
+      rulesSectionToggle.textContent = "Hide section";
+      rulesSectionToggle.setAttribute("aria-expanded", "true");
+      rulesSectionToggle.setAttribute("aria-label", "Hide rules");
+    }
+  };
+
+  const goToRule = target => {
+    if (!target) return;
+    if (searchInput.value) {
+      searchInput.value = "";
+      applySearch("");
+    }
+    setRulesSectionExpanded();
+    window.history.pushState(null, "", `#${target.id}`);
+    window.requestAnimationFrame(() => {
+      target.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+        block: "start"
+      });
+      target.focus({ preventScroll: true });
+    });
+  };
+
+  [...cardsSection.querySelectorAll(".card-rules .secondaries .name")].forEach(badge => {
+    const target = ruleTargets.get(normalize(badge.textContent)) || ruleTargets.get(ruleNameKey(badge.textContent));
+    if (!target) return;
+
+    const link = document.createElement("a");
+    [...badge.attributes].forEach(attribute => link.setAttribute(attribute.name, attribute.value));
+    link.href = `#${target.id}`;
+    link.textContent = badge.textContent;
+    link.title = `Jump to the ${badge.textContent.trim()} rule`;
+    link.setAttribute("aria-label", `Jump to the ${badge.textContent.trim()} rule`);
+    link.addEventListener("click", event => {
+      event.preventDefault();
+      goToRule(target);
+    });
+    badge.replaceWith(link);
+  });
 
   const summonUnitDetails = {
   "zombie": {
@@ -6913,7 +7019,16 @@ a {
     }
   });
 
+  const revealRuleFromHash = () => {
+    const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+    if (!target?.classList.contains("rule-link-target")) return;
+    setRulesSectionExpanded();
+    window.requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
+  };
+
+  window.addEventListener("hashchange", revealRuleFromHash);
   applySearch("");
+  revealRuleFromHash();
 })();
 </script>
 </body>
