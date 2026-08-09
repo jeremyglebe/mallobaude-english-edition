@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A complete, searchable reference for all 23 End Times spells in the Warhammer Fantasy Battles 8.5 fan supplement.">
+  <title>End Times Spells - Warhammer Fantasy Battles 8.5</title>
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/spells.css">
+</head>
+<body class="spells-shell">
+  <nav class="site-bar" aria-label="Site navigation">
+    <a href="index.html">Project home</a>
+    <a href="guide.html">Game Guide</a>
+    <a href="rules.html">WFB8 Rules</a>
+    <a href="armies/index.html">Campaign Armies</a>
+    <a href="end-times-spells.html" aria-current="page">End Times Spells</a>
+    <a href="downloads/WHFB-End-Times-8.5.pdf">Source PDF</a>
+    <span class="status">23-spell quick reference</span>
+  </nav>
+
+  <main class="spells-main">
+    <header class="spells-hero">
+      <div>
+        <p class="kicker">Warhammer Fantasy Battles 8.5</p>
+        <h1>End Times Spells</h1>
+        <p class="lead">Every End Times spell in one searchable, mobile-friendly reference. Select a lore or search by spell name, effect, range, target, or casting value.</p>
+      </div>
+      <div class="spell-count-mark" aria-hidden="true"><strong>23</strong><span>complete spells</span></div>
+    </header>
+
+    <section class="spell-primer" aria-label="End Times spell rules">
+      <div><strong>Who knows them?</strong><p>In an End Times game, Wizards of Level 3 or higher know End Times spells in addition to their other spells.</p></div>
+      <div><strong>Casting restriction</strong><p>Each different End Times spell can be cast only once per Magic phase and cannot be dispelled if successfully cast.</p></div>
+      <div><strong>Lore interaction</strong><p>Lore-specific spells benefit from their parent lore attribute. The universal Fulcrum spell is available to any Level 3 or higher Wizard. <a href="downloads/WHFB-End-Times-8.5.pdf#page=10">Fulcrum rules</a></p></div>
+    </section>
+
+    <form class="spell-tools" role="search" onsubmit="return false">
+      <label>
+        <span>Search the spells</span>
+        <input id="spell-search" type="search" autocomplete="off" placeholder="Try ‘vortex’, ‘24 inches’, ‘summoning’...">
+      </label>
+      <label>
+        <span>Filter by lore</span>
+        <select id="spell-lore">
+          <option value="">All lores</option>
+          <option>Universal</option>
+          <option>Fire</option>
+          <option>Light</option>
+          <option>Beasts</option>
+          <option>Metal</option>
+          <option>Life</option>
+          <option>Heavens</option>
+          <option>High Magic</option>
+          <option>Dark Magic</option>
+          <option>Shadow</option>
+          <option>Death</option>
+          <option>Vampires</option>
+          <option>Nehekhara</option>
+          <option>Undeath</option>
+          <option>Wild</option>
+          <option>Great Maw</option>
+          <option>Big Waaagh!</option>
+          <option>Little Waaagh!</option>
+          <option>Skaven Plague</option>
+          <option>Skaven Ruin</option>
+          <option>Tzeentch</option>
+          <option>Nurgle</option>
+          <option>Slaanesh</option>
+        </select>
+      </label>
+      <button id="spell-clear" type="button" disabled>Clear</button>
+      <p class="spell-results" id="spell-results" role="status" aria-live="polite">Showing all 23 spells.</p>
+    </form>
+
+    <section class="spell-grid" id="spell-grid" aria-label="End Times spell reference">
+      <article class="spell-card" id="conjure-arcane-fulcrum" data-lore="Universal">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Universal</p>
+          <h2>Conjure Arcane Fulcrum</h2>
+          <div class="spell-card__meta"><span>Cast on 12+</span><span>Summoning</span><span>Range 6&quot;</span></div>
+          <a class="spell-anchor" href="#conjure-arcane-fulcrum" aria-label="Link to Conjure Arcane Fulcrum" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">The wizard commands a towering fulcrum of magical energy into existence, which lifts him high into the air.</p>
+          <div class="spell-rules"><p>Conjure Arcane Fulcrum is a <strong>summoning spell</strong> with a range of 6&quot;. The caster summons a single Arcane Fulcrum model and is immediately placed on top of it.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="withering-heat" data-lore="Fire">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Fire</p>
+          <h2>Withering Heat</h2>
+          <div class="spell-card__meta"><span>Cast on 20+</span><span>Hex</span><span>All enemy units</span></div>
+          <a class="spell-anchor" href="#withering-heat" aria-label="Link to Withering Heat" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">With a triumphant gesture, the wizard sets a curse of desiccation upon his foe's flesh.</p>
+          <div class="spell-rules"><p>Withering Heat is a <strong>hex spell</strong> that targets all enemy units on the battlefield. Until the start of the caster's next Magic phase, whenever a target unit charges, pursues or flees, it rolls an extra die and discards the highest result. In addition, all target units have the Flammable special rule for the duration of the spell, and all Flaming Attacks re-roll failed To Wound rolls against target units.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="enlightenment" data-lore="Light">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Light</p>
+          <h2>Enlightenment</h2>
+          <div class="spell-card__meta"><span>Cast on 20+</span><span>Hex / Augment</span><span>Range 12&quot;</span></div>
+          <a class="spell-anchor" href="#enlightenment" aria-label="Link to Enlightenment" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">The light of truth is a powerful thing, strengthening the righteous and banishing the unholy.</p>
+          <div class="spell-rules"><p>Enlightenment is a <strong>hex spell</strong> against Forces of Destruction units and an <strong>augment spell</strong> against Forces of Order units. It targets all units within 12&quot; of the caster, including the caster himself. Target Order units have the Unbreakable special rule until the start of the caster's next Magic phase. For target Destruction units, roll 4D6. For each point by which the roll exceeds the target's Leadership, the unit suffers 1 Wound. Target Non-Aligned units are unaffected.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="a-murder-of-crows" data-lore="Beasts">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Beasts</p>
+          <h2>A Murder of Crows</h2>
+          <div class="spell-card__meta"><span>Cast on 15+</span><span>Magical Vortex</span><span>Remains in Play</span></div>
+          <a class="spell-anchor" href="#a-murder-of-crows" aria-label="Link to A Murder of Crows" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">Calling upon Corvus the Cranford, the wizard summons a voracious flock of carrion birds to tear flesh from bone.</p>
+          <div class="spell-rules">
+            <p>Remains in play. A Murder of Crows is a <strong>magical vortex</strong> that uses the large round template. Once the template is placed, nominate the direction in which it will move. Roll an artillery die and multiply the result by 3 to determine how far it moves in inches.</p>
+            <p>If the artillery die is a misfire, centre the template on the caster and roll a scatter die. The template then moves D6&quot; in the direction shown; if you roll a Hit!, use the little arrow on the Hit! symbol. Any model under or passed over by the template suffers a Strength 3 hit.</p>
+            <p>In subsequent Magic phases, A Murder of Crows travels in a random direction and moves a number of inches equal to the roll on an artillery die. If a misfire is rolled in subsequent turns, it collapses in upon itself and is removed.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="meteoric-ironclad" data-lore="Metal">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Metal</p>
+          <h2>Meteoric Ironclad</h2>
+          <div class="spell-card__meta"><span>Cast on 15+</span><span>Augment</span><span>Range 24&quot;</span></div>
+          <a class="spell-anchor" href="#meteoric-ironclad" aria-label="Link to Meteoric Ironclad" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">Casting charms of silver and iron, the wizard creates suits of enchanted armour that no weapon can breach.</p>
+          <div class="spell-rules"><p>Meteoric Ironclad is an <strong>augment spell</strong> with a range of 24&quot;. The target unit has a 2+ ward save until the start of the caster's next Magic phase.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="storm-of-renewal" data-lore="Life">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Life</p>
+          <h2>Storm of Renewal</h2>
+          <div class="spell-card__meta"><span>Cast on 15+</span><span>Magical Vortex</span><span>Remains in Play</span></div>
+          <a class="spell-anchor" href="#storm-of-renewal" aria-label="Link to Storm of Renewal" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">Raw life-energy flows across the battlefield, mending wounds and restoring the fallen to fresh vigour.</p>
+          <div class="spell-rules">
+            <p>Remains in play. Storm of Renewal is a <strong>magical vortex</strong> that uses the large round template. Once the template is placed, nominate the direction in which it will move. Roll an artillery die and multiply the result by 2 to determine how far it moves in inches.</p>
+            <p>If the artillery die is a misfire, centre the template on the caster and roll a scatter die. The template then moves D6&quot; in the direction shown; if you roll a Hit!, use the little arrow on the Hit! symbol. Any unit under or passed over by the template immediately regains 2D6+1 Wounds' worth of models.</p>
+            <p>First, the unit champion is resurrected, then the musician; standard bearers are never resurrected and a lost banner remains lost. Displace rank-and-file models as required. Rank-and-file models with multiple Wounds, including command figures, are then healed to their starting value. Remaining Wounds resurrect rank-and-file models, fully healing the first before another can be resurrected.</p>
+            <p>Resurrected models are added to the front rank until it reaches at least five models, or three for Monstrous Infantry, Monstrous Beasts, Monstrous Cavalry or Chariots; additional models can then be added to the front or rear rank. If the unit already has more than one rank, models can only be added to the rear rank. A unit cannot exceed its starting size. Storm of Renewal cannot heal characters or their mounts; if a character has joined a unit, only the unit recovers lost Wounds.</p>
+            <p>In subsequent turns, Storm of Renewal travels in a random direction and moves a number of inches equal to the roll on an artillery die. If a misfire is rolled in subsequent turns, it collapses in upon itself and is removed.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="let-the-four-winds-blow" data-lore="Heavens">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Heavens</p>
+          <h2>Let the Four Winds Blow!</h2>
+          <div class="spell-card__meta"><span>Cast on 15+</span><span>Magic Missile</span><span>Range 48&quot;</span></div>
+          <a class="spell-anchor" href="#let-the-four-winds-blow" aria-label="Link to Let the Four Winds Blow" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">Calling upon the spirits of air, the wizard sends mighty winds howling across the battlefield.</p>
+          <div class="spell-rules">
+            <p>Let the Four Winds Blow! is a <strong>magic missile</strong> with a range of 48&quot; that targets up to four magical vortexes or enemy units in any combination. Resolve them in any order. Each target in range is pushed 2D6&quot; directly away from the caster without changing facing. If a target unit contacts impassable terrain, it stops and suffers 2D6 Strength 3 hits.</p>
+            <p>If a target unit contacts another unit, it stops 1&quot; away and both units suffer 2D6 Strength 3 hits. If a magical vortex is pushed into a unit, that unit suffers the vortex's usual effects. If a vortex ends in the middle of a unit, place it beyond the unit as though it had moved there under its own power.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="deadlock" data-lore="High Magic">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of High Magic</p>
+          <h2>Deadlock</h2>
+          <div class="spell-card__meta"><span>Cast on 20+</span><span>Hex</span><span>Battlefield</span></div>
+          <a class="spell-anchor" href="#deadlock" aria-label="Link to Deadlock" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">Such is their mastery in magic, the Slann of Lustria and the most powerful elven mages can mystically nullify the flow of a foe's sorcerous powers.</p>
+          <div class="spell-rules"><p>Deadlock is a <strong>hex spell</strong> that targets a Wizard anywhere on the battlefield. Until the start of the caster's next Magic phase, the target cannot channel, cast spells or dispel.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="oblivion" data-lore="Dark Magic">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Dark Magic</p>
+          <h2>Oblivion</h2>
+          <div class="spell-card__meta"><span>Cast on 25+</span><span>Arcane Fulcrum</span><span>Range 6&quot;</span></div>
+          <a class="spell-anchor" href="#oblivion" aria-label="Link to Oblivion" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">To a wizard proficient in dark magic, an arcane fulcrum is more than a conduit of power: it is unparalleled destruction, just waiting to be unleashed.</p>
+          <div class="spell-rules"><p>Nominate an Arcane Fulcrum anywhere upon the battlefield. Oblivion targets all models, friendly and enemy and including the caster, within 6&quot; of the nominated Arcane Fulcrum. Each target suffers a Strength 10 hit. Once damage has been resolved, roll a D6. On a roll of 4+, the Arcane Fulcrum and any Wizard occupying it are blown to smithereens and removed from play.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="bridge-of-shadows" data-lore="Shadow">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Shadow</p>
+          <h2>Bridge of Shadows</h2>
+          <div class="spell-card__meta"><span>Cast on 15+</span><span>Augment</span><span>Range 24&quot;</span></div>
+          <a class="spell-anchor" href="#bridge-of-shadows" aria-label="Link to Bridge of Shadows" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">At the wizard's command, a bridge of shadow and spite whisks his allies across the battlefield.</p>
+          <div class="spell-rules"><p>Bridge of Shadows is an <strong>augment spell</strong> with a range of 24&quot;. The target unit is immediately removed from the table and replaced anywhere on the battlefield visible to the Wizard, provided that no model from the unit is within 1&quot; of another unit or impassable terrain. The unit can return facing any direction but must retain the same formation. This spell can remove friendly units from combat; any enemy units left without an opponent can immediately reform.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="ashes-and-dust" data-lore="Death">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Death</p>
+          <h2>Ashes and Dust</h2>
+          <div class="spell-card__meta"><span>Cast on 15+</span><span>Magical Vortex</span><span>Remains in Play</span></div>
+          <a class="spell-anchor" href="#ashes-and-dust" aria-label="Link to Ashes and Dust" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">A choking dust cloud erupts from the wizard's fingertips, suffocating all in its path.</p>
+          <div class="spell-rules">
+            <p>Remains in play. Ashes and Dust is a <strong>magical vortex</strong> that uses the large round template. Once the template is placed, nominate its direction. Roll an artillery die and multiply the result by 2 to determine how far it moves in inches. If the artillery die is a misfire, centre the template on the caster and roll a scatter die. The template then moves D6&quot; in the direction shown; if you roll a Hit!, use the little arrow on the Hit! symbol.</p>
+            <p>At the end of the Magic phase, any unit with one or more models under or passed over by the template must take a Leadership test with a -3 penalty. It suffers a Wound for every point by which the test is failed, with no armour saves allowed. In subsequent turns, Ashes and Dust moves in a random direction a number of inches equal to the roll on an artillery die. If a misfire is rolled in subsequent turns, it collapses in upon itself and is removed.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="the-army-of-doom-keep" data-lore="Vampires">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of the Vampires</p>
+          <h2>The Army of Doom Keep</h2>
+          <div class="spell-card__meta"><span>Cast on 25+</span><span>Summoning</span><span>Range 36&quot;</span></div>
+          <a class="spell-anchor" href="#the-army-of-doom-keep" aria-label="Link to The Army of Doom Keep" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">The legendary elf mage Anareth could not forever destroy the dread army of Doom Keep, so he sealed it away in a pocket of magic. Alas, this prison could not remain secret forever, and little by little, accursed necromancers have begun to draw the wight-host into the mortal world once more.</p>
+          <div class="spell-rules"><p>The Army of Doom Keep is a <strong>summoning spell</strong> with a range of 36&quot;. It summons one Wight King and one unit of Grave Guard. The two units can have a combined points value of up to 300 points. The Wight King must be set up as part of the Grave Guard unit.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="return-of-the-golden-age" data-lore="Nehekhara">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Nehekhara</p>
+          <h2>Return of the Golden Age</h2>
+          <div class="spell-card__meta"><span>Cast on 20+</span><span>Augment</span><span>All friendly Tomb Kings units</span></div>
+          <a class="spell-anchor" href="#return-of-the-golden-age" aria-label="Link to Return of the Golden Age" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">The caster focuses his incantations and restores to the army the vigour and might they enjoyed whilst still alive.</p>
+          <div class="spell-rules"><p>Return of the Golden Age is an <strong>augment spell</strong> that targets all friendly units from <em>Warhammer: Tomb Kings</em> on the battlefield. All target units add 1 to the Weapon Skill, Strength and Initiative characteristics on their profile until the start of the caster's next Magic phase.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="malediction-of-nagash" data-lore="Undeath">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Undeath</p>
+          <h2>Malediction of Nagash</h2>
+          <div class="spell-card__meta"><span>Cast on 20+</span><span>Hex</span><span>Range 24&quot;</span></div>
+          <a class="spell-anchor" href="#malediction-of-nagash" aria-label="Link to Malediction of Nagash" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">At the Necromancer's command, his enemies feel the looming shadow of undeath fall across them, sapping their strength and endurance.</p>
+          <div class="spell-rules"><p>Malediction of Nagash is a <strong>hex spell</strong> that targets all enemy units within 24&quot;. All target units halve the Strength characteristic on their profile, rounding up any fractions, until the start of the caster's next Magic phase.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="ruiner-of-the-wrought" data-lore="Wild">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of the Wild</p>
+          <h2>Ruiner of the Wrought</h2>
+          <div class="spell-card__meta"><span>Cast on 25+</span><span>Hex</span><span>All buildings and war machines</span></div>
+          <a class="spell-anchor" href="#ruiner-of-the-wrought" aria-label="Link to Ruiner of the Wrought" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">Slamming his staff into the ground, the bray-shaman unshackles stock and stone from their bindings of artifice, unmaking the enemy's weapons of war.</p>
+          <div class="spell-rules"><p>Ruiner of the Wrought is a <strong>hex spell</strong> that targets all buildings and war machines on the battlefield. War machines suffer D3 Strength 10 hits, rolled separately for each; buildings collapse and are removed from play on a roll of 4+. A unit garrisoning a building removed this way is placed in the space previously occupied by the building and suffers 4D6 Strength 6 hits from falling rubble. If any surviving models cannot be placed at least 1&quot; from other units or impassable terrain, the entire unit is removed from play.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="the-great-maw-awakens" data-lore="Great Maw">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of the Great Maw</p>
+          <h2>The Great Maw Awakens</h2>
+          <div class="spell-card__meta"><span>Cast on 20+</span><span>Magical Vortex</span><span>Remains in Play</span></div>
+          <a class="spell-anchor" href="#the-great-maw-awakens" aria-label="Link to The Great Maw Awakens" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">The butcher joins his own hunger to the Great Maw's, conjuring a bloody whirlpool of rock that sweeps across the battlefield, swallowing enemies whole.</p>
+          <div class="spell-rules">
+            <p>Remains in play. The Great Maw Awakens is a <strong>magical vortex</strong> that uses the large round template. Once the template is placed, nominate its direction. Roll an artillery die and multiply the result by 2 to determine how far it moves in inches. Any model under or passed over by the template must pass an Initiative test or be swallowed whole and removed as a casualty.</p>
+            <p>In subsequent turns, The Great Maw Awakens moves a number of inches equal to an artillery die roll multiplied by 2, in a random direction. If a misfire is rolled at any point, centre the template over the caster instead. Once damage is resolved, remove The Great Maw Awakens from play.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="raise-great-idol" data-lore="Big Waaagh!">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Spells of the Big Waaagh!</p>
+          <h2>Raise Great Idol</h2>
+          <div class="spell-card__meta"><span>Cast on 15+</span><span>Summoning</span><span>Range 18&quot;</span></div>
+          <a class="spell-anchor" href="#raise-great-idol" aria-label="Link to Raise Great Idol" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">Straining and grimacing, the shaman wills an idol of Gork, or possibly Mork, to rise out of the ground. Under the stony gaze of such an idol, greenskins are inspired to further acts of extreme violence.</p>
+          <div class="spell-rules">
+            <p>Raise Great Idol is a <strong>summoning spell</strong>. Place an Idol of Gork, or possibly Mork, within 18&quot; of the caster. The effigy uses the Idol of Gork rules from the Warhammer rulebook.</p>
+            <p>Additionally, all friendly units from <em>Warhammer: Orcs &amp; Goblins</em> within 12&quot; of the Great Idol re-roll failed To Hit rolls. The Idol is a Mystical Monument and therefore has the Magical Lodestone special rule.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="nikkit-nikkit" data-lore="Little Waaagh!">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Spells of the Little Waaagh!</p>
+          <h2>Nikkit! Nikkit!</h2>
+          <div class="spell-card__meta"><span>Cast on 15+</span><span>Direct Damage</span><span>Range 24&quot;</span></div>
+          <a class="spell-anchor" href="#nikkit-nikkit" aria-label="Link to Nikkit Nikkit" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">The shaman conjures a pair of great green hands, one of which binds the chosen enemy in a vice-like grip, whilst the other rifles through the victim's possessions in search of anything shiny enough to be worth stealing.</p>
+          <div class="spell-rules"><p>Nikkit! Nikkit! is a <strong>direct damage spell</strong> that targets a single enemy character within 24&quot;. The target suffers a number of Wounds equal to D6 minus his own Toughness. Armour saves cannot be taken. Regardless of whether the target is slain, the caster steals one magic item of his choice from the target. If the caster does not already have a magic item of this type, he can now use it; otherwise it is destroyed.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="the-great-red-pox" data-lore="Skaven Plague">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Skaven Spells of Plague</p>
+          <h2>The Great Red Pox</h2>
+          <div class="spell-card__meta"><span>Cast on 25+</span><span>Area Effect</span><span>Range 24&quot;</span></div>
+          <a class="spell-anchor" href="#the-great-red-pox" aria-label="Link to The Great Red Pox" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">The caster vomits forth a crimson mist that rapidly spreads across the battlefield, causing an instantaneous eruption of fist-sized boils and then a most painful death.</p>
+          <div class="spell-rules"><p>The Great Red Pox targets all units, friendly or enemy, within 24&quot; of the caster. Units are affected on a D6 roll of 4+, except for Clan Pestilens units, which are affected on a 5+. Every model in an affected unit must pass a Toughness test or be removed as a casualty with no armour saves allowed.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="pit-of-the-underworld" data-lore="Skaven Ruin">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Skaven Spells of Ruin</p>
+          <h2>Pit of the Underworld</h2>
+          <div class="spell-card__meta"><span>Cast on 20+</span><span>Battlefield Effect</span><span>Delayed</span></div>
+          <a class="spell-anchor" href="#pit-of-the-underworld" aria-label="Link to Pit of the Underworld" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">The caster strains his mind to open a great rent in the earth. The target site begins to shake until the ground gives way to a vast pit that drops into blackness below.</p>
+          <div class="spell-rules"><p>Pit of the Underworld causes a great pit to open anywhere on the battlefield. Place a suitable marker over the exact spot affected; a coin is ideal. Roll a D6 at the start of each subsequent Magic phase. On a roll of 5+, the pit opens. Centre the large template over the marker. Any model wholly or partially under the template must pass an Initiative test or be removed as a casualty. Any buildings touched by the template collapse and are removed. Any models garrisoning a building removed this way are also removed.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="daemonfire-vortex" data-lore="Tzeentch">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Tzeentch</p>
+          <h2>Daemonfire Vortex</h2>
+          <div class="spell-card__meta"><span>Cast on 25+</span><span>Magical Vortex</span><span>Remains in Play</span></div>
+          <a class="spell-anchor" href="#daemonfire-vortex" aria-label="Link to Daemonfire Vortex" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">A prismatic haze erupts from the wizard's hand and rages across the battlefield, consuming everything in its path.</p>
+          <div class="spell-rules">
+            <p>Remains in play. Daemonfire Vortex is a <strong>magical vortex</strong> that uses the large round template. Once the template is placed, nominate its direction. Roll an artillery die and multiply the result by 2 to determine how far it moves in inches.</p>
+            <p>If the artillery die is a misfire, centre the template on the caster and roll a scatter die. The template then moves D6&quot; in the direction shown; if you roll a Hit!, use the little arrow on the Hit! symbol. Any model under or passed over by the template suffers a Wound on a 4+ with no armour saves allowed.</p>
+            <p>In subsequent turns, Daemonfire Vortex moves in a random direction a number of inches equal to the artillery die roll plus the number of unsaved Wounds it has caused since it was cast. If a misfire is rolled in subsequent turns, it collapses in upon itself and is removed.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="grandfather-nurgles-circle-of-life" data-lore="Nurgle">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Nurgle</p>
+          <h2>Grandfather Nurgle's Circle of Life</h2>
+          <div class="spell-card__meta"><span>Cast on 25+</span><span>Direct Damage</span><span>Range 36&quot;</span></div>
+          <a class="spell-anchor" href="#grandfather-nurgles-circle-of-life" aria-label="Link to Grandfather Nurgle's Circle of Life" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">There is a fragment of the Plaguefather in every living thing. A wizard who casts this spell will discover the truth of the matter.</p>
+          <div class="spell-rules"><p>Grandfather Nurgle's Circle of Life is a <strong>direct damage spell</strong> with a range of 36&quot;. It inflicts 5D6 hits on the target that wound on a 4+, with no armour saves allowed. If at least 10 unsaved Wounds are caused, the spell also summons a Great Unclean One if the caster is a Daemon of Chaos, or a Daemon Prince with the Mark of Nurgle if the caster is a Chaos Sorcerer, within 12&quot; of the target or in the target's position if it was completely destroyed. The summoned model can be worth up to 375 points.</p></div>
+        </div>
+      </article>
+
+      <article class="spell-card" id="song-of-seduction" data-lore="Slaanesh">
+        <header class="spell-card__header">
+          <p class="spell-card__lore">Lore of Slaanesh</p>
+          <h2>Song of Seduction</h2>
+          <div class="spell-card__meta"><span>Cast on 20+</span><span>Hex</span><span>Range 24&quot;</span><span>Remains in Play</span></div>
+          <a class="spell-anchor" href="#song-of-seduction" aria-label="Link to Song of Seduction" title="Link to this spell">#</a>
+        </header>
+        <div class="spell-card__body">
+          <p class="spell-flavour">Every man has his price, even if he knows it not, and Slaanesh's wizards can divine such things whilst magic flows strong.</p>
+          <div class="spell-rules"><p>Remains in play. Song of Seduction is a <strong>hex spell</strong> with a range of 24&quot;. For the duration of the spell, models in the target unit reduce their Leadership by 2 and immediately change loyalties: you control the unit as if it were part of your army for as long as the spell lasts. If the target is in close combat, separate the units by 1&quot;; you may have to shuffle several units to make this work, which is fine so long as you do not gain an unfair advantage. At the end of each subsequent Magic phase, the unit attempts to reassert its will by taking a Leadership test on its modified Leadership. If the test is passed, the spell is dispelled.</p></div>
+        </div>
+      </article>
+    </section>
+
+    <p class="spell-empty" id="spell-empty" hidden>No End Times spells match that search and lore combination.</p>
+
+    <footer class="spell-footer">
+      <p>Rules reference transcribed from pages 10-15 of the <a href="downloads/WHFB-End-Times-8.5.pdf#page=10">Warhammer Fantasy Battles 8.5 - The End Times fan supplement</a>. This page is an unofficial gaming aid.</p>
+    </footer>
+  </main>
+
+  <script>
+  (() => {
+    "use strict";
+
+    const search = document.querySelector("#spell-search");
+    const lore = document.querySelector("#spell-lore");
+    const clear = document.querySelector("#spell-clear");
+    const results = document.querySelector("#spell-results");
+    const empty = document.querySelector("#spell-empty");
+    const cards = [...document.querySelectorAll(".spell-card")];
+    const normalize = value => String(value || "").toLocaleLowerCase().replace(/\s+/g, " ").trim();
+
+    cards.forEach(card => {
+      card.dataset.search = normalize(card.textContent);
+    });
+
+    const revealHashTarget = () => {
+      const target = location.hash ? document.querySelector(location.hash) : null;
+      if (!target?.classList.contains("spell-card")) return;
+      search.value = "";
+      lore.value = "";
+      applyFilters();
+    };
+
+    const applyFilters = () => {
+      const terms = normalize(search.value).split(" ").filter(Boolean);
+      const selectedLore = lore.value;
+      let visible = 0;
+
+      cards.forEach(card => {
+        const matchesText = terms.every(term => card.dataset.search.includes(term));
+        const matchesLore = !selectedLore || card.dataset.lore === selectedLore;
+        const matches = matchesText && matchesLore;
+        card.hidden = !matches;
+        if (matches) visible += 1;
+      });
+
+      const active = terms.length > 0 || Boolean(selectedLore);
+      clear.disabled = !active;
+      empty.hidden = visible > 0;
+      results.textContent = active
+        ? `Showing ${visible} of ${cards.length} spells.`
+        : `Showing all ${cards.length} spells.`;
+    };
+
+    search.addEventListener("input", applyFilters);
+    lore.addEventListener("change", applyFilters);
+    clear.addEventListener("click", () => {
+      search.value = "";
+      lore.value = "";
+      applyFilters();
+      search.focus();
+    });
+    window.addEventListener("hashchange", revealHashTarget);
+    document.addEventListener("keydown", event => {
+      const tag = event.target?.tagName?.toLowerCase();
+      const typing = tag === "input" || tag === "select" || tag === "textarea" || event.target?.isContentEditable;
+      if (event.key === "/" && !typing) {
+        event.preventDefault();
+        search.focus();
+      }
+      if (event.key === "Escape" && document.activeElement === search) {
+        search.value = "";
+        applyFilters();
+        search.blur();
+      }
+    });
+
+    applyFilters();
+    revealHashTarget();
+  })();
+  </script>
+</body>
+</html>
