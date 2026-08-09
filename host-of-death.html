@@ -1388,8 +1388,26 @@ a {
 
   .section.cards .reference-unit .card > tbody > tr > td {
     max-width: 100%;
-    overflow: hidden;
     width: 100%;
+  }
+
+  .section.cards .reference-unit .profile-table-scroll {
+    box-sizing: border-box;
+    display: block;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    touch-action: pan-x pan-y;
+    -webkit-overflow-scrolling: touch;
+    width: calc(100vw - 50px);
+  }
+
+  .section.cards .reference-unit .profile-table-scroll > .profile-group {
+    min-width: 650px;
   }
 
   .section.cards .profile-group,
@@ -1444,18 +1462,10 @@ a {
   }
 
   .stat-profile-scroll {
-    box-sizing: border-box;
     display: block;
-    max-width: 100%;
-    min-width: 0;
-    overflow-x: scroll !important;
-    overflow-y: hidden;
-    overscroll-behavior-inline: contain;
-    scrollbar-gutter: stable;
-    scrollbar-width: thin;
-    touch-action: pan-x pan-y;
-    -webkit-overflow-scrolling: touch;
-    width: calc(100vw - 50px);
+    max-width: none;
+    overflow: visible;
+    width: auto;
   }
 
   .section.cards .stat-profile-table {
@@ -4286,11 +4296,13 @@ a {
       });
       const scroll = document.createElement("div");
       scroll.className = "stat-profile-scroll";
-      scroll.setAttribute("role", "region");
-      scroll.setAttribute("aria-label", `${labels[0] || "Model"} characteristics; scroll horizontally to see all values`);
-      scroll.tabIndex = 0;
       table.before(scroll);
       scroll.append(table);
+      const profileBlock = table.closest("tr.profile-row.profiles")?.firstElementChild;
+      if (profileBlock) {
+        profileBlock.classList.add("profile-table-scroll");
+        profileBlock.tabIndex = 0;
+      }
     }
 
     rows.forEach(row => {
@@ -4374,6 +4386,10 @@ a {
     toggle.className = "card-toggle";
     toggle.setAttribute("aria-label", `Expand ${title}`);
     toggle.setAttribute("aria-expanded", "false");
+    const profileScroll = wrapper.querySelector(".profile-table-scroll");
+    if (profileScroll) {
+      profileScroll.setAttribute("aria-label", `${title} profile and equipment tables; scroll horizontally to see all columns`);
+    }
     if (cardBody) {
       cardBody.id = `${wrapper.id}-details`;
       toggle.setAttribute("aria-controls", cardBody.id);
