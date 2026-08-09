@@ -15,27 +15,43 @@ window.CAMPAIGN_ARMY_DATA = {
       "rules": [
         {
           "name": "Death to the Lady",
-          "detail": "Campaign army rule; see page 18."
+          "sourcePage": 18,
+          "detail": "Any model in a Rebel army, a Mousillon army, or an army led by Mallobaude that has The Blessing of the Lady must replace it with Sworn Enemy of the Lady."
         },
         {
           "name": "Oath of the Black Grail",
-          "detail": "Campaign vow; see page 18."
+          "sourcePage": 18,
+          "detail": "This vow replaces the Grail Vow and grants a 6+ ward save and Fear. A Rebel that drinks from the Grail result on the Civil War table treats it as the Black Grail and gains the Oath of the Black Grail."
         },
         {
           "name": "Standard of Mousillon",
-          "detail": "Campaign standard; see page 18."
+          "sourcePage": 18,
+          "detail": "In a Mousillon, Vampire Counts, or Legion of Undeath army containing Black Grail Knights, their unit may carry the Cursed Pennon of Mousillon for free. Otherwise, in a Rebel, Mousillon, or Legion of Undeath army containing Mallobaude, a Paladin or Wight King Battle Standard Bearer may carry it for +10 points. If the enemy captures the Pennon, that unit immediately suffers D6 Strength 4 hits distributed as shooting and then D6 Strength 3 hits at the start of each of its turns. The unit may abandon the Pennon at any time to stop suffering these hits, but the standard is lost and awards no Victory Points."
         },
         {
           "name": "No Damsels or Prophetesses",
-          "detail": "The list cannot include them and ignores For the Glory of the Damsels."
+          "sourcePage": 21,
+          "detail": "The army cannot include Damsels or Prophetesses. Consequently, it is unaffected by the For the Glory of the Damsels result."
         },
         {
           "name": "No Questing Knights",
-          "detail": "Questing Knights are unavailable."
+          "sourcePage": 21,
+          "detail": "The army cannot include Questing Knights."
+        },
+        {
+          "name": "No Detachments",
+          "sourcePage": 21,
+          "detail": "Handgunners, Crossbowmen, and Rogues represented by Free Company Militia cannot use the Detachments special rule."
         },
         {
           "name": "Human Bolt Thrower Crew",
-          "detail": "Use the Dwarf Bolt Thrower rules with Empire cannon-crew profiles and rules."
+          "sourcePage": 21,
+          "detail": "The Bolt Thrower uses the Dwarf Bolt Thrower rules, but its human crew use the profile and rules of Empire cannon crew."
+        },
+        {
+          "name": "Bretonnian Army List",
+          "sourcePage": 21,
+          "detail": "The Rebels of Bretonnia list counts as a Bretonnian army list in all respects."
         }
       ],
       "categories": [
@@ -135,19 +151,23 @@ window.CAMPAIGN_ARMY_DATA = {
       "rules": [
         {
           "name": "Death to the Lady",
-          "detail": "Campaign army rule; see page 18."
+          "sourcePage": 18,
+          "detail": "Any model in a Rebel army, a Mousillon army, or an army led by Mallobaude that has The Blessing of the Lady must replace it with Sworn Enemy of the Lady."
         },
         {
           "name": "Oath of the Black Grail",
-          "detail": "Campaign vow; see page 18."
+          "sourcePage": 18,
+          "detail": "This vow replaces the Grail Vow and grants a 6+ ward save and Fear. A Rebel that drinks from the Grail result on the Civil War table treats it as the Black Grail and gains the Oath of the Black Grail."
         },
         {
           "name": "Standard of Mousillon",
-          "detail": "Campaign standard; see page 18."
+          "sourcePage": 18,
+          "detail": "In a Mousillon, Vampire Counts, or Legion of Undeath army containing Black Grail Knights, their unit may carry the Cursed Pennon of Mousillon for free. Otherwise, in a Rebel, Mousillon, or Legion of Undeath army containing Mallobaude, a Paladin or Wight King Battle Standard Bearer may carry it for +10 points. If the enemy captures the Pennon, that unit immediately suffers D6 Strength 4 hits distributed as shooting and then D6 Strength 3 hits at the start of each of its turns. The unit may abandon the Pennon at any time to stop suffering these hits, but the standard is lost and awards no Victory Points."
         },
         {
           "name": "The Dead Shall Walk Among the Living",
-          "detail": "Invocation of Nehek gains +1 raised model per living unit in melee within 12 inches, or +2 for units of 30 or more."
+          "sourcePage": 22,
+          "detail": "When a Wizard from the Mousillon army successfully casts Invocation of Nehek, add +1 to the number of models raised for each living unit engaged in close combat within 12 inches of the caster. A living unit of 30 or more models instead contributes +2. Units with Undead, Daemon, or Forest Spirit are not living units for this rule."
         }
       ],
       "outcomeAdditions": [
@@ -324,15 +344,18 @@ window.CAMPAIGN_ARMY_DATA = {
       "rules": [
         {
           "name": "Hatred (Elves)",
-          "detail": "The army hates Elves."
+          "sourcePage": 25,
+          "detail": "Every model in the Wildwood Host has Hatred (Elves)."
         },
         {
           "name": "Mad Awakening",
-          "detail": "The army may use Drycha's Mad Awakening rule even if Drycha is absent."
+          "sourcePage": 25,
+          "detail": "The army may use Drycha's Mad Awakening rule to enter the battlefield even when Drycha is not included."
         },
         {
           "name": "Wildwood Spirits",
-          "detail": "Branchwraiths and Treeman Ancients may choose the Lore of Shadow instead of the Lore of Life."
+          "sourcePage": 25,
+          "detail": "Branchwraiths and Treeman Ancients in this army may choose the Lore of Shadow instead of the Lore of Life."
         }
       ],
       "categories": [
@@ -407,11 +430,13 @@ window.CAMPAIGN_ARMY_DATA = {
       "rules": [
         {
           "name": "Loyal Dukes",
-          "detail": "Named dukes may be selected only if they remain loyal and alive in the chosen campaign branch."
+          "sourcePage": 32,
+          "detail": "Named Bretonnian Dukes may be selected as Bretonnian Lords only if they remain loyal to Louen and are still alive in the chosen campaign branch."
         },
         {
           "name": "Morgiana's Fate",
-          "detail": "Morgiana the Fay is unavailable if Drycha captured her."
+          "sourcePage": 32,
+          "detail": "Morgiana the Fay Enchantress may be selected only if she was not captured by Drycha."
         }
       ],
       "categories": [
@@ -614,19 +639,23 @@ window.CAMPAIGN_ARMY_DATA = {
       "rules": [
         {
           "name": "Errantry War",
-          "detail": "Only Knights Errant count towards Core; at least 25% of the army must be Knights Errant."
+          "sourcePage": 41,
+          "detail": "Only Knights Errant count towards the mandatory Core percentage. At least 25% of the army's points must therefore be spent on Knights Errant."
         },
         {
           "name": "Experienced Leader",
-          "detail": "A Knights Errant unit may replace its champion with a Grail Knight for +22 points, or +12 if Louen the High Paladin is present."
+          "sourcePage": 41,
+          "detail": "Instead of taking a normal unit champion, a Knights Errant unit may include a Grail Knight as its champion for +22 points. If Louen the High Paladin is present in the Crusade Army, this upgrade costs +12 points instead."
         },
         {
           "name": "Errantry Fervour",
-          "detail": "Every Knights Errant unit must take a standard bearer and gains the Errantry Banner for free; it may take no other banner."
+          "sourcePage": 41,
+          "detail": "Every Knights Errant unit must include a standard bearer. Each of those units receives the effects of the Errantry Banner for free and may not select a different banner."
         },
         {
           "name": "Glory or Death",
-          "detail": "Apply the listed Impetuosity penalties for fear, terror, dragons, nearby Damsels, and enemy hordes. Knights Errant must pursue and roll an extra die, keeping the best, for pursuit distance."
+          "sourcePage": 41,
+          "detail": "Knights Errant suffer a cumulative -1 penalty to Impetuosity tests for each of the following conditions: at least one Fear-causing creature is within charge range; at least one Terror-causing creature is within charge range; at least one Dragon is within charge range; at least one Damsel is within 6 inches; and at least one enemy Horde is within charge range. Knights Errant must always pursue. When determining their pursuit distance, roll one additional die and discard the lowest."
         }
       ],
       "outcomeAdditions": [
@@ -5488,7 +5517,8 @@ window.CAMPAIGN_ARMY_DATA = {
       ],
       "specialRules": [
         "Sworn Enemy of the Lady",
-        "Black Grail Vow"
+        "Virtue of Knightly Temper",
+        "Sense of Honour"
       ],
       "options": [],
       "notes": [],
@@ -5515,7 +5545,9 @@ window.CAMPAIGN_ARMY_DATA = {
         "Red Thirst",
         "Undead",
         "Vampiric",
-        "Blood Dragon Vampire"
+        "Blood Dragon Vampire",
+        "Honour or Death",
+        "No Mortal Son"
       ],
       "options": [],
       "notes": [
@@ -5572,6 +5604,9 @@ window.CAMPAIGN_ARMY_DATA = {
       "specialRules": [
         "Sworn Enemy of the Lady",
         "Lord of Death",
+        "Red Thirst",
+        "Undead",
+        "Vampiric",
         "Blood Dragon Vampire",
         "Honour or Death",
         "No Mortal Son",
@@ -5649,7 +5684,12 @@ window.CAMPAIGN_ARMY_DATA = {
       ],
       "equipment": [],
       "specialRules": [
-        "Frenzy",
+        "The Hunger",
+        "Undead",
+        "Vampiric",
+        "The General of Undeath",
+        "Dread Knight",
+        "Red Fury",
         "Former Duke of Aquitaine"
       ],
       "options": [],
@@ -5688,6 +5728,9 @@ window.CAMPAIGN_ARMY_DATA = {
         "Barded skeletal steed"
       ],
       "specialRules": [
+        "Killing Blow",
+        "Undead",
+        "Vampire Counts Battle Standards",
         "Dread Knight",
         "Red Fury",
         "Knight, Lord of the Dead"
@@ -5721,6 +5764,10 @@ window.CAMPAIGN_ARMY_DATA = {
       ],
       "equipment": [],
       "specialRules": [
+        "Ethereal",
+        "Ghostly Howl",
+        "Terror",
+        "Undead",
         "Hover",
         "White Witch"
       ],
@@ -5775,6 +5822,10 @@ window.CAMPAIGN_ARMY_DATA = {
         "Barding"
       ],
       "specialRules": [
+        "Frenzy",
+        "Undead",
+        "Vampiric",
+        "Martial Honour",
         "Stupidity",
         "Spectral Steeds",
         "Lance Formation",
@@ -5811,6 +5862,14 @@ window.CAMPAIGN_ARMY_DATA = {
       ],
       "equipment": [],
       "specialRules": [
+        "Blessing of the Ancients",
+        "Flammable",
+        "Forest Spirit",
+        "Large Target",
+        "Stubborn",
+        "Terror",
+        "Tree Whack",
+        "Scaly Skin (3+)",
         "Hatred (Elves)",
         "Hatred (Durthu)",
         "Wildwood Onager",
@@ -5861,6 +5920,10 @@ window.CAMPAIGN_ARMY_DATA = {
       ],
       "equipment": [],
       "specialRules": [
+        "Fear",
+        "Flammable",
+        "Forest Spirit",
+        "Scaly Skin (4+)",
         "Scaly Skin (3+)",
         "Acts as a character"
       ],
@@ -5914,7 +5977,9 @@ window.CAMPAIGN_ARMY_DATA = {
       ],
       "equipment": [],
       "specialRules": [
-        "Forest Spirit instead of Undead"
+        "Ethereal",
+        "Skirmishers",
+        "Forest Spirit"
       ],
       "options": [],
       "notes": [],

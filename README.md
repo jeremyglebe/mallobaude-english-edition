@@ -11,4 +11,6 @@ The repository contains two static, browser-readable books and a campaign army r
 
 Open `index.html` locally or visit the [GitHub Pages site](https://jeremyglebe.com/mallobaude-english-edition/).
 
+Campaign-army rule disclosures combine the translated campaign rules with locally stored definitions from the [WHFB8 Online Rules Index](https://8th.whfb.app/), retaining a source link for each indexed rule. Run `python tools/build_rule_definitions.py` to refresh those definitions.
+
 This is an unofficial, non-commercial fan project. It is not affiliated with or endorsed by Games Workshop. Warhammer and associated names, characters, and imagery remain the property of their respective owners.

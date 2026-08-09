@@ -198,6 +198,18 @@ html {
   gap: 0.75rem 1.25rem;
 }
 
+.army-rules-intro {
+  margin: -0.25rem 0 0.85rem;
+  color: #665443;
+  font-size: 0.9rem;
+}
+
+.army-rule-disclosures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.65rem;
+}
+
 .army-rule-item strong {
   display: block;
   margin-bottom: 0.2rem;
@@ -295,7 +307,7 @@ html {
   display: none;
 }
 
-.unit-card summary {
+.unit-card > summary {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   gap: 1rem;
@@ -305,17 +317,17 @@ html {
   list-style: none;
 }
 
-.unit-card summary::-webkit-details-marker {
+.unit-card > summary::-webkit-details-marker {
   display: none;
 }
 
-.unit-card summary::before {
+.unit-card > summary::before {
   margin-right: 0.45rem;
   color: var(--army-wine);
   content: "▸";
 }
 
-.unit-card[open] summary::before {
+.unit-card[open] > summary::before {
   content: "▾";
 }
 
@@ -426,6 +438,109 @@ html {
   line-height: 1.4;
 }
 
+.rule-reference-list {
+  display: grid;
+  gap: 0.38rem;
+}
+
+.rule-reference {
+  min-width: 0;
+  color: #34271c;
+  background: rgba(255, 252, 243, 0.58);
+  border: 1px solid rgba(142, 112, 65, 0.45);
+}
+
+.rule-reference > summary {
+  position: relative;
+  display: block;
+  padding: 0.42rem 1.75rem 0.42rem 0.55rem;
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.28;
+}
+
+.rule-reference > summary::-webkit-details-marker {
+  display: none;
+}
+
+.rule-reference > summary::after {
+  position: absolute;
+  top: 50%;
+  right: 0.6rem;
+  color: var(--army-wine);
+  content: "+";
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  transform: translateY(-50%);
+}
+
+.rule-reference[open] > summary::after {
+  content: "−";
+}
+
+.rule-definition {
+  padding: 0.15rem 0.6rem 0.62rem;
+  color: #493d31;
+  border-top: 1px solid rgba(142, 112, 65, 0.28);
+  font-size: 0.82rem;
+  line-height: 1.42;
+}
+
+.rule-definition p {
+  margin: 0.48rem 0 0;
+}
+
+.rule-definition ul,
+.rule-definition ol {
+  margin: 0.48rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.rule-definition h4 {
+  margin: 0.65rem 0 0.25rem;
+  color: #5a3821;
+  font-size: 0.82rem;
+  text-transform: none;
+}
+
+.rule-source {
+  padding-top: 0.45rem;
+  color: #75624c;
+  border-top: 1px dotted #bca77e;
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+}
+
+.rule-source a,
+.rule-search-link {
+  color: var(--army-wine);
+}
+
+.rule-reference.unresolved .rule-definition {
+  min-height: 2rem;
+}
+
+.rule-search-link {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-size: 0.76rem;
+  font-style: italic;
+}
+
+.army-rule-reference > summary {
+  padding: 0.7rem 2rem 0.7rem 0.75rem;
+  color: #4f251e;
+  font-family: Georgia, serif;
+  font-size: 0.98rem;
+}
+
+.army-rule-reference .rule-definition {
+  padding: 0.15rem 0.8rem 0.8rem;
+  font-size: 0.88rem;
+}
+
 .empty-field {
   color: #786b5a;
   font-size: 0.84rem;
@@ -433,6 +548,10 @@ html {
 }
 
 .options-list {
+  grid-column: span 3;
+}
+
+.special-rules-panel {
   grid-column: span 2;
 }
 
@@ -576,7 +695,11 @@ html {
     grid-column: auto;
   }
 
-  .unit-card summary {
+  .special-rules-panel {
+    grid-column: auto;
+  }
+
+  .unit-card > summary {
     grid-template-columns: auto minmax(0, 1fr);
     gap: 0.25rem;
   }

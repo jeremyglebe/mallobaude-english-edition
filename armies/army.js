@@ -2,6 +2,10 @@
   "use strict";
 
   const data = window.CAMPAIGN_ARMY_DATA;
+  const indexedRules = (window.WHFB_RULE_DEFINITIONS || {}).definitions || {};
+  const campaignRuleData = window.CAMPAIGN_RULE_DEFINITIONS || {};
+  const campaignRules = campaignRuleData.definitions || {};
+  const campaignRuleOverrides = campaignRuleData.entryOverrides || {};
   const app = document.getElementById("army-app");
 
   if (!data || !app) return;
@@ -38,6 +42,50 @@
   function renderList(values, emptyText) {
     if (!values || !values.length) return `<p class="empty-field">${escapeHtml(emptyText)}</p>`;
     return `<ul>${values.map((value) => `<li>${escapeHtml(value)}</li>`).join("")}</ul>`;
+  }
+
+  function ruleDefinition(ruleName, entryId) {
+    const override = entryId && campaignRuleOverrides[entryId] && campaignRuleOverrides[entryId][ruleName];
+    return override || campaignRules[ruleName] || indexedRules[ruleName] || null;
+  }
+
+  function renderRuleSource(definition) {
+    if (!definition || !definition.sourceUrl) return "";
+    const label = definition.sourceReference || definition.sourceTitle || "Rule source";
+    const external = definition.sourceUrl.startsWith("http");
+    return `<p class="rule-source"><a href="${escapeHtml(definition.sourceUrl)}"${external ? ' target="_blank" rel="noreferrer"' : ""}>${escapeHtml(label)}</a></p>`;
+  }
+
+  function renderRuleDisclosure(ruleName, entryId) {
+    const definition = ruleDefinition(ruleName, entryId);
+    const hasDefinition = Boolean(definition && definition.html);
+    const searchUrl = definition && definition.searchUrl
+      ? definition.searchUrl
+      : `https://8th.whfb.app/search?q=${encodeURIComponent(ruleName)}`;
+    return `
+      <details class="rule-reference${hasDefinition ? "" : " unresolved"}">
+        <summary>${escapeHtml(ruleName)}</summary>
+        <div class="rule-definition">
+          ${hasDefinition ? definition.html : `<a class="rule-search-link" href="${escapeHtml(searchUrl)}" target="_blank" rel="noreferrer">Search the WHFB8 index</a>`}
+          ${renderRuleSource(definition)}
+        </div>
+      </details>`;
+  }
+
+  function renderSpecialRules(values, entryId) {
+    if (!values || !values.length) return '<p class="empty-field">Not specified in this supplement.</p>';
+    return `<div class="rule-reference-list">${values.map((value) => renderRuleDisclosure(value, entryId)).join("")}</div>`;
+  }
+
+  function renderArmyRule(rule) {
+    return `
+      <details class="rule-reference army-rule-reference">
+        <summary>${escapeHtml(rule.name)}</summary>
+        <div class="rule-definition">
+          ${rule.detail ? `<p>${escapeHtml(rule.detail)}</p>` : ""}
+          ${rule.sourcePage ? `<p class="rule-source"><a href="../rules.html#rules-page-${escapeHtml(rule.sourcePage)}">The Revolt of Mallobaude, p. ${escapeHtml(rule.sourcePage)}</a></p>` : ""}
+        </div>
+      </details>`;
   }
 
   function renderProfiles(profiles) {
@@ -100,9 +148,9 @@
               <h4>Equipment</h4>
               ${renderList(entry.equipment, "Not specified in this supplement.")}
             </section>
-            <section class="unit-detail">
+            <section class="unit-detail special-rules-panel">
               <h4>Special Rules</h4>
-              ${renderList(entry.specialRules, "Not specified in this supplement.")}
+              ${renderSpecialRules(entry.specialRules, reference.id)}
             </section>
             <section class="unit-detail options-list">
               <h4>Options</h4>
@@ -190,12 +238,13 @@
         ${renderCampaignRole(army.campaignRole)}
         <section class="army-rules" aria-labelledby="army-rules-title">
           <h2 id="army-rules-title">Army-Specific Rules</h2>
-          <div class="army-rules-grid">
-            ${army.rules.map((rule) => `<div class="army-rule-item"><strong>${escapeHtml(rule.name)}</strong><p>${escapeHtml(rule.detail)}</p></div>`).join("")}
+          <p class="army-rules-intro">Open a rule for its complete campaign wording.</p>
+          <div class="army-rule-disclosures">
+            ${army.rules.map(renderArmyRule).join("")}
           </div>
         </section>
         ${renderOutcomeAdditions(army.outcomeAdditions)}
-        <p class="source-note">${escapeHtml(data.sourceNote)} Missing fields are deliberately marked instead of inferred.</p>
+        <p class="source-note">${escapeHtml(data.sourceNote)} Full official-rule definitions are stored locally from the <a href="https://8th.whfb.app/special-rules" target="_blank" rel="noreferrer">WHFB8 Online Rules Index</a> and retain links to their individual sources. Missing fields are deliberately marked instead of inferred.</p>
         ${army.categories.map((category) => `
           <section class="army-category" id="${slug(category.name)}">
             <h2 class="category-title">${escapeHtml(category.name)}</h2>
@@ -209,6 +258,7 @@
       </main>`;
 
     const cards = [...document.querySelectorAll(".unit-card")];
+    const disclosures = [...document.querySelectorAll("details")];
     const search = document.getElementById("army-search");
     search.addEventListener("input", () => {
       const query = search.value.trim().toLowerCase();
@@ -217,15 +267,15 @@
         if (query && !card.hidden) card.open = true;
       });
     });
-    document.getElementById("expand-all").addEventListener("click", () => cards.forEach((card) => { if (!card.hidden) card.open = true; }));
-    document.getElementById("collapse-all").addEventListener("click", () => cards.forEach((card) => { card.open = false; }));
+    document.getElementById("expand-all").addEventListener("click", () => disclosures.forEach((item) => { if (!item.closest(".unit-card[hidden]")) item.open = true; }));
+    document.getElementById("collapse-all").addEventListener("click", () => disclosures.forEach((item) => { item.open = false; }));
 
     let printState = [];
     window.addEventListener("beforeprint", () => {
-      printState = cards.map((card) => card.open);
-      cards.forEach((card) => { card.open = true; });
+      printState = disclosures.map((item) => item.open);
+      disclosures.forEach((item) => { item.open = true; });
     });
-    window.addEventListener("afterprint", () => cards.forEach((card, index) => { card.open = printState[index]; }));
+    window.addEventListener("afterprint", () => disclosures.forEach((item, index) => { item.open = printState[index]; }));
 
     if (location.hash) {
       const target = document.querySelector(location.hash);
