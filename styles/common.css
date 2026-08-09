@@ -210,25 +210,80 @@ h3 {
   line-height: 1.55;
 }
 
+.dashboard .lead em,
+.dashboard-section__header em {
+  color: #f1dfad;
+}
+
+.dashboard-section {
+  margin-top: clamp(3.5rem, 8vw, 6rem);
+}
+
+.dashboard-section__header {
+  max-width: 760px;
+}
+
+.dashboard-section__header h2 {
+  color: #f5eedf;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  line-height: 1.08;
+}
+
+.dashboard-section__header > p:last-child {
+  margin: 0.65rem 0 0;
+  color: #cfc4b4;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.section-kicker,
+.card-label {
+  color: #d8bd78;
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-kicker {
+  margin: 0 0 0.55rem;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 1.25rem;
 }
 
 .card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   min-height: 170px;
   padding: 1.25rem;
   color: #f4eee3;
   text-decoration: none;
   background: rgba(55, 46, 40, 0.86);
   border: 1px solid rgba(207, 184, 125, 0.45);
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
 
-.card:hover {
+.card:hover,
+.card:focus-visible {
   background: rgba(84, 61, 51, 0.92);
+  border-color: rgba(239, 217, 154, 0.88);
+  transform: translateY(-2px);
+}
+
+.card:focus-visible {
+  outline: 2px solid #efd99a;
+  outline-offset: 3px;
+}
+
+.card-label {
+  display: block;
+  margin-bottom: 0.55rem;
 }
 
 .card strong {
@@ -241,6 +296,10 @@ h3 {
 .card span {
   color: #cfc4b4;
   line-height: 1.45;
+}
+
+.dashboard-section--compact .card {
+  min-height: 145px;
 }
 
 .editorial-sheet {
@@ -303,5 +362,39 @@ h3 {
 
   .columns-2 {
     column-count: 1;
+  }
+}
+
+@media (max-width: 560px) {
+  .dashboard {
+    padding: 3.5rem 1.2rem;
+    background-attachment: scroll;
+  }
+
+  .dashboard h1 {
+    font-size: clamp(2.7rem, 16vw, 4rem);
+  }
+
+  .dashboard .lead {
+    font-size: 1.04rem;
+  }
+
+  .dashboard-section {
+    margin-top: 3.75rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .dashboard-section--compact .card {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
   }
 }
