@@ -215,6 +215,15 @@ h3 {
   color: #f1dfad;
 }
 
+.dashboard .kicker a {
+  color: #d8cfc1;
+}
+
+.dashboard .kicker a:hover,
+.dashboard .kicker a:focus-visible {
+  color: #efd99a;
+}
+
 .dashboard-section {
   margin-top: clamp(3.5rem, 8vw, 6rem);
 }
