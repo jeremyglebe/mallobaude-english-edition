@@ -7,6 +7,9 @@ The repository contains two static, browser-readable books and a campaign army r
 - `guide.html` - campaign and game guide
 - `rules.html` - rules, army lists, characters, and scenarios
 - `armies/index.html` - searchable roster cards for all five campaign armies, including outcome-dependent post-campaign entries
+- `downloads/revolt-of-mallobaude-french-game-guide-v1.8.pdf` - preserved original French campaign guide
+- `downloads/revolt-of-mallobaude-french-rules-v1.5.pdf` - preserved original French rules book
+- `downloads/WHFB-End-Times-8.5.pdf` - preserved complete End Times 8.5 fan supplement
 - `other-end-times-content.html` - a holding page for related End Times material that has not yet moved to its own site
 
 Open `index.html` locally or visit the [GitHub Pages site](https://jeremyglebe.com/site.whfb8.mallobaude-english-edition/).
