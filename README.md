@@ -9,7 +9,7 @@ The repository contains two static, browser-readable books and a campaign army r
 - `armies/index.html` - searchable roster cards for all five campaign armies, including outcome-dependent post-campaign entries
 - `other-end-times-content.html` - a holding page for related End Times material that has not yet moved to its own site
 
-Open `index.html` locally or visit the [GitHub Pages site](https://jeremyglebe.com/mallobaude-english-edition/).
+Open `index.html` locally or visit the [GitHub Pages site](https://jeremyglebe.com/site.whfb8.mallobaude-english-edition/).
 
 The separate [Lore of Undeath Summons Helper](https://jeremyglebe.com/site.whfb8.undeath-summons-helper/) lives in its own repository. It is linked from the holding page alongside the local End Times 8.5 PDF and spells reference.
 
