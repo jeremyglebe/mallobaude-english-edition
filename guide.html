@@ -257,11 +257,22 @@
         </div>
       </div>
 
-      <svg class="campaign-map" viewBox="0 0 720 500" role="img" aria-label="Branching sequence of campaign stages">
+      <svg class="campaign-map" viewBox="0 0 720 500" role="img" aria-labelledby="campaign-map-title campaign-map-description">
+        <title id="campaign-map-title">Branching sequence of campaign stages</title>
+        <desc id="campaign-map-description">Blue arrows show the shorter campaign route. Black arrows show the complete campaign route.</desc>
         <defs>
           <marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="3.5" markerHeight="3.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#171717"/></marker>
           <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="3.5" markerHeight="3.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#497fb7"/></marker>
         </defs>
+
+        <g class="campaign-map-legend" aria-label="Route legend">
+          <rect x="505" y="4" width="210" height="64" rx="5"/>
+          <text class="legend-title" x="518" y="19">ROUTE LEGEND</text>
+          <path class="path-blue legend-route" d="M520 35 H550"/>
+          <text class="legend-label" x="562" y="39">Shorter campaign route</text>
+          <path class="path-dark legend-route" d="M520 53 H550"/>
+          <text class="legend-label" x="562" y="57">Complete campaign route</text>
+        </g>
 
         <path class="path-dark" d="M150 58 V84"/>
         <path class="path-blue" d="M150 116 V142"/>

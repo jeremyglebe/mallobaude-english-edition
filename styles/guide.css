@@ -249,6 +249,33 @@
   marker-end: url("#arrow-blue");
 }
 
+.campaign-map-legend rect {
+  fill: #f6f2e8;
+  stroke: #8d7b65;
+  stroke-width: 1.5;
+}
+
+.campaign-map .legend-title,
+.campaign-map .legend-label {
+  fill: #302a25;
+  font-family: Arial, sans-serif;
+  text-anchor: start;
+}
+
+.campaign-map .legend-title {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.campaign-map .legend-label {
+  font-size: 10.5px;
+}
+
+.campaign-map .legend-route {
+  stroke-width: 3;
+}
+
 .campaign-note {
   margin-top: 2mm;
   padding: 3mm;
