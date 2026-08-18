@@ -342,6 +342,235 @@ h3 {
   border-left-color: var(--wine);
 }
 
+.campaign-source-page {
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    linear-gradient(rgba(34, 29, 25, 0.9), rgba(34, 29, 25, 0.97)),
+    url("../assets/guide/paper-texture.jpg") center / 760px auto fixed;
+}
+
+.campaign-overview-shell {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 2rem auto 4rem;
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.38);
+}
+
+.campaign-overview-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2.5rem;
+  align-items: center;
+  min-height: 330px;
+  padding: clamp(2rem, 6vw, 4.5rem);
+  overflow: hidden;
+  color: #f6efe2;
+  background:
+    radial-gradient(circle at 82% 30%, rgba(184, 154, 85, 0.2), transparent 28%),
+    linear-gradient(135deg, #1d1714 0%, #3a1819 68%, #641a1d 100%);
+  border-bottom: 5px solid var(--gold);
+}
+
+.campaign-overview-hero .section-kicker {
+  margin-bottom: 1rem;
+}
+
+.campaign-overview-hero h1 {
+  max-width: 750px;
+  font-size: clamp(3rem, 8vw, 6.3rem);
+  font-variant: small-caps;
+  letter-spacing: 0.01em;
+  line-height: 0.82;
+  text-wrap: balance;
+}
+
+.campaign-overview-hero img {
+  width: clamp(110px, 14vw, 150px);
+  aspect-ratio: 129 / 162;
+  object-fit: cover;
+  border: 2px solid rgba(236, 211, 145, 0.8);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.38);
+}
+
+.campaign-overview-date {
+  margin: 1.2rem 0 0;
+  color: #efd99a;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.campaign-overview-byline {
+  margin: 0.35rem 0 0;
+  color: #cfc4b4;
+  font-size: 0.92rem;
+}
+
+.campaign-overview-article {
+  padding: clamp(1.5rem, 5vw, 4.5rem);
+  background-color: var(--paper);
+  background-image: url("../assets/guide/paper-texture.jpg");
+  background-size: 760px auto;
+}
+
+.source-credit {
+  margin-bottom: clamp(2.5rem, 6vw, 4.5rem);
+  padding: 1rem 1.15rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  background: rgba(255, 250, 240, 0.82);
+  border-left: 4px solid var(--gold);
+}
+
+.campaign-overview-copy {
+  max-width: 790px;
+}
+
+.campaign-overview-copy h2,
+.campaign-section-heading h2 {
+  color: #3d1718;
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  line-height: 1.1;
+}
+
+.campaign-overview-copy h2:not(:first-of-type) {
+  margin-top: 2.5rem;
+}
+
+.campaign-overview-copy p,
+.campaign-section-heading > p:last-child {
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.campaign-overview-copy p {
+  margin: 1rem 0 0;
+}
+
+.campaign-volumes,
+.campaign-chronology {
+  margin-top: clamp(4rem, 9vw, 7rem);
+}
+
+.campaign-section-heading {
+  max-width: 790px;
+}
+
+.campaign-section-heading > p:last-child {
+  margin: 0.85rem 0 0;
+  color: #51483f;
+}
+
+.volume-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.volume-link {
+  display: flex;
+  flex-direction: column;
+  min-height: 175px;
+  padding: 1.4rem;
+  color: #f5eee2;
+  text-decoration: none;
+  background: #302924;
+  border-top: 4px solid var(--gold);
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.volume-link:hover,
+.volume-link:focus-visible {
+  background: #4b2827;
+  transform: translateY(-2px);
+}
+
+.volume-link:focus-visible {
+  outline: 2px solid var(--wine);
+  outline-offset: 3px;
+}
+
+.volume-link small {
+  color: #d8bd78;
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.volume-link strong {
+  margin-top: 0.55rem;
+  color: #efd99a;
+  font-size: 1.45rem;
+}
+
+.volume-link span {
+  margin-top: 0.65rem;
+  color: #d1c7b8;
+  line-height: 1.5;
+}
+
+.chronology-table-wrap {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+  border: 1px solid #bdb09e;
+  box-shadow: 0 4px 12px rgba(62, 48, 38, 0.08);
+}
+
+.chronology-scroll-hint {
+  display: none;
+}
+
+.campaign-chronology table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  background: rgba(255, 252, 245, 0.88);
+}
+
+.campaign-chronology th,
+.campaign-chronology td {
+  padding: 1rem;
+  vertical-align: top;
+  border-bottom: 1px solid #d3c8b8;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.campaign-chronology th {
+  color: #fff8e9;
+  background: #3d1718;
+  font-family: Arial, sans-serif;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.campaign-chronology th:first-child,
+.campaign-chronology th:nth-child(2),
+.campaign-chronology td:first-child,
+.campaign-chronology td:nth-child(2) {
+  width: 155px;
+}
+
+.campaign-chronology td:first-child,
+.campaign-chronology td:nth-child(2) {
+  color: #5f181b;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.campaign-chronology tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.campaign-chronology tbody tr:nth-child(even) {
+  background: rgba(232, 223, 206, 0.44);
+}
+
 @media (max-width: 900px) {
   .book {
     display: block;
@@ -363,9 +592,28 @@ h3 {
   .columns-2 {
     column-count: 1;
   }
+
+  .campaign-overview-shell {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media (max-width: 560px) {
+  .campaign-source-page .site-bar {
+    gap: 0.5rem;
+    padding: 0.65rem 0.6rem;
+    font-size: 0.76rem;
+  }
+
+  .campaign-source-page .site-bar a {
+    white-space: nowrap;
+  }
+
+  .campaign-source-page .site-bar .status {
+    display: none;
+  }
+
   .dashboard {
     padding: 3.5rem 1.2rem;
     background-attachment: scroll;
@@ -391,10 +639,50 @@ h3 {
   .dashboard-section--compact .card {
     min-height: 0;
   }
+
+  .campaign-overview-hero {
+    grid-template-columns: minmax(0, 1fr) 64px;
+    gap: 1rem;
+    min-height: 270px;
+    padding: 2rem 1.25rem;
+  }
+
+  .campaign-overview-hero h1 {
+    font-size: clamp(2.6rem, 13vw, 3.6rem);
+  }
+
+  .campaign-overview-hero img {
+    width: 64px;
+  }
+
+  .campaign-overview-article {
+    padding: 1.5rem 1.2rem 3.5rem;
+  }
+
+  .volume-links {
+    grid-template-columns: 1fr;
+  }
+
+  .chronology-scroll-hint {
+    display: block;
+    margin: 1.25rem 0 0.5rem;
+    color: var(--wine);
+    font-family: Arial, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .chronology-table-wrap {
+    margin-top: 0.5rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .card {
+    transition: none;
+  }
+
+  .volume-link {
     transition: none;
   }
 }
