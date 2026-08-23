@@ -30,6 +30,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         "settled": [
           "Moonclaw is compulsory and must be the General; he remains Cavalry on Umbralok. Mallobaude, Kairos, and Ku'gath are likewise the required Generals of their forces in this variant.",
           "Every eligible unit is named individually rather than admitted by a catch-all rule.",
+          "Identity-heavy borrowed units use Laughing Masses aliases; each card names the archived WAP profile that supplies its balance chassis.",
           "Every unit whose troop type is Infantry gains Skirmishers; Cavalry and all other troop types do not.",
           "Every unit must use the army's enhanced Ambushers rule, including seized war machines; Moonclaw arrives automatically in turn 2 and all other units arrive no later than turn 4.",
           "The Masses can win only by finishing with strictly more ordinary Victory Points than every rival army.",
@@ -38,8 +39,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         "open": [
           "The fourth army's points allowance relative to the two full Daemon armies and Mallobaude's half-sized force.",
           "Whether Marks of Chaos should be extended to units that do not already have a printed Mark option, made compulsory, or replaced by a Morrslieb-specific mutation rule.",
-          "Whether 50 points and the current equipment allowance are right for the Anarchist Jester.",
-          "Whether Wolf-Kin and Children of Ulric are too bound to Ulrican identity to remain as provisional imports."
+          "Whether 50 points and the current equipment allowance are right for the Anarchist Jester."
         ]
       },
       "rules": [
@@ -77,7 +77,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         },
         {
           "name": "Borrowed Bodies",
-          "detail": "Except for the Anarchist Jester, this army creates no new unit profiles. Each choice uses the points, unit size, equipment, options, and special rules printed in its named archived WAP source, except where this page expressly changes its category or grants an army-wide rule. Forsaken are Special rather than Core in this army. A timing reference to the source army's turn, such as 'the Beastmen turn' in Chaos Mutations, means the Laughing Masses' turn here."
+          "detail": "Except for the Anarchist Jester, this army creates no new stat lines. A Laughing Masses alias uses the points, profiles, unit size, equipment, options, and special rules of the archived WAP unit named at the top of its card; that source is a balance chassis, not the unit's identity in the story. Warped Ones use Forsaken but are Special rather than Core here. A timing reference to the source army's turn, such as 'the Beastmen turn' in Chaos Mutations, means the Laughing Masses' turn here."
         }
       ],
       "categories": [
@@ -124,23 +124,20 @@ window.CAMPAIGN_ARMY_VARIANTS = {
               "note": "Yeomen remain Cavalry and do not gain Skirmishers."
             },
             {
-              "id": "wap-grail-pilgrims"
-            },
-            {
               "id": "wap-forsaken",
-              "note": "Provisional cross-book import. Forsaken are moved from Core in their source book to Special here."
+              "note": "Uses the Forsaken profile and options from Ravening Hordes — Warriors of Chaos; categorized as Special in this army."
             },
             {
               "id": "wap-flayerkin",
-              "note": "Provisional cross-book import."
+              "note": "Uses the Flayerkin profile and options from Ravening Hordes — Warriors of Chaos."
             },
             {
               "id": "wap-flagellants",
-              "note": "Provisional cross-book import."
+              "note": "Uses the Flagellants profile and options from Ravening Hordes — The Empire."
             },
             {
               "id": "wap-wolf-kin",
-              "note": "Provisional cross-book import; its Ulrican identity remains an open design question."
+              "note": "Uses the Wolf-Kin profile and options from Warhammer — Cult of Ulric."
             }
           ]
         },
@@ -161,7 +158,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
             },
             {
               "id": "wap-children-of-ulric",
-              "note": "Provisional cross-book import; mechanically apt, but its Ulrican identity remains an open design question."
+              "note": "Uses the Children of Ulric profile and options from Warhammer — Cult of Ulric."
             }
           ]
         }
@@ -438,43 +435,14 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "status": "referenced",
       "statusLabel": "WAP army-book reference"
     },
-    "wap-grail-pilgrims": {
-      "name": "Grail Pilgrims",
-      "points": "8 points per model",
-      "unitSize": "10+",
-      "troopType": "Infantry",
-      "profiles": [
-        {
-          "name": "Grail Reliquae",
-          "stats": { "M": "4", "WS": "3", "BS": "3", "S": "3", "T": "3", "W": "6", "I": "3", "A": "4", "Ld": "8" }
-        },
-        {
-          "name": "Grail Pilgrim",
-          "stats": { "M": "4", "WS": "3", "BS": "3", "S": "3", "T": "3", "W": "1", "I": "3", "A": "1", "Ld": "8" }
-        },
-        {
-          "name": "Battle Pilgrim",
-          "stats": { "M": "4", "WS": "3", "BS": "3", "S": "3", "T": "3", "W": "1", "I": "3", "A": "2", "Ld": "8" }
-        }
-      ],
-      "equipment": ["Hand weapon", "Light armour", "Shield"],
-      "specialRules": ["Hatred", "Grail Reliquae", "The Peasant's Duty", "Stubborn", "Skirmishers"],
-      "options": [
-        { "name": "Upgrade one Grail Pilgrim to a Battle Pilgrim", "cost": "+10 points" },
-        { "name": "Upgrade six Grail Pilgrims to a Grail Reliquae", "cost": "+30 points" }
-      ],
-      "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 113 and 155",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
-    },
     "wap-forsaken": {
-      "name": "Forsaken",
+      "name": "Warped Ones",
       "points": "15 points per model",
       "unitSize": "5+",
       "troopType": "Infantry",
       "profiles": [
         {
-          "name": "Forsaken",
+          "name": "Warped One",
           "stats": { "M": "6", "WS": "4", "BS": "0", "S": "4", "T": "4", "W": "1", "I": "4", "A": "D3", "Ld": "8" }
         }
       ],
@@ -486,81 +454,81 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Mark of Slaanesh (Swiftstride)", "cost": "+1 point per model" },
         { "name": "Mark of Tzeentch (6+ Ward save)", "cost": "+1 point per model" }
       ],
-      "notes": ["Core in Warriors of Chaos, but deliberately moved to Special in this army so that mandatory Core remains Mousillon's peasants and fresh Mutants.", "A Forsaken unit may select at most one Mark."],
+      "notes": ["Core in Warriors of Chaos, but deliberately moved to Special in this army so that mandatory Core remains Mousillon's peasants and fresh Mutants.", "A unit of Warped Ones may select at most one Mark."],
       "source": "Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, pp. 4 and 21",
       "status": "referenced",
-      "statusLabel": "Provisional WAP import"
+      "statusLabel": "WAP profile basis"
     },
     "wap-flayerkin": {
-      "name": "Flayerkin",
+      "name": "Ruin-Crawlers",
       "points": "9 points per model",
       "unitSize": "5+",
       "troopType": "Infantry",
       "profiles": [
         {
-          "name": "Flayerkin",
+          "name": "Ruin-Crawler",
           "stats": { "M": "4", "WS": "4", "BS": "3", "S": "4", "T": "3", "W": "1", "I": "3", "A": "1", "Ld": "7" }
         },
         {
-          "name": "Wallcreeper",
+          "name": "Ruin-Stalker",
           "stats": { "M": "4", "WS": "4", "BS": "3", "S": "4", "T": "3", "W": "1", "I": "3", "A": "2", "Ld": "7" }
         }
       ],
       "equipment": ["Two hand weapons"],
       "specialRules": ["Killing Blow", "Scouts", "Skirmishers", "Obstacle Strider"],
       "options": [
-        { "name": "Upgrade one Flayerkin to a Wallcreeper", "cost": "+10 points" }
+        { "name": "Upgrade one Ruin-Crawler to a Ruin-Stalker", "cost": "+10 points" }
       ],
       "notes": ["From Every Ruin requires this unit to begin in reserve, so Scouts does not permit it to deploy before the battle."],
       "source": "Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, p. 23",
       "status": "referenced",
-      "statusLabel": "Provisional WAP import"
+      "statusLabel": "WAP profile basis"
     },
     "wap-flagellants": {
-      "name": "Flagellants",
+      "name": "Raving Mob",
       "points": "9 points per model",
       "unitSize": "10+",
       "troopType": "Infantry",
       "profiles": [
         {
-          "name": "Flagellant",
+          "name": "Raver",
           "stats": { "M": "4", "WS": "2", "BS": "2", "S": "3", "T": "3", "W": "1", "I": "3", "A": "1", "Ld": "6" }
         },
         {
-          "name": "Prophet of Doom",
+          "name": "Rabble-Rouser",
           "stats": { "M": "4", "WS": "2", "BS": "2", "S": "3", "T": "3", "W": "1", "I": "3", "A": "2", "Ld": "6" }
         }
       ],
       "equipment": ["Flail"],
       "specialRules": ["Frenzy", "Unbreakable", "The End is Nigh!", "Skirmishers"],
       "options": [
-        { "name": "Upgrade one Flagellant to a Prophet of Doom", "cost": "+10 points" },
+        { "name": "Upgrade one Raver to a Rabble-Rouser", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
         { "name": "Standard bearer", "cost": "+10 points" }
       ],
       "source": "Ravening Hordes — The Empire, Discord Archive 8th Edition, pp. 3 and 16",
       "status": "referenced",
-      "statusLabel": "Provisional WAP import"
+      "statusLabel": "WAP profile basis"
     },
     "wap-wolf-kin": {
-      "name": "Wolf-Kin",
+      "name": "Wolf-Mutants",
       "points": "9 points per model",
       "unitSize": "10+",
       "troopType": "Infantry",
       "profiles": [
         {
-          "name": "Wolf-Kin",
+          "name": "Wolf-Mutant",
           "stats": { "M": "4", "WS": "4", "BS": "3", "S": "4", "T": "3", "W": "1", "I": "3", "A": "1", "Ld": "8" }
         },
         {
-          "name": "Wolf Brother",
+          "name": "Pack Alpha",
           "stats": { "M": "4", "WS": "4", "BS": "3", "S": "4", "T": "3", "W": "1", "I": "3", "A": "2", "Ld": "8" }
         }
       ],
       "equipment": ["Hand weapon"],
       "specialRules": ["Crush the Weak", "Hatred", "Skirmishers", "Stubborn"],
       "options": [
-        { "name": "Upgrade one Wolf-Kin to a Wolf Brother", "cost": "+10 points" },
+        { "name": "Upgrade one Wolf-Mutant to a Pack Alpha", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
         { "name": "Standard bearer", "cost": "+10 points" },
         { "name": "Great weapons", "cost": "+2 points per model" },
@@ -571,7 +539,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "notes": ["Choose at most one of great weapons or additional hand weapons."],
       "source": "Warhammer — Cult of Ulric, Discord Archive 8th Edition, pp. 40 and 57",
       "status": "referenced",
-      "statusLabel": "Provisional WAP import"
+      "statusLabel": "WAP profile basis"
     },
     "wap-ballista": {
       "name": "Ballista",
@@ -677,29 +645,29 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "statusLabel": "WAP army-book reference"
     },
     "wap-children-of-ulric": {
-      "name": "Children of Ulric",
+      "name": "Werewolves",
       "points": "15 points per model",
       "unitSize": "3+",
       "troopType": "War Beast",
       "profiles": [
         {
-          "name": "Child of Ulric",
+          "name": "Werewolf",
           "stats": { "M": "9", "WS": "4", "BS": "0", "S": "4", "T": "4", "W": "1", "I": "5", "A": "2", "Ld": "8" }
         },
         {
-          "name": "Pack Leader",
+          "name": "Werewolf Alpha",
           "stats": { "M": "9", "WS": "4", "BS": "0", "S": "4", "T": "4", "W": "1", "I": "5", "A": "3", "Ld": "8" }
         }
       ],
       "equipment": ["Claws"],
       "specialRules": ["Crush the Weak", "Fear", "Frenzy", "Regeneration (5+)"],
       "options": [
-        { "name": "Upgrade one Child of Ulric to a Pack Leader", "cost": "+10 points" }
+        { "name": "Upgrade one Werewolf to a Werewolf Alpha", "cost": "+10 points" }
       ],
       "notes": ["A War Beast unit: it must use From Every Ruin but does not gain Skirmishers."],
       "source": "Warhammer — Cult of Ulric, Discord Archive 8th Edition, pp. 41 and 58",
       "status": "referenced",
-      "statusLabel": "Provisional WAP import"
+      "statusLabel": "WAP profile basis"
     }
   }
 };

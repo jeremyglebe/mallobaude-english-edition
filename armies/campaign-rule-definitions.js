@@ -160,10 +160,6 @@ window.CAMPAIGN_RULE_DEFINITIONS = {
       html: "<p>The model automatically passes Dangerous Terrain tests caused by obstacles.</p>",
       sourceReference: "Warhammer Rulebook; printed for Flayerkin in Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, p. 23"
     },
-    "The End is Nigh!": {
-      html: "<p>At the start of a Close Combat phase in which the unit is in base contact with an enemy, it must sacrifice D3 Wounds of models; these martyrs do not count towards combat resolution. If at least one model is removed, the survivors gain an effect until the end of the phase: one martyr re-rolls failed To Hit rolls; two also re-roll failed To Wound rolls; three also grants +1 Toughness. Friendly non-Flagellant units within 6 inches suffer −1 Leadership.</p>",
-      sourceReference: "Ravening Hordes — The Empire, Discord Archive 8th Edition, p. 3"
-    },
     "Crush the Weak": {
       html: "<p>The model has Hatred against enemies with Leadership 6 or lower. The rule does not affect its mount.</p>",
       sourceReference: "Warhammer — Cult of Ulric, Discord Archive 8th Edition, p. 32"
@@ -210,20 +206,16 @@ window.CAMPAIGN_RULE_DEFINITIONS = {
         sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
       }
     },
-    "wap-grail-pilgrims": {
-      "The Peasant's Duty": {
-        html: "<p>Models with this rule may use the Leadership of any non-fleeing Knight within 6 inches. Unit standards in the unit grant no additional Victory Points.</p>",
-        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
-      },
-      "Grail Reliquae": {
-        html: "<p>The Reliquae is placed in the centre of the front rank and counts as both a standard bearer and musician. It does not begin taking Wounds until every Battle Pilgrim in the unit has been removed. While the Reliquae is present, the unit has the archived Blessing of the Lady: a 6+ Ward save against close-combat attacks and a 5+ Ward save against missile attacks, including magic missiles. Once lost, the Blessing cannot be regained. The unit loses it if it flees; also apply the archived refused-challenge condition if a Knightly character or champion able to accept a challenge is involved.</p>",
-        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 87 and 113"
-      }
-    },
     "wap-flayerkin": {
       "Scouts": {
         html: "<p>The unit has the Scouts special rule and is deployed under the normal Scouts rules.</p>",
         sourceReference: "Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, p. 23; Warhammer Rulebook, p. 79"
+      }
+    },
+    "wap-flagellants": {
+      "The End is Nigh!": {
+        html: "<p>At the start of a Close Combat phase in which the unit is in base contact with an enemy, it must sacrifice D3 Wounds of models; these martyrs do not count towards combat resolution. If at least one model is removed, the survivors gain an effect until the end of the phase: one martyr re-rolls failed To Hit rolls; two also re-roll failed To Wound rolls; three also grants +1 Toughness. Friendly units other than Raving Mobs within 6 inches suffer −1 Leadership.</p>",
+        sourceReference: "Ravening Hordes — The Empire, Discord Archive 8th Edition, p. 3"
       }
     },
     "wap-ballista": {

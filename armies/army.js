@@ -141,11 +141,19 @@
     const cardId = `${idPrefix || "unit"}-${reference.id}`;
     const notes = [...(entry.notes || [])];
     if (reference.note) notes.unshift(reference.note);
+    const searchText = [
+      entry.name,
+      ...(entry.profiles || []).map((profile) => profile.name),
+      ...(entry.specialRules || []),
+      ...(entry.equipment || []),
+      entry.source,
+      ...notes
+    ].filter(Boolean).join(" ").toLowerCase();
 
     const statusLabel = entry.statusLabel || (entry.status === "referenced" ? "Army-book reference" : "Campaign rule");
 
     return `
-      <details class="unit-card" id="${escapeHtml(cardId)}" data-search="${escapeHtml(`${entry.name} ${(entry.specialRules || []).join(" ")} ${(entry.equipment || []).join(" ")}`.toLowerCase())}">
+      <details class="unit-card" id="${escapeHtml(cardId)}" data-search="${escapeHtml(searchText)}">
         <summary>
           <span class="unit-name">${escapeHtml(entry.name)}</span>
           <span class="unit-price">${escapeHtml(entry.points || "Points not specified")}</span>
