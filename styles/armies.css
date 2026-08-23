@@ -577,6 +577,17 @@ html {
   white-space: nowrap;
 }
 
+.option-label {
+  display: grid;
+  gap: 0.12rem;
+}
+
+.option-description {
+  color: #746451;
+  font-size: 0.74rem;
+  font-style: italic;
+}
+
 .unit-source {
   margin: 0.85rem 0 0;
   padding-top: 0.55rem;

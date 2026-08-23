@@ -99,9 +99,161 @@ window.CAMPAIGN_RULE_DEFINITIONS = {
       html: "<p>The model is a Level 2 Wizard that uses the Lore of Shadow.</p>",
       sourceReference: "Warhammer Armies: Wood Elves",
       sourceUrl: "https://8th.whfb.app/army/wood-elves"
+    },
+    "Primal Fury": {
+      html: "<p>At the beginning of each round of close combat, each engaged unit with this rule takes a Leadership test. If it passes, the unit has Hatred until the end of that Close Combat phase and may re-roll failed To Hit rolls even after the first round.</p>",
+      sourceReference: "Warhammer — Beastmen, Discord Archive 8th Edition, p. 60"
+    },
+    "Ward save (5+)": {
+      html: "<p>The model has a 5+ Ward save.</p>",
+      sourceReference: "Warhammer — Beastmen, Discord Archive 8th Edition, p. 102"
+    },
+    "Magic Resistance (2)": {
+      html: "<p>The model has Magic Resistance (2), improving its unit's Ward save against damage caused by spells by 2, or granting a 5+ Ward save against that damage if the unit has no Ward save.</p>",
+      sourceReference: "Warhammer Rulebook; value printed in Warhammer — Beastmen, Discord Archive 8th Edition, p. 102"
+    },
+    "Wave of Insanity": {
+      html: "<p>At the start of each enemy turn, every enemy unit within 12 inches of Moonclaw must take a Stupidity test.</p>",
+      sourceReference: "Warhammer — Beastmen, Discord Archive 8th Edition, p. 102"
+    },
+    "Unholy Zenith": {
+      html: "<p>At the beginning of the game, secretly roll a D3 and record the result. During that numbered turn, Moonclaw adds +2 to casting rolls and may make D3 shooting attacks as a stone thrower even if he moved or marched. Each misfire instead inflicts one Wound on Moonclaw with no save of any kind.</p>",
+      sourceReference: "Warhammer — Beastmen, Discord Archive 8th Edition, p. 102"
+    },
+    "Chaos Mutations": {
+      html: "<p>At the start of each Beastmen turn, roll a D6 for the unit. The indicated mutation lasts for that turn:</p><ol><li>Animalistic Legs: +1 Movement.</li><li>Hulking: +1 Strength.</li><li>Grossly Fat: +1 Toughness.</li><li>Scales: Scaly Skin (6+).</li><li>Tentacle-like Arms: +1 Attack.</li><li>Pincer Hand: Armour Piercing.</li></ol>",
+      sourceReference: "Warhammer — Beastmen, Discord Archive 8th Edition, p. 67"
+    },
+    "Acrobatic": {
+      html: "<p>The Anarchist Jester has a 2+ Ward save against all non-magical attacks.</p>",
+      sourceReference: "Adapted without renaming from Jules the Jester; Warhammer — Bretonnia, Discord Archive 8th Edition, p. 134"
+    },
+    "I Will Taunt You Viciously a Second Time": {
+      html: "<p>All enemy models within 6 inches of an Anarchist Jester suffer a −1 penalty to Hit rolls in close combat. Multiple instances of this aura do not stack in this playtest list.</p>",
+      sourceReference: "Adapted without renaming from Jules the Jester; Warhammer — Bretonnia, Discord Archive 8th Edition, p. 134"
+    },
+    "Disorganized Mob": {
+      html: "<p>Peasant Levies roll 3D6 for Leadership tests and use the two highest dice.</p>",
+      sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 109"
+    },
+    "Truffle Madness": {
+      html: "<p>Truffle Hounds are recorded with their parent peasant unit rather than deployed. If that unit is destroyed or flees the battlefield before they are revealed, the Hounds are removed as casualties. Reveal them when an enemy comes within 8 inches of their parent unit; each Hound must charge the closest enemy. A Hound that reaches base contact causes D3+1 Strength 3 hits and is then removed. A failed charger repeats the attempt against the closest enemy in its next turn. The enemy receives Victory Points for the Hounds only if their parent unit is destroyed.</p>",
+      sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 105"
+    },
+    "Random Movement (3D6)": {
+      html: "<p>The model moves 3D6 inches under the Random Movement rules rather than making ordinary moves or declaring charges.</p>",
+      sourceReference: "Warhammer Rulebook; value printed in Warhammer — Beastmen, Discord Archive 8th Edition, p. 118"
+    },
+    "Random Attacks (D6+1)": {
+      html: "<p>Roll D6+1 whenever the model fights to determine its Attacks characteristic for that round.</p>",
+      sourceReference: "Warhammer Rulebook; value printed in Warhammer — Beastmen, Discord Archive 8th Edition, p. 118"
+    },
+    "Random Attacks (D3)": {
+      html: "<p>Roll a D3 whenever the model fights to determine its Attacks characteristic for that round.</p>",
+      sourceReference: "Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, p. 21"
+    },
+    "Freakish Mutations": {
+      html: "<p>At the start of each Close Combat phase in which the unit is in base contact with an enemy, roll a D6. Until the end of the phase the unit gains: 1 Always Strikes Last; 2 Armour Piercing; 3 Always Strikes First; 4 Poisoned Attacks; 5 Regeneration (5+); or 6 Killing Blow.</p>",
+      sourceReference: "Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, p. 4"
+    },
+    "Obstacle Strider": {
+      html: "<p>The model automatically passes Dangerous Terrain tests caused by obstacles.</p>",
+      sourceReference: "Warhammer Rulebook; printed for Flayerkin in Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, p. 23"
+    },
+    "The End is Nigh!": {
+      html: "<p>At the start of a Close Combat phase in which the unit is in base contact with an enemy, it must sacrifice D3 Wounds of models; these martyrs do not count towards combat resolution. If at least one model is removed, the survivors gain an effect until the end of the phase: one martyr re-rolls failed To Hit rolls; two also re-roll failed To Wound rolls; three also grants +1 Toughness. Friendly non-Flagellant units within 6 inches suffer −1 Leadership.</p>",
+      sourceReference: "Ravening Hordes — The Empire, Discord Archive 8th Edition, p. 3"
+    },
+    "Crush the Weak": {
+      html: "<p>The model has Hatred against enemies with Leadership 6 or lower. The rule does not affect its mount.</p>",
+      sourceReference: "Warhammer — Cult of Ulric, Discord Archive 8th Edition, p. 32"
+    },
+    "Bombard": {
+      html: "<p>The Bombard has Range 48 inches, Strength 9, and Multiple Wounds (D6). It can never move or pivot. When it misfires, roll on the Black Powder Misfire chart and subtract 1 from the result.</p>",
+      sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 120"
     }
   },
   entryOverrides: {
+    "anarchist-jester": {
+      "The Peasant's Duty": {
+        html: "<p>The model may use the Leadership of any non-fleeing Knight within 6 inches. Its unit standard, if any, grants no additional Victory Points.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
+      }
+    },
+    "wap-peasant-levy": {
+      "The Peasant's Duty": {
+        html: "<p>Models with this rule may use the Leadership of any non-fleeing Knight within 6 inches. Unit standards in the unit grant no additional Victory Points.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
+      }
+    },
+    "wap-men-at-arms": {
+      "The Peasant's Duty": {
+        html: "<p>Models with this rule may use the Leadership of any non-fleeing Knight within 6 inches. Unit standards in the unit grant no additional Victory Points.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
+      }
+    },
+    "wap-peasant-bowmen": {
+      "The Peasant's Duty": {
+        html: "<p>Models with this rule may use the Leadership of any non-fleeing Knight within 6 inches. Unit standards in the unit grant no additional Victory Points.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
+      }
+    },
+    "wap-squires": {
+      "The Peasant's Duty": {
+        html: "<p>Models with this rule may use the Leadership of any non-fleeing Knight within 6 inches. Unit standards in the unit grant no additional Victory Points.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
+      }
+    },
+    "wap-yeomen": {
+      "The Peasant's Duty": {
+        html: "<p>Models with this rule may use the Leadership of any non-fleeing Knight within 6 inches. Unit standards in the unit grant no additional Victory Points.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
+      }
+    },
+    "wap-grail-pilgrims": {
+      "The Peasant's Duty": {
+        html: "<p>Models with this rule may use the Leadership of any non-fleeing Knight within 6 inches. Unit standards in the unit grant no additional Victory Points.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
+      },
+      "Grail Reliquae": {
+        html: "<p>The Reliquae is placed in the centre of the front rank and counts as both a standard bearer and musician. It does not begin taking Wounds until every Battle Pilgrim in the unit has been removed. While the Reliquae is present, the unit has the archived Blessing of the Lady: a 6+ Ward save against close-combat attacks and a 5+ Ward save against missile attacks, including magic missiles. Once lost, the Blessing cannot be regained. The unit loses it if it flees; also apply the archived refused-challenge condition if a Knightly character or champion able to accept a challenge is involved.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 87 and 113"
+      }
+    },
+    "wap-flayerkin": {
+      "Scouts": {
+        html: "<p>The unit has the Scouts special rule and is deployed under the normal Scouts rules.</p>",
+        sourceReference: "Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, p. 23; Warhammer Rulebook, p. 79"
+      }
+    },
+    "wap-ballista": {
+      "The Peasant's Duty": {
+        html: "<p>Models with this rule may use the Leadership of any non-fleeing Knight within 6 inches. Unit standards in the unit grant no additional Victory Points.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
+      }
+    },
+    "wap-mangonel": {
+      "The Peasant's Duty": {
+        html: "<p>Models with this rule may use the Leadership of any non-fleeing Knight within 6 inches. Unit standards in the unit grant no additional Victory Points.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
+      }
+    },
+    "wap-field-trebuchet": {
+      "The Peasant's Duty": {
+        html: "<p>Models with this rule may use the Leadership of any non-fleeing Knight within 6 inches. Unit standards in the unit grant no additional Victory Points.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
+      },
+      "Field Trebuchet": {
+        html: "<p>The WAP Field Trebuchet has Range 12–60 inches, Strength 4(10), and Multiple Wounds (D6). It can never move during the game, including pivoting on the spot.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 119"
+      }
+    },
+    "wap-bombard": {
+      "The Peasant's Duty": {
+        html: "<p>Models with this rule may use the Leadership of any non-fleeing Knight within 6 inches. Unit standards in the unit grant no additional Victory Points.</p>",
+        sourceReference: "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 87"
+      }
+    },
     "chevaliers-moires": {
       "Knight of the Haven": {
         html: "<p>Chevaliers-Moires have Ethereal, Fear, Unbreakable, and Unstable.</p>",

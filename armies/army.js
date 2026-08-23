@@ -1,7 +1,15 @@
 (function () {
   "use strict";
 
-  const data = window.CAMPAIGN_ARMY_DATA;
+  const baseData = window.CAMPAIGN_ARMY_DATA;
+  const variantData = window.CAMPAIGN_ARMY_VARIANTS;
+  const data = variantData && baseData
+    ? {
+        ...baseData,
+        armies: { ...baseData.armies, ...(variantData.armies || {}) },
+        entries: { ...baseData.entries, ...(variantData.entries || {}) }
+      }
+    : baseData;
   const indexedRules = (window.WHFB_RULE_DEFINITIONS || {}).definitions || {};
   const campaignRuleData = window.CAMPAIGN_RULE_DEFINITIONS || {};
   const campaignRules = campaignRuleData.definitions || {};
@@ -15,7 +23,8 @@
     mousillon: "mousillon.html",
     "wildwood-host": "wildwood-host.html",
     "alliance-against-undeath": "alliance-against-undeath.html",
-    "crusade-army": "crusade-army.html"
+    "crusade-army": "crusade-army.html",
+    "morrsliebs-laughing-masses": "morrsliebs-laughing-masses.html"
   };
 
   const leaderDestinations = {
@@ -50,8 +59,9 @@
   }
 
   function renderRuleSource(definition) {
-    if (!definition || !definition.sourceUrl) return "";
+    if (!definition) return "";
     const label = definition.sourceReference || definition.sourceTitle || "Rule source";
+    if (!definition.sourceUrl) return `<p class="rule-source">${escapeHtml(label)}</p>`;
     const external = definition.sourceUrl.startsWith("http");
     return `<p class="rule-source"><a href="${escapeHtml(definition.sourceUrl)}"${external ? ' target="_blank" rel="noreferrer"' : ""}>${escapeHtml(label)}</a></p>`;
   }
@@ -117,7 +127,10 @@
     if (!options || !options.length) return '<p class="empty-field">No options transcribed.</p>';
     return options.map((option) => `
       <div class="option-row">
-        <span>${escapeHtml(option.name)}${option.group ? ` <small>(${escapeHtml(option.group)})</small>` : ""}</span>
+        <span class="option-label">
+          <span>${escapeHtml(option.name)}${option.group ? ` <small>(${escapeHtml(option.group)})</small>` : ""}</span>
+          ${option.description ? `<small class="option-description">${escapeHtml(option.description)}</small>` : ""}
+        </span>
         <span class="option-cost">${escapeHtml(option.cost || "Not specified")}</span>
       </div>`).join("");
   }
@@ -128,6 +141,8 @@
     const cardId = `${idPrefix || "unit"}-${reference.id}`;
     const notes = [...(entry.notes || [])];
     if (reference.note) notes.unshift(reference.note);
+
+    const statusLabel = entry.statusLabel || (entry.status === "referenced" ? "Army-book reference" : "Campaign rule");
 
     return `
       <details class="unit-card" id="${escapeHtml(cardId)}" data-search="${escapeHtml(`${entry.name} ${(entry.specialRules || []).join(" ")} ${(entry.equipment || []).join(" ")}`.toLowerCase())}">
@@ -140,7 +155,7 @@
           <div class="unit-meta">
             <span><strong>Unit size:</strong> ${escapeHtml(entry.unitSize || "Not specified")}</span>
             <span><strong>Troop type:</strong> ${escapeHtml(entry.troopType || "Not specified")}</span>
-            <span class="status-pill ${entry.status === "referenced" ? "referenced" : ""}">${entry.status === "referenced" ? "Army-book reference" : "Campaign rule"}</span>
+            <span class="status-pill ${entry.status === "referenced" ? "referenced" : ""}">${escapeHtml(statusLabel)}</span>
           </div>
           ${renderProfiles(entry.profiles)}
           <div class="unit-details">
@@ -185,6 +200,22 @@
       </section>`;
   }
 
+  function renderDesignNotes(notes) {
+    if (!notes) return "";
+    const columns = [
+      ...(notes.settled && notes.settled.length ? [{ title: "Settled in this draft", items: notes.settled }] : []),
+      ...(notes.open && notes.open.length ? [{ title: "Still open for playtest", items: notes.open }] : [])
+    ];
+    return `
+      <section class="outcome-panel" aria-labelledby="design-notes-title">
+        <h2 id="design-notes-title">${escapeHtml(notes.title || "Playtest Draft")}</h2>
+        ${notes.intro ? `<p>${escapeHtml(notes.intro)}</p>` : ""}
+        <div class="army-rules-grid">
+          ${columns.map((column) => `<div class="army-rule-item"><strong>${escapeHtml(column.title)}</strong>${renderList(column.items, "Nothing recorded.")}</div>`).join("")}
+        </div>
+      </section>`;
+  }
+
   function renderOutcomeAdditions(additions) {
     if (!additions || !additions.length) return "";
     return `
@@ -213,13 +244,13 @@
     app.innerHTML = `
       ${renderNav(army.name)}
       <header class="army-header">
-        <p class="eyebrow">The Revolt of Mallobaude · Campaign Army Reference</p>
+        <p class="eyebrow">${escapeHtml(army.eyebrow || "The Revolt of Mallobaude · Campaign Army Reference")}</p>
         <h1>${escapeHtml(army.name)}</h1>
         <p class="subtitle">${escapeHtml(army.subtitle)}</p>
         <div class="army-toolbar">
           <div>
             <div class="source-chip-row">
-              <a class="source-chip" href="../rules.html#rules-page-${army.sourcePage}">Campaign rules, p. ${army.sourcePage}</a>
+              <a class="source-chip" href="${escapeHtml(army.sourceHref || `../rules.html#rules-page-${army.sourcePage}`)}">${escapeHtml(army.sourceLabel || `Campaign rules, p. ${army.sourcePage}`)}</a>
               ${army.books.map((book) => `<span class="source-chip">${escapeHtml(book)}</span>`).join("")}
             </div>
             <nav class="category-jump" aria-label="Army categories">${categoryLinks}</nav>
@@ -236,6 +267,7 @@
       </header>
       <main class="army-content">
         ${renderCampaignRole(army.campaignRole)}
+        ${renderDesignNotes(army.designNotes)}
         <section class="army-rules" aria-labelledby="army-rules-title">
           <h2 id="army-rules-title">Army-Specific Rules</h2>
           <p class="army-rules-intro">Open a rule for its complete campaign wording.</p>
@@ -244,7 +276,9 @@
           </div>
         </section>
         ${renderOutcomeAdditions(army.outcomeAdditions)}
-        <p class="source-note">${escapeHtml(data.sourceNote)} Full official-rule definitions are stored locally from the <a href="https://8th.whfb.app/special-rules" target="_blank" rel="noreferrer">WHFB8 Online Rules Index</a> and retain links to their individual sources. Missing fields are deliberately marked instead of inferred.</p>
+        ${army.sourceNote
+          ? `<p class="source-note">${escapeHtml(army.sourceNote)}</p>`
+          : `<p class="source-note">${escapeHtml(data.sourceNote)} Full official-rule definitions are stored locally from the <a href="https://8th.whfb.app/special-rules" target="_blank" rel="noreferrer">WHFB8 Online Rules Index</a> and retain links to their individual sources. Missing fields are deliberately marked instead of inferred.</p>`}
         ${army.categories.map((category) => `
           <section class="army-category" id="${slug(category.name)}">
             <h2 class="category-title">${escapeHtml(category.name)}</h2>
@@ -291,11 +325,11 @@
       <main class="army-hub">
         <p class="eyebrow">The Revolt of Mallobaude · Army-List Reference</p>
         <h1>Campaign Armies</h1>
-        <p class="intro">Compact, searchable army-building references for every campaign list in the supplement. Campaign rules take precedence over the referenced army books; unknown details remain visibly unfilled for later review.</p>
+        <p class="intro">Compact, searchable references for the supplement's five campaign lists and clearly labelled project-original variants. Campaign rules take precedence over referenced army books; unresolved design choices remain visible for review.</p>
         <section class="army-card-grid" aria-label="Campaign army lists">
           ${armies.map(([id, army]) => `
             <a class="army-choice-card" href="${armyFiles[id]}">
-              <span class="card-label">Rules page ${army.sourcePage}</span>
+              <span class="card-label">${escapeHtml(army.cardLabel || `Rules page ${army.sourcePage}`)}</span>
               <h2>${escapeHtml(army.name)}</h2>
               <p>${escapeHtml(army.subtitle)}</p>
               <span class="card-footer">Open army reference →</span>
