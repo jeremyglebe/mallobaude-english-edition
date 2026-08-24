@@ -253,9 +253,16 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Standard bearer", "cost": "+10 points" },
         { "name": "Throwing weapons", "cost": "+½ point per model" },
         { "name": "Slings", "cost": "+1 point per model" },
-        { "name": "Up to three Truffle Hounds", "cost": "+10 points each" }
+        { "name": "Up to three Truffle Hounds", "cost": "+10 points each" },
+        { "name": "Mark of Khorne", "cost": "+2 points per model", "description": "Frenzy. A model that already has Frenzy instead gains +1 Attack while its Frenzy lasts." },
+        { "name": "Mark of Nurgle", "cost": "+2 points per model", "description": "+1 Toughness." },
+        { "name": "Mark of Slaanesh", "cost": "+1 point per model", "description": "Immune to Psychology." },
+        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save which works in combination with other Ward saves." }
       ],
-      "notes": ["Each purchased Truffle Hound is a Warbeast equipped with fangs; its profile is shown above, but it remains attached to this parent unit until Truffle Madness reveals it."],
+      "notes": [
+        "The unit may take one of the following Marks of Chaos, using the Beastmen version of each Mark.",
+        "Each purchased Truffle Hound is a Warbeast equipped with fangs; its profile is shown above, but it remains attached to this parent unit until Truffle Madness reveals it."
+      ],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 105, 109, and 153",
       "status": "campaign",
       "statusLabel": "Laughing Masses unit"
@@ -288,9 +295,16 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Standard bearer", "cost": "+10 points" },
         { "name": "Replace halberds with spears and shields", "cost": "Free" },
         { "name": "Shields while retaining halberds", "cost": "+½ point per model" },
-        { "name": "Up to three Truffle Hounds", "cost": "+10 points each" }
+        { "name": "Up to three Truffle Hounds", "cost": "+10 points each" },
+        { "name": "Mark of Khorne", "cost": "+2 points per model", "description": "Frenzy. A model that already has Frenzy instead gains +1 Attack while its Frenzy lasts." },
+        { "name": "Mark of Nurgle", "cost": "+2 points per model", "description": "+1 Toughness." },
+        { "name": "Mark of Slaanesh", "cost": "+1 point per model", "description": "Immune to Psychology." },
+        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save which works in combination with other Ward saves." }
       ],
-      "notes": ["Each purchased Truffle Hound is a Warbeast equipped with fangs; its profile is shown above, but it remains attached to this parent unit until Truffle Madness reveals it."],
+      "notes": [
+        "The unit may take one of the following Marks of Chaos, using the Beastmen version of each Mark.",
+        "Each purchased Truffle Hound is a Warbeast equipped with fangs; its profile is shown above, but it remains attached to this parent unit until Truffle Madness reveals it."
+      ],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 105 and 153",
       "status": "campaign",
       "statusLabel": "Laughing Masses unit"
@@ -323,9 +337,14 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Standard bearer", "cost": "+10 points" },
         { "name": "Braziers (Flaming Attacks)", "cost": "+½ point per model" },
         { "name": "Light armour", "cost": "+½ point per model" },
-        { "name": "Up to three Truffle Hounds", "cost": "+10 points each" }
+        { "name": "Up to three Truffle Hounds", "cost": "+10 points each" },
+        { "name": "Mark of Khorne", "cost": "+2 points per model", "description": "Frenzy. A model that already has Frenzy instead gains +1 Attack while its Frenzy lasts." },
+        { "name": "Mark of Nurgle", "cost": "+2 points per model", "description": "+1 Toughness." },
+        { "name": "Mark of Slaanesh", "cost": "+1 point per model", "description": "Immune to Psychology." },
+        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save which works in combination with other Ward saves." }
       ],
       "notes": [
+        "The unit may take one of the following Marks of Chaos, using the Beastmen version of each Mark.",
         "Each purchased Truffle Hound is a Warbeast equipped with fangs; its profile is shown above, but it remains attached to this parent unit until Truffle Madness reveals it.",
         "Peasant Bowmen may not take Defensive Stakes."
       ],
@@ -374,8 +393,13 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "options": [
         { "name": "Upgrade one Squire to a Howling Equerry", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
-        { "name": "Standard bearer", "cost": "+10 points" }
+        { "name": "Standard bearer", "cost": "+10 points" },
+        { "name": "Mark of Khorne", "cost": "+2 points per model", "description": "Frenzy. A model that already has Frenzy instead gains +1 Attack while its Frenzy lasts." },
+        { "name": "Mark of Nurgle", "cost": "+2 points per model", "description": "+1 Toughness." },
+        { "name": "Mark of Slaanesh", "cost": "+1 point per model", "description": "Immune to Psychology." },
+        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save which works in combination with other Ward saves." }
       ],
+      "notes": ["The unit may take one of the following Marks of Chaos, using the Beastmen version of each Mark."],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 154",
       "status": "campaign",
       "statusLabel": "Laughing Masses unit"
@@ -409,8 +433,13 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Spears", "cost": "+1 point per model" },
         { "name": "Bows or crossbows", "cost": "+2 points per model" },
         { "name": "Shields", "cost": "+1 point per model" },
-        { "name": "Light armour", "cost": "+1 point per model" }
+        { "name": "Light armour", "cost": "+1 point per model" },
+        { "name": "Mark of Khorne", "cost": "+2 points per model", "description": "Frenzy. A model that already has Frenzy instead gains +1 Attack while its Frenzy lasts." },
+        { "name": "Mark of Nurgle", "cost": "+2 points per model", "description": "+1 Toughness." },
+        { "name": "Mark of Slaanesh", "cost": "+1 point per model", "description": "Immune to Psychology." },
+        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save which works in combination with other Ward saves." }
       ],
+      "notes": ["The unit may take one of the following Marks of Chaos, using the Beastmen version of each Mark."],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 155",
       "status": "campaign",
       "statusLabel": "Laughing Masses unit"
