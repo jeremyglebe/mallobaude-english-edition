@@ -21,37 +21,39 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "campaignRole": [
         {
           "title": "Daemonic Assault on Mousillon — Four-Player Variant",
-          "detail": "Use the Laughing Masses as an independent fourth army in Daemonic Assault on Mousillon. All other scenario rules remain unchanged except as stated below."
+          "detail": "Add the Laughing Masses as an independent fourth army. Apply only the changes below; otherwise use the printed scenario.",
+          "changes": [
+            {
+              "title": "Moonclaw Leads the Masses",
+              "detail": "Moonclaw, Son of Morrslieb is compulsory and must be the Laughing Masses' General."
+            },
+            {
+              "title": "From Every Ruin",
+              "detail": "Every unit in the army gains Ambushers and must begin in reserve. After terrain is placed but before deployment, secretly assign each unit to one table edge, building, or fortress section. Any number of units may share an edge, but no more than one unit may be assigned to each building or fortress section. This assignment replaces the normal Ambushers roll for the arrival edge. Moonclaw arrives automatically in the Remaining Moves sub-phase of the Laughing Masses' turn in battle round 2. For each other unit, roll at the start of the Laughing Masses' turn: it arrives on 3+ in battle round 2, on 2+ in battle round 3, and automatically in battle round 4. A successful unit enters in that turn's Remaining Moves sub-phase. A unit assigned to an edge enters as Reinforcements from that edge. A unit assigned to a building or fortress section is placed with at least one model within 3 inches of it, then formed as closely as possible while remaining more than 1 inch from enemies and impassable terrain; this is its entire move and it cannot charge that turn. If legal placement is impossible, the unit remains in reserve and may use the nearest table edge on its next arrival attempt. If the assigned feature has been removed, measure from its former footprint."
+            },
+            {
+              "title": "The Last Player to Stir",
+              "detail": "The Laughing Masses do not participate in battle round 1. For Moonclaw's Unholy Zenith, secretly roll D3+1 instead of D3. From battle round 2 onward, include the Laughing Masses when determining turn order normally using the scenario's Triumph & Treachery rules."
+            },
+            {
+              "title": "Seized Engines",
+              "detail": "A War Machine arriving from reserve is placed with the machine and all of its crew wholly within 3 inches of its assigned table edge, building, or fortress section and more than 1 inch from enemies and impassable terrain. This placement is permitted even if the machine could not normally move. It counts as entering as Reinforcements, cannot move any farther, counts as having moved, and cannot shoot or charge that turn unless another rule expressly allows it to do so."
+            },
+            {
+              "title": "Morrslieb Laughs Last",
+              "detail": "Before comparing the printed scenario's objective points, the Laughing Masses win outright if they have strictly more ordinary Victory Points than every other army. A tie is not enough; otherwise the Masses cannot win. If the Masses slay Kairos or Ku'gath, Mallobaude receives the printed point for that Daemon's death, but not the additional point for his own army delivering the killing blow. If the Masses slay Mallobaude, neither Daemon army scores points that require its own army to kill him."
+            },
+            {
+              "title": "After the Laughter",
+              "detail": "If the Laughing Masses win, Mallobaude does not receive the four Ancient Relic results, and the Masses receive no campaign reward."
+            }
+          ]
         }
       ],
       "rules": [
         {
-          "name": "Four Armies, Four Generals",
-          "detail": "Moonclaw, Son of Morrslieb is compulsory and must be the Laughing Masses' General. Mallobaude the Black Knight, Kairos Fateweaver, and Ku'gath Plaguefather remain compulsory and must be the Generals of their respective armies."
-        },
-        {
-          "name": "From Every Ruin",
-          "detail": "Every unit in the army gains Ambushers and must begin in reserve. After terrain is placed but before deployment, secretly assign each unit to one table edge, building, or fortress section. Any number of units may share an edge, but no more than one unit may be assigned to each building or fortress section. This assignment replaces the normal Ambushers roll for the arrival edge. Moonclaw arrives automatically in the Remaining Moves sub-phase of the Laughing Masses' turn in battle round 2. For each other unit, roll at the start of the Laughing Masses' turn: it arrives on 3+ in battle round 2, on 2+ in battle round 3, and automatically in battle round 4. A successful unit enters in that turn's Remaining Moves sub-phase. A unit assigned to an edge enters as Reinforcements from that edge. A unit assigned to a building or fortress section is placed with at least one model within 3 inches of it, then formed as closely as possible while remaining more than 1 inch from enemies and impassable terrain; this is its entire move and it cannot charge that turn. If legal placement is impossible, the unit remains in reserve and may use the nearest table edge on its next arrival attempt. If the assigned feature has been removed, measure from its former footprint."
-        },
-        {
-          "name": "The Last Player to Stir",
-          "detail": "The Laughing Masses do not participate in battle round 1. From battle round 2 onward, include the Laughing Masses when determining turn order normally using the scenario's Triumph & Treachery rules."
-        },
-        {
           "name": "A Riot, Not a Regiment",
-          "detail": "Every unit whose troop type is Infantry gains the Skirmishers special rule. This does not apply to Cavalry, Monstrous Infantry, Monstrous Beasts, War Beasts, Chariots, Monsters, or War Machines. Moonclaw is therefore not a Skirmisher."
-        },
-        {
-          "name": "Seized Engines",
-          "detail": "A War Machine arriving from reserve is placed with the machine and all of its crew wholly within 3 inches of its assigned table edge, building, or fortress section and more than 1 inch from enemies and impassable terrain. This placement is permitted even if the machine could not normally move. It counts as entering as Reinforcements, cannot move any farther, counts as having moved, and cannot shoot or charge that turn unless another rule expressly allows it to do so."
-        },
-        {
-          "name": "Morrslieb Laughs Last",
-          "detail": "Resolve this before the printed scenario's objective points. If the Laughing Masses have strictly more ordinary Victory Points than each of the other three armies, they win outright regardless of scenario-objective totals. Otherwise they cannot win; remove them from consideration and determine the winner among Mallobaude, Kairos, and Ku'gath using the printed objective system and its Victory Point tiebreaker. A tie for the highest Victory Point total is not enough for the Masses. If the Masses slay Kairos or Ku'gath, Mallobaude still receives the printed 1 point because that Daemon was slain, but not the additional point for his army delivering the killing blow. If the Masses slay Mallobaude, neither Daemon army scores the points that require its own army to kill him."
-        },
-        {
-          "name": "After the Laughter",
-          "detail": "If the Laughing Masses win, Mallobaude does not receive the four Ancient Relic results. The Masses receive no campaign reward of their own, and the campaign still proceeds to Stage 2, The Revolt. A General slain in this scenario returns for later campaign stages unless another campaign rule expressly says otherwise."
+          "detail": "Every unit whose troop type is Infantry gains the Skirmishers special rule."
         },
         {
           "name": "Stolen Bretonnian Engines",
@@ -459,7 +461,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "options": [
         { "name": "Upgrade one Ruin-Crawler to a Ruin-Stalker", "cost": "+10 points" }
       ],
-      "notes": ["From Every Ruin requires this unit to begin in reserve, so Scouts does not permit it to deploy before the battle."],
+      "notes": [],
       "source": "Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, p. 23",
       "status": "campaign",
       "statusLabel": "Laughing Masses unit"

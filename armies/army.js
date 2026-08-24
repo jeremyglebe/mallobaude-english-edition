@@ -205,7 +205,15 @@
       <section class="outcome-panel campaign-role" aria-labelledby="campaign-role-title">
         <h2 id="campaign-role-title">Where This Army Fits in the Campaign</h2>
         <div class="army-rules-grid">
-          ${items.map((item) => `<div class="army-rule-item"><strong>${item.guideAnchor ? `<a href="../guide.html#${escapeHtml(item.guideAnchor)}">${escapeHtml(item.title)}</a>` : escapeHtml(item.title)}</strong><p>${escapeHtml(item.detail)}</p></div>`).join("")}
+          ${items.map((item) => `
+            <div class="army-rule-item">
+              <strong>${item.guideAnchor ? `<a href="../guide.html#${escapeHtml(item.guideAnchor)}">${escapeHtml(item.title)}</a>` : escapeHtml(item.title)}</strong>
+              <p>${escapeHtml(item.detail)}</p>
+              ${item.changes && item.changes.length ? `
+                <div class="campaign-change-grid">
+                  ${item.changes.map((change) => `<div class="campaign-change"><strong>${escapeHtml(change.title)}</strong><p>${escapeHtml(change.detail)}</p></div>`).join("")}
+                </div>` : ""}
+            </div>`).join("")}
         </div>
       </section>`;
   }
