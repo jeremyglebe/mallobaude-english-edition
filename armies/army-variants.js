@@ -224,7 +224,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "statusLabel": "Laughing Masses unit"
     },
     "wap-peasant-levy": {
-      "name": "Peasant Levy",
+      "name": "Insane Peasant Levy",
       "comparedTo": "Peasant Levy in WAP Bretonnia.",
       "points": "2 points per model",
       "unitSize": "20+",
@@ -235,7 +235,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
           "stats": { "M": "4", "WS": "2", "BS": "2", "S": "3", "T": "3", "W": "1", "I": "3", "A": "1", "Ld": "4" }
         },
         {
-          "name": "Rabble Leader",
+          "name": "Cackling Rabble Leader",
           "stats": { "M": "4", "WS": "2", "BS": "2", "S": "3", "T": "3", "W": "1", "I": "3", "A": "2", "Ld": "4" }
         },
         {
@@ -246,7 +246,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "equipment": ["Hand weapon"],
       "specialRules": ["Disorganized Mob", "The Peasant's Duty", "Skirmishers", "Truffle Madness"],
       "options": [
-        { "name": "Upgrade one Peasant to a Rabble Leader", "cost": "+10 points" },
+        { "name": "Upgrade one Peasant to a Cackling Rabble Leader", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
         { "name": "Standard bearer", "cost": "+10 points" },
         { "name": "Throwing weapons", "cost": "+½ point per model" },
@@ -259,7 +259,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "statusLabel": "Laughing Masses unit"
     },
     "wap-men-at-arms": {
-      "name": "Men-at-Arms",
+      "name": "Deranged Men-at-Arms",
       "comparedTo": "Men-at-Arms in WAP Bretonnia.",
       "points": "5 points per model",
       "unitSize": "10+",
@@ -270,7 +270,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
           "stats": { "M": "4", "WS": "3", "BS": "2", "S": "3", "T": "3", "W": "1", "I": "3", "A": "1", "Ld": "6" }
         },
         {
-          "name": "Yeoman Warden",
+          "name": "Ranting Yeoman Warden",
           "stats": { "M": "4", "WS": "3", "BS": "3", "S": "3", "T": "3", "W": "1", "I": "3", "A": "2", "Ld": "6" }
         },
         {
@@ -281,7 +281,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "equipment": ["Hand weapon", "Halberd", "Light armour"],
       "specialRules": ["The Peasant's Duty", "Skirmishers", "Truffle Madness"],
       "options": [
-        { "name": "Upgrade one Man-at-Arms to a Yeoman Warden", "cost": "+10 points" },
+        { "name": "Upgrade one Man-at-Arms to a Ranting Yeoman Warden", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
         { "name": "Standard bearer", "cost": "+10 points" },
         { "name": "Replace halberds with spears and shields", "cost": "Free" },
@@ -294,7 +294,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "statusLabel": "Laughing Masses unit"
     },
     "wap-peasant-bowmen": {
-      "name": "Peasant Bowmen",
+      "name": "Nutty Peasant Bowmen",
       "comparedTo": "Peasant Bowmen in WAP Bretonnia.",
       "points": "5 points per model",
       "unitSize": "10+",
@@ -305,7 +305,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
           "stats": { "M": "4", "WS": "2", "BS": "3", "S": "3", "T": "3", "W": "1", "I": "3", "A": "1", "Ld": "5" }
         },
         {
-          "name": "Villein",
+          "name": "Giggling Villein",
           "stats": { "M": "4", "WS": "2", "BS": "4", "S": "3", "T": "3", "W": "1", "I": "3", "A": "1", "Ld": "5" }
         },
         {
@@ -316,7 +316,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "equipment": ["Hand weapon", "Long bow"],
       "specialRules": ["The Peasant's Duty", "Skirmishers", "Truffle Madness"],
       "options": [
-        { "name": "Upgrade one Bowman to a Villein", "cost": "+10 points" },
+        { "name": "Upgrade one Bowman to a Giggling Villein", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
         { "name": "Standard bearer", "cost": "+10 points" },
         { "name": "Braziers (Flaming Attacks)", "cost": "+½ point per model" },
@@ -352,7 +352,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "statusLabel": "Laughing Masses unit"
     },
     "wap-squires": {
-      "name": "Squires",
+      "name": "Loopy Squires",
       "comparedTo": "Squires in WAP Bretonnia.",
       "points": "7 points per model",
       "unitSize": "5+",
@@ -363,14 +363,14 @@ window.CAMPAIGN_ARMY_VARIANTS = {
           "stats": { "M": "4", "WS": "3", "BS": "3", "S": "3", "T": "3", "W": "1", "I": "3", "A": "1", "Ld": "6" }
         },
         {
-          "name": "Equerry",
+          "name": "Howling Equerry",
           "stats": { "M": "4", "WS": "3", "BS": "3", "S": "3", "T": "3", "W": "1", "I": "3", "A": "1", "Ld": "6" }
         }
       ],
       "equipment": ["Hand weapon", "Long bow"],
       "specialRules": ["The Peasant's Duty", "Skirmishers"],
       "options": [
-        { "name": "Upgrade one Squire to an Equerry", "cost": "+10 points" },
+        { "name": "Upgrade one Squire to a Howling Equerry", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
         { "name": "Standard bearer", "cost": "+10 points" }
       ],
@@ -379,7 +379,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "statusLabel": "Laughing Masses unit"
     },
     "wap-yeomen": {
-      "name": "Yeomen",
+      "name": "Unhinged Yeomen",
       "comparedTo": "Yeomen in WAP Bretonnia.",
       "points": "10 points per model",
       "unitSize": "5+",
@@ -390,7 +390,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
           "stats": { "M": "4", "WS": "3", "BS": "3", "S": "3", "T": "3", "W": "1", "I": "3", "A": "1", "Ld": "6" }
         },
         {
-          "name": "Warden",
+          "name": "Shrieking Warden",
           "stats": { "M": "4", "WS": "3", "BS": "3", "S": "3", "T": "3", "W": "1", "I": "3", "A": "2", "Ld": "6" }
         },
         {
@@ -401,7 +401,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "equipment": ["Hand weapon", "Horse (mount)"],
       "specialRules": ["Fast Cavalry", "The Peasant's Duty"],
       "options": [
-        { "name": "Upgrade one Yeoman to a Warden", "cost": "+10 points" },
+        { "name": "Upgrade one Yeoman to a Shrieking Warden", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
         { "name": "Standard bearer", "cost": "+10 points" },
         { "name": "Spears", "cost": "+1 point per model" },
@@ -414,14 +414,14 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "statusLabel": "Laughing Masses unit"
     },
     "wap-forsaken": {
-      "name": "Warped Ones",
+      "name": "Forsaken",
       "comparedTo": "Forsaken in WAP Warriors of Chaos.",
       "points": "15 points per model",
       "unitSize": "5+",
       "troopType": "Infantry",
       "profiles": [
         {
-          "name": "Warped One",
+          "name": "Forsaken",
           "stats": { "M": "6", "WS": "4", "BS": "0", "S": "4", "T": "4", "W": "1", "I": "4", "A": "D3", "Ld": "8" }
         }
       ],
@@ -433,7 +433,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Mark of Slaanesh (Swiftstride)", "cost": "+1 point per model" },
         { "name": "Mark of Tzeentch (6+ Ward save)", "cost": "+1 point per model" }
       ],
-      "notes": ["Warped Ones are a Special choice in this army.", "A unit of Warped Ones may select at most one Mark."],
+      "notes": ["Forsaken are a Special choice in this army.", "A unit of Forsaken may select at most one Mark."],
       "source": "Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, pp. 4 and 21",
       "status": "campaign",
       "statusLabel": "Laughing Masses unit"
@@ -492,14 +492,14 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "statusLabel": "Laughing Masses unit"
     },
     "wap-wolf-kin": {
-      "name": "Wolf-Mutants",
+      "name": "Wolfmen",
       "comparedTo": "Wolf-Kin in WAP Cult of Ulric.",
       "points": "9 points per model",
       "unitSize": "10+",
       "troopType": "Infantry",
       "profiles": [
         {
-          "name": "Wolf-Mutant",
+          "name": "Wolfman",
           "stats": { "M": "4", "WS": "4", "BS": "3", "S": "4", "T": "3", "W": "1", "I": "3", "A": "1", "Ld": "8" }
         },
         {
@@ -510,7 +510,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "equipment": ["Hand weapon"],
       "specialRules": ["Crush the Weak", "Hatred", "Skirmishers", "Stubborn"],
       "options": [
-        { "name": "Upgrade one Wolf-Mutant to a Pack Alpha", "cost": "+10 points" },
+        { "name": "Upgrade one Wolfman to a Pack Alpha", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
         { "name": "Standard bearer", "cost": "+10 points" },
         { "name": "Great weapons", "cost": "+2 points per model" },
