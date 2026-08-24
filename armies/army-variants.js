@@ -28,14 +28,6 @@ window.CAMPAIGN_ARMY_VARIANTS = {
               "detail": "Moonclaw, Son of Morrslieb is compulsory and must be the Laughing Masses' General."
             },
             {
-              "title": "From Every Ruin",
-              "detail": "Every unit in the army gains Ambushers and must begin in reserve. After terrain is placed but before deployment, secretly assign each unit to one table edge, building, or fortress section. Any number of units may share an edge, but no more than one unit may be assigned to each building or fortress section. This assignment replaces the normal Ambushers roll for the arrival edge. Moonclaw arrives automatically in the Remaining Moves sub-phase of the Laughing Masses' turn in battle round 2. For each other unit, roll at the start of the Laughing Masses' turn: it arrives on 3+ in battle round 2, on 2+ in battle round 3, and automatically in battle round 4. A successful unit enters in that turn's Remaining Moves sub-phase. A unit assigned to an edge enters as Reinforcements from that edge. A unit assigned to a building or fortress section is placed with at least one model within 3 inches of it, then formed as closely as possible while remaining more than 1 inch from enemies and impassable terrain; this is its entire move and it cannot charge that turn. If legal placement is impossible, the unit remains in reserve and may use the nearest table edge on its next arrival attempt. If the assigned feature has been removed, measure from its former footprint."
-            },
-            {
-              "title": "Seized Engines",
-              "detail": "A War Machine arriving from reserve is placed with the machine and all of its crew wholly within 3 inches of its assigned table edge, building, or fortress section and more than 1 inch from enemies and impassable terrain. This placement is permitted even if the machine could not normally move. It counts as entering as Reinforcements, cannot move any farther, counts as having moved, and cannot shoot or charge that turn unless another rule expressly allows it to do so."
-            },
-            {
               "title": "Morrslieb Laughs Last",
               "detail": "Before comparing the printed scenario's objective points, the Laughing Masses win outright if they have strictly more ordinary Victory Points than every other army. A tie is not enough; otherwise the Masses cannot win. If the Masses slay Kairos or Ku'gath, Mallobaude receives the printed point for that Daemon's death, but not the additional point for his own army delivering the killing blow. If the Masses slay Mallobaude, neither Daemon army scores points that require its own army to kill him."
             },
@@ -148,7 +140,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon", "Umbralok (mount)"],
-      "specialRules": ["Primal Fury", "Ward save (5+)", "Magic Resistance (2)", "Wave of Insanity", "Unholy Zenith"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Primal Fury", "Ward save (5+)", "Magic Resistance (2)", "Wave of Insanity", "Unholy Zenith"],
       "options": [],
       "notes": ["Level 1 Wizard. Choose the Lore of Shadow or the Lore of the Wild."],
       "source": "Warhammer — Beastmen, Discord Archive 8th Edition, pp. 102 and 113",
@@ -172,7 +164,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon"],
-      "specialRules": ["The Peasant's Duty", "Acrobatic", "I Will Taunt You Viciously a Second Time", "Skirmishers"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Ambushing From Buildings", "The Peasant's Duty", "Acrobatic", "I Will Taunt You Viciously a Second Time", "Skirmishers"],
       "options": [
         { "name": "Additional hand weapon", "cost": "+2 points" },
         { "name": "Flail", "cost": "+6 points" },
@@ -209,7 +201,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon"],
-      "specialRules": ["Chaos Mutations", "Skirmishers"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Ambushing From Buildings", "Chaos Mutations", "Skirmishers"],
       "options": [
         { "name": "Upgrade one Mutant to a Mutant Leader", "cost": "+10 points" }
       ],
@@ -238,7 +230,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon"],
-      "specialRules": ["Disorganized Mob", "The Peasant's Duty", "Skirmishers", "Truffle Madness"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Ambushing From Buildings", "Disorganized Mob", "The Peasant's Duty", "Skirmishers", "Truffle Madness"],
       "options": [
         { "name": "Upgrade one Peasant to a Cackling Rabble Leader", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
@@ -280,7 +272,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon", "Halberd", "Light armour"],
-      "specialRules": ["The Peasant's Duty", "Skirmishers", "Truffle Madness"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Ambushing From Buildings", "The Peasant's Duty", "Skirmishers", "Truffle Madness"],
       "options": [
         { "name": "Upgrade one Man-at-Arms to a Ranting Yeoman Warden", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
@@ -322,7 +314,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon", "Long bow"],
-      "specialRules": ["The Peasant's Duty", "Skirmishers", "Truffle Madness"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Ambushing From Buildings", "The Peasant's Duty", "Skirmishers", "Truffle Madness"],
       "options": [
         { "name": "Upgrade one Bowman to a Giggling Villein", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
@@ -356,7 +348,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Tentacles, claws, and teeth"],
-      "specialRules": ["Fear", "Random Movement (3D6)", "Random Attacks (D6+1)", "Unbreakable"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Ambushing From Buildings", "Fear", "Random Movement (3D6)", "Random Attacks (D6+1)", "Unbreakable"],
       "options": [],
       "notes": [],
       "source": "Warhammer — Beastmen, Discord Archive 8th Edition, p. 118",
@@ -380,7 +372,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon", "Long bow"],
-      "specialRules": ["The Peasant's Duty", "Skirmishers"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Ambushing From Buildings", "The Peasant's Duty", "Skirmishers"],
       "options": [
         { "name": "Upgrade one Squire to a Howling Equerry", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
@@ -416,7 +408,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon", "Horse (mount)"],
-      "specialRules": ["Fast Cavalry", "The Peasant's Duty"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Fast Cavalry", "The Peasant's Duty"],
       "options": [
         { "name": "Upgrade one Yeoman to a Shrieking Warden", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
@@ -448,7 +440,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon", "Heavy armour"],
-      "specialRules": ["Frenzy", "Immune to Psychology", "Random Attacks (D3)", "Skirmishers", "Freakish Mutations"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Ambushing From Buildings", "Frenzy", "Immune to Psychology", "Random Attacks (D3)", "Skirmishers", "Freakish Mutations"],
       "options": [
         { "name": "Forsaken of Khorne", "cost": "+1 point per model", "description": "Hatred.", "group": "Forsaken of Chaos — choose one" },
         { "name": "Forsaken of Nurgle", "cost": "+1 point per model", "description": "Fear.", "group": "Forsaken of Chaos — choose one" },
@@ -477,7 +469,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Two hand weapons"],
-      "specialRules": ["Killing Blow", "Scouts", "Skirmishers", "Obstacle Strider"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Ambushing From Buildings", "Killing Blow", "Scouts", "Skirmishers", "Obstacle Strider"],
       "options": [
         { "name": "Upgrade one Ruin-Crawler to a Ruin-Stalker", "cost": "+10 points" }
       ],
@@ -503,7 +495,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Flail"],
-      "specialRules": ["Frenzy", "Unbreakable", "The End is Nigh!", "Skirmishers"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Ambushing From Buildings", "Frenzy", "Unbreakable", "The End is Nigh!", "Skirmishers"],
       "options": [
         { "name": "Upgrade one Raver to a Rabble-Rouser", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
@@ -530,7 +522,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon"],
-      "specialRules": ["Crush the Weak", "Hatred", "Skirmishers", "Stubborn"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Ambushing From Buildings", "Crush the Weak", "Hatred", "Skirmishers", "Stubborn"],
       "options": [
         { "name": "Upgrade one Wolfman to a Pack Alpha", "cost": "+10 points" },
         { "name": "Musician", "cost": "+10 points" },
@@ -562,7 +554,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon (crew)"],
-      "specialRules": ["The Peasant's Duty"],
+      "specialRules": ["Ambushers", "From Every Ruin", "War Machines From Every Ruin", "The Peasant's Duty"],
       "options": [
         { "name": "Wall Warden", "cost": "+10 points", "description": "Once per game, re-roll one Artillery die or failed To Hit roll." },
         { "name": "Additional Peasant Crew", "cost": "+3 points" }
@@ -589,7 +581,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon (crew)"],
-      "specialRules": ["The Peasant's Duty"],
+      "specialRules": ["Ambushers", "From Every Ruin", "War Machines From Every Ruin", "The Peasant's Duty"],
       "options": [
         { "name": "Wall Warden", "cost": "+15 points", "description": "Once per game, re-roll one Artillery die or failed To Hit roll." },
         { "name": "Additional Peasant Crew", "cost": "+3 points" }
@@ -616,7 +608,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon (crew)"],
-      "specialRules": ["Field Trebuchet", "The Peasant's Duty"],
+      "specialRules": ["Ambushers", "From Every Ruin", "War Machines From Every Ruin", "Field Trebuchet", "The Peasant's Duty"],
       "options": [
         { "name": "Wall Warden", "cost": "+15 points", "description": "Once per game, re-roll one Artillery die or failed To Hit roll." }
       ],
@@ -642,7 +634,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Hand weapon (crew)"],
-      "specialRules": ["Bombard", "The Peasant's Duty"],
+      "specialRules": ["Ambushers", "From Every Ruin", "War Machines From Every Ruin", "Bombard", "The Peasant's Duty"],
       "options": [
         { "name": "Wall Warden", "cost": "+15 points", "description": "Once per game, re-roll one Artillery die or failed To Hit roll." },
         { "name": "Additional Peasant Crew", "cost": "+3 points" }
@@ -669,7 +661,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "equipment": ["Claws"],
-      "specialRules": ["Crush the Weak", "Fear", "Frenzy", "Regeneration (5+)"],
+      "specialRules": ["Ambushers", "From Every Ruin", "Charging From Ambush", "Ambushing From Buildings", "Crush the Weak", "Fear", "Frenzy", "Regeneration (5+)"],
       "options": [
         { "name": "Upgrade one Werewolf to a Werewolf Alpha", "cost": "+10 points" }
       ],
