@@ -32,10 +32,6 @@ window.CAMPAIGN_ARMY_VARIANTS = {
               "detail": "Every unit in the army gains Ambushers and must begin in reserve. After terrain is placed but before deployment, secretly assign each unit to one table edge, building, or fortress section. Any number of units may share an edge, but no more than one unit may be assigned to each building or fortress section. This assignment replaces the normal Ambushers roll for the arrival edge. Moonclaw arrives automatically in the Remaining Moves sub-phase of the Laughing Masses' turn in battle round 2. For each other unit, roll at the start of the Laughing Masses' turn: it arrives on 3+ in battle round 2, on 2+ in battle round 3, and automatically in battle round 4. A successful unit enters in that turn's Remaining Moves sub-phase. A unit assigned to an edge enters as Reinforcements from that edge. A unit assigned to a building or fortress section is placed with at least one model within 3 inches of it, then formed as closely as possible while remaining more than 1 inch from enemies and impassable terrain; this is its entire move and it cannot charge that turn. If legal placement is impossible, the unit remains in reserve and may use the nearest table edge on its next arrival attempt. If the assigned feature has been removed, measure from its former footprint."
             },
             {
-              "title": "The Last Player to Stir",
-              "detail": "The Laughing Masses do not participate in battle round 1. For Moonclaw's Unholy Zenith, secretly roll D3+1 instead of D3. From battle round 2 onward, include the Laughing Masses when determining turn order normally using the scenario's Triumph & Treachery rules."
-            },
-            {
               "title": "Seized Engines",
               "detail": "A War Machine arriving from reserve is placed with the machine and all of its crew wholly within 3 inches of its assigned table edge, building, or fortress section and more than 1 inch from enemies and impassable terrain. This placement is permitted even if the machine could not normally move. It counts as entering as Reinforcements, cannot move any farther, counts as having moved, and cannot shoot or charge that turn unless another rule expressly allows it to do so."
             },
@@ -51,10 +47,6 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         }
       ],
       "rules": [
-        {
-          "name": "A Riot, Not a Regiment",
-          "detail": "Every unit whose troop type is Infantry gains the Skirmishers special rule."
-        },
         {
           "name": "Stolen Bretonnian Engines",
           "detail": "Ballistas, Mangonels, Field Trebuchets, and Bombards all count as the same Rare choice for duplicate limits. Each Bombard counts as two Rare choices."
@@ -192,7 +184,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Common magic items", "cost": "Up to 50 points" }
       ],
       "notes": [
-        "Skirmishers is granted by A Riot, Not a Regiment only while the Jester is on foot; taking a Warhorse changes his troop type to Cavalry and removes it.",
+        "The Anarchist Jester has Skirmishers while on foot. Taking a Warhorse changes his troop type to Cavalry, so he loses Skirmishers.",
         "Choose at most one of additional hand weapon, flail, or great weapon.",
         "The effects of I Will Taunt You Viciously a Second Time from multiple Anarchist Jesters do not stack."
       ],
@@ -257,7 +249,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Mark of Khorne", "cost": "+2 points per model", "description": "Frenzy. A model that already has Frenzy instead gains +1 Attack while its Frenzy lasts." },
         { "name": "Mark of Nurgle", "cost": "+2 points per model", "description": "+1 Toughness." },
         { "name": "Mark of Slaanesh", "cost": "+1 point per model", "description": "Immune to Psychology." },
-        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save which works in combination with other Ward saves." }
+        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save; if the model already has a Ward save, improve it by 1 instead, to a maximum of 3+." }
       ],
       "notes": [
         "The unit may take one of the following Marks of Chaos, using the Beastmen version of each Mark.",
@@ -299,7 +291,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Mark of Khorne", "cost": "+2 points per model", "description": "Frenzy. A model that already has Frenzy instead gains +1 Attack while its Frenzy lasts." },
         { "name": "Mark of Nurgle", "cost": "+2 points per model", "description": "+1 Toughness." },
         { "name": "Mark of Slaanesh", "cost": "+1 point per model", "description": "Immune to Psychology." },
-        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save which works in combination with other Ward saves." }
+        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save; if the model already has a Ward save, improve it by 1 instead, to a maximum of 3+." }
       ],
       "notes": [
         "The unit may take one of the following Marks of Chaos, using the Beastmen version of each Mark.",
@@ -341,12 +333,11 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Mark of Khorne", "cost": "+2 points per model", "description": "Frenzy. A model that already has Frenzy instead gains +1 Attack while its Frenzy lasts." },
         { "name": "Mark of Nurgle", "cost": "+2 points per model", "description": "+1 Toughness." },
         { "name": "Mark of Slaanesh", "cost": "+1 point per model", "description": "Immune to Psychology." },
-        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save which works in combination with other Ward saves." }
+        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save; if the model already has a Ward save, improve it by 1 instead, to a maximum of 3+." }
       ],
       "notes": [
         "The unit may take one of the following Marks of Chaos, using the Beastmen version of each Mark.",
-        "Each purchased Truffle Hound is a Warbeast equipped with fangs; its profile is shown above, but it remains attached to this parent unit until Truffle Madness reveals it.",
-        "Peasant Bowmen may not take Defensive Stakes."
+        "Each purchased Truffle Hound is a Warbeast equipped with fangs; its profile is shown above, but it remains attached to this parent unit until Truffle Madness reveals it."
       ],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 105, 108, and 153",
       "status": "campaign",
@@ -397,7 +388,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Mark of Khorne", "cost": "+2 points per model", "description": "Frenzy. A model that already has Frenzy instead gains +1 Attack while its Frenzy lasts." },
         { "name": "Mark of Nurgle", "cost": "+2 points per model", "description": "+1 Toughness." },
         { "name": "Mark of Slaanesh", "cost": "+1 point per model", "description": "Immune to Psychology." },
-        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save which works in combination with other Ward saves." }
+        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save; if the model already has a Ward save, improve it by 1 instead, to a maximum of 3+." }
       ],
       "notes": ["The unit may take one of the following Marks of Chaos, using the Beastmen version of each Mark."],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 154",
@@ -437,7 +428,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Mark of Khorne", "cost": "+2 points per model", "description": "Frenzy. A model that already has Frenzy instead gains +1 Attack while its Frenzy lasts." },
         { "name": "Mark of Nurgle", "cost": "+2 points per model", "description": "+1 Toughness." },
         { "name": "Mark of Slaanesh", "cost": "+1 point per model", "description": "Immune to Psychology." },
-        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save which works in combination with other Ward saves." }
+        { "name": "Mark of Tzeentch", "cost": "+2 points per model", "description": "A 6+ Ward save; if the model already has a Ward save, improve it by 1 instead, to a maximum of 3+." }
       ],
       "notes": ["The unit may take one of the following Marks of Chaos, using the Beastmen version of each Mark."],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 155",
@@ -459,12 +450,12 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "equipment": ["Hand weapon", "Heavy armour"],
       "specialRules": ["Frenzy", "Immune to Psychology", "Random Attacks (D3)", "Skirmishers", "Freakish Mutations"],
       "options": [
-        { "name": "Mark of Khorne (Hatred)", "cost": "+1 point per model" },
-        { "name": "Mark of Nurgle (Fear)", "cost": "+1 point per model" },
-        { "name": "Mark of Slaanesh (Swiftstride)", "cost": "+1 point per model" },
-        { "name": "Mark of Tzeentch (6+ Ward save)", "cost": "+1 point per model" }
+        { "name": "Forsaken of Khorne", "cost": "+1 point per model", "description": "Hatred.", "group": "Forsaken of Chaos — choose one" },
+        { "name": "Forsaken of Nurgle", "cost": "+1 point per model", "description": "Fear.", "group": "Forsaken of Chaos — choose one" },
+        { "name": "Forsaken of Slaanesh", "cost": "+1 point per model", "description": "Swiftstride.", "group": "Forsaken of Chaos — choose one" },
+        { "name": "Forsaken of Tzeentch", "cost": "+1 point per model", "description": "6+ Ward save.", "group": "Forsaken of Chaos — choose one" }
       ],
-      "notes": ["Forsaken are a Special choice in this army.", "A unit of Forsaken may select at most one Mark."],
+      "notes": [],
       "source": "Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, pp. 4 and 21",
       "status": "campaign",
       "statusLabel": "Laughing Masses unit"
