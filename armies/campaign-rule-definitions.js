@@ -126,11 +126,11 @@ window.CAMPAIGN_RULE_DEFINITIONS = {
     },
     "Acrobatic": {
       html: "<p>The Anarchist Jester has a 2+ Ward save against all non-magical attacks.</p>",
-      sourceReference: "Adapted without renaming from Jules the Jester; Warhammer — Bretonnia, Discord Archive 8th Edition, p. 134"
+      sourceReference: "Jules the Jester, Warhammer — Bretonnia, Discord Archive 8th Edition, p. 134"
     },
     "I Will Taunt You Viciously a Second Time": {
-      html: "<p>All enemy models within 6 inches of an Anarchist Jester suffer a −1 penalty to Hit rolls in close combat. Multiple instances of this aura do not stack in this playtest list.</p>",
-      sourceReference: "Adapted without renaming from Jules the Jester; Warhammer — Bretonnia, Discord Archive 8th Edition, p. 134"
+      html: "<p>All enemy models within 6 inches of an Anarchist Jester suffer a −1 penalty to Hit rolls in close combat. Multiple instances of this aura do not stack.</p>",
+      sourceReference: "Jules the Jester, Warhammer — Bretonnia, Discord Archive 8th Edition, p. 134"
     },
     "Disorganized Mob": {
       html: "<p>Peasant Levies roll 3D6 for Leadership tests and use the two highest dice.</p>",
@@ -170,6 +170,18 @@ window.CAMPAIGN_RULE_DEFINITIONS = {
     }
   },
   entryOverrides: {
+    "wap-moonclaw": {
+      "Unholy Zenith": {
+        html: "<p>At the beginning of the game, secretly roll D3+1 and record the result. During that numbered battle round, Moonclaw adds +2 to casting rolls and may make D3 shooting attacks as a stone thrower even if he moved or marched. Each misfire instead inflicts one Wound on Moonclaw with no save of any kind.</p>",
+        sourceReference: "Laughing Masses variant; based on Warhammer — Beastmen, Discord Archive 8th Edition, p. 102"
+      }
+    },
+    "wap-mutants": {
+      "Chaos Mutations": {
+        html: "<p>At the start of each Laughing Masses player turn, roll a D6 for the unit. The indicated mutation lasts for that player turn:</p><ol><li>Animalistic Legs: +1 Movement.</li><li>Hulking: +1 Strength.</li><li>Grossly Fat: +1 Toughness.</li><li>Scales: Scaly Skin (6+).</li><li>Tentacle-like Arms: +1 Attack.</li><li>Pincer Hand: Armour Piercing.</li></ol>",
+        sourceReference: "Warhammer — Beastmen, Discord Archive 8th Edition, p. 67"
+      }
+    },
     "anarchist-jester": {
       "The Peasant's Duty": {
         html: "<p>The model may use the Leadership of any non-fleeing Knight within 6 inches. Its unit standard, if any, grants no additional Victory Points.</p>",

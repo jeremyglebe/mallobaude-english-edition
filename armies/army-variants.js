@@ -5,9 +5,9 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "name": "Morrslieb's Laughing Masses",
       "subtitle": "Mousillon's peasantry erupting into monstrous new shapes beneath the grinning Chaos moon",
       "sourcePage": 45,
-      "eyebrow": "The Year of Woe · Optional Four-Player Variant · Playtest Draft",
-      "cardLabel": "Project-original scenario force",
-      "sourceLabel": "Original scenario, pp. 45–46",
+      "eyebrow": "The Year of Woe · Optional Project-Created Four-Player Variant",
+      "cardLabel": "Optional project-created scenario force",
+      "sourceLabel": "Daemonic Assault on Mousillon, pp. 45–46",
       "sourceHref": "../rules.html#rules-page-45",
       "books": [
         "WAP Beastmen · Discord Archive 8th Edition",
@@ -17,43 +17,25 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         "WAP Cult of Ulric · Discord Archive 8th Edition",
         "The Revolt of Mallobaude"
       ],
-      "sourceNote": "This is project-original playtest material, not a translated sixth army list. Imported profiles and options follow the Discord Archive 8th Edition WAP PDFs in the project's Google Drive; online mirrors are not rules authorities for this variant.",
+      "sourceNote": "This optional project-created variant uses the listed WAP 8th Edition sources for unit profiles and options.",
       "campaignRole": [
         {
           "title": "Daemonic Assault on Mousillon — Four-Player Variant",
-          "detail": "Add the Laughing Masses as an independent fourth army. The original three-player scenario on pages 45–46 remains unchanged and is still the source-faithful version."
+          "detail": "Use the Laughing Masses as an independent fourth army in Daemonic Assault on Mousillon. All other scenario rules remain unchanged except as stated below."
         }
       ],
-      "designNotes": {
-        "title": "Working Design Ledger",
-        "intro": "Confirmed decisions are rules for the current draft. Open items are recorded here so that a playtest assumption cannot quietly become canon.",
-        "settled": [
-          "Moonclaw is compulsory and must be the General; he remains Cavalry on Umbralok. Mallobaude, Kairos, and Ku'gath are likewise the required Generals of their forces in this variant.",
-          "Every eligible unit is named individually rather than admitted by a catch-all rule.",
-          "Identity-heavy borrowed units use Laughing Masses aliases; each card names the archived WAP profile that supplies its balance chassis.",
-          "Every unit whose troop type is Infantry gains Skirmishers; Cavalry and all other troop types do not.",
-          "Every unit must use the army's enhanced Ambushers rule, including seized war machines; Moonclaw arrives automatically in turn 2 and all other units arrive no later than turn 4.",
-          "The Masses can win only by finishing with strictly more ordinary Victory Points than every rival army.",
-          "The first draft has no Lord choices: Moonclaw and the Anarchist Jester are its only characters."
-        ],
-        "open": [
-          "The fourth army's points allowance relative to the two full Daemon armies and Mallobaude's half-sized force.",
-          "Whether Marks of Chaos should be extended to units that do not already have a printed Mark option, made compulsory, or replaced by a Morrslieb-specific mutation rule.",
-          "Whether 50 points and the current equipment allowance are right for the Anarchist Jester."
-        ]
-      },
       "rules": [
         {
           "name": "Four Armies, Four Generals",
-          "detail": "Moonclaw, Son of Morrslieb is compulsory and must be the Laughing Masses' General. Use his archived WAP 8th Edition profile: he is Cavalry and rides Umbralok as part of his entry. Mallobaude the Black Knight, Kairos Fateweaver, and Ku'gath Plaguefather remain compulsory and must be the Generals of their respective armies. Because Moonclaw must begin in reserve, secretly roll D3+1 rather than D3 for Unholy Zenith; its effect therefore occurs in battle turn 2, 3, or 4."
+          "detail": "Moonclaw, Son of Morrslieb is compulsory and must be the Laughing Masses' General. Mallobaude the Black Knight, Kairos Fateweaver, and Ku'gath Plaguefather remain compulsory and must be the Generals of their respective armies."
         },
         {
           "name": "From Every Ruin",
-          "detail": "Every unit in the army gains Ambushers and must begin in reserve. After terrain is placed but before deployment, secretly assign each unit to one table edge, building, or fortress section. Any number of units may share an edge, but no more than one unit may be assigned to each building or fortress section. This assignment replaces the normal Ambushers roll for the arrival edge. Moonclaw arrives automatically in the Remaining Moves sub-phase of the army's second turn. For each other unit, roll at the start of the army's turn: it arrives on 3+ in turn 2, on 2+ in turn 3, and automatically in turn 4. A successful unit enters in that turn's Remaining Moves sub-phase. A unit assigned to an edge enters as Reinforcements from that edge. A unit assigned to a building or fortress section is placed with at least one model within 3 inches of it, then formed as closely as possible while remaining more than 1 inch from enemies and impassable terrain; this is its entire move and it cannot charge that turn. If legal placement is impossible, the unit remains in reserve and may use the nearest table edge on its next arrival attempt. If the assigned feature has been removed, measure from its former footprint."
+          "detail": "Every unit in the army gains Ambushers and must begin in reserve. After terrain is placed but before deployment, secretly assign each unit to one table edge, building, or fortress section. Any number of units may share an edge, but no more than one unit may be assigned to each building or fortress section. This assignment replaces the normal Ambushers roll for the arrival edge. Moonclaw arrives automatically in the Remaining Moves sub-phase of the Laughing Masses' turn in battle round 2. For each other unit, roll at the start of the Laughing Masses' turn: it arrives on 3+ in battle round 2, on 2+ in battle round 3, and automatically in battle round 4. A successful unit enters in that turn's Remaining Moves sub-phase. A unit assigned to an edge enters as Reinforcements from that edge. A unit assigned to a building or fortress section is placed with at least one model within 3 inches of it, then formed as closely as possible while remaining more than 1 inch from enemies and impassable terrain; this is its entire move and it cannot charge that turn. If legal placement is impossible, the unit remains in reserve and may use the nearest table edge on its next arrival attempt. If the assigned feature has been removed, measure from its former footprint."
         },
         {
           "name": "The Last Player to Stir",
-          "detail": "In the first battle round, take turns in this order: Kairos, Ku'gath, Mallobaude, then the Laughing Masses. The Masses still take that first turn even though every unit is in reserve; their Ambushers cannot begin arriving until their second turn. In later rounds, determine the order for all four players using the scenario's Triumph & Treachery rules."
+          "detail": "The Laughing Masses do not participate in battle round 1. From battle round 2 onward, include the Laughing Masses when determining turn order normally using the scenario's Triumph & Treachery rules."
         },
         {
           "name": "A Riot, Not a Regiment",
@@ -74,10 +56,6 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         {
           "name": "Stolen Bretonnian Engines",
           "detail": "Ballistas, Mangonels, Field Trebuchets, and Bombards all count as the same Rare choice for duplicate limits. Each Bombard counts as two Rare choices."
-        },
-        {
-          "name": "Borrowed Bodies",
-          "detail": "Except for the Anarchist Jester, this army creates no new stat lines. A Laughing Masses alias uses the points, profiles, unit size, equipment, options, and special rules of the archived WAP unit named at the top of its card; that source is a balance chassis, not the unit's identity in the story. Warped Ones use Forsaken but are Special rather than Core here. A timing reference to the source army's turn, such as 'the Beastmen turn' in Chaos Mutations, means the Laughing Masses' turn here."
         }
       ],
       "categories": [
@@ -85,8 +63,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
           "name": "Heroes",
           "entries": [
             {
-              "id": "wap-moonclaw",
-              "note": "Compulsory General. Moonclaw is always mounted on Umbralok in the archived WAP 8th Edition book."
+              "id": "wap-moonclaw"
             },
             {
               "id": "anarchist-jester"
@@ -120,24 +97,19 @@ window.CAMPAIGN_ARMY_VARIANTS = {
               "id": "wap-squires"
             },
             {
-              "id": "wap-yeomen",
-              "note": "Yeomen remain Cavalry and do not gain Skirmishers."
+              "id": "wap-yeomen"
             },
             {
-              "id": "wap-forsaken",
-              "note": "Uses the Forsaken profile and options from Ravening Hordes — Warriors of Chaos; categorized as Special in this army."
+              "id": "wap-forsaken"
             },
             {
-              "id": "wap-flayerkin",
-              "note": "Uses the Flayerkin profile and options from Ravening Hordes — Warriors of Chaos."
+              "id": "wap-flayerkin"
             },
             {
-              "id": "wap-flagellants",
-              "note": "Uses the Flagellants profile and options from Ravening Hordes — The Empire."
+              "id": "wap-flagellants"
             },
             {
-              "id": "wap-wolf-kin",
-              "note": "Uses the Wolf-Kin profile and options from Warhammer — Cult of Ulric."
+              "id": "wap-wolf-kin"
             }
           ]
         },
@@ -157,8 +129,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
               "id": "wap-bombard"
             },
             {
-              "id": "wap-children-of-ulric",
-              "note": "Uses the Children of Ulric profile and options from Warhammer — Cult of Ulric."
+              "id": "wap-children-of-ulric"
             }
           ]
         }
@@ -168,6 +139,7 @@ window.CAMPAIGN_ARMY_VARIANTS = {
   "entries": {
     "wap-moonclaw": {
       "name": "Moonclaw, Son of Morrslieb",
+      "comparedTo": "Moonclaw, Son of Morrslieb in WAP Beastmen.",
       "points": "200 points",
       "unitSize": "1",
       "troopType": "Cavalry (Special Character)",
@@ -186,11 +158,12 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "options": [],
       "notes": ["Level 1 Wizard. Choose the Lore of Shadow or the Lore of the Wild."],
       "source": "Warhammer — Beastmen, Discord Archive 8th Edition, pp. 102 and 113",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses character"
     },
     "anarchist-jester": {
       "name": "Anarchist Jester",
+      "comparedTo": "Jules the Jester in WAP Bretonnia.",
       "points": "50 points (provisional)",
       "unitSize": "1",
       "troopType": "Infantry (Character)",
@@ -217,18 +190,17 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Common magic items", "cost": "Up to 50 points" }
       ],
       "notes": [
-        "A project-original generic Hero built from Jules the Jester's printed profile and rules.",
-        "Once Trampled, Twice Shy is omitted because it exists only to govern Jules's relationship with Tristan.",
         "Skirmishers is granted by A Riot, Not a Regiment only while the Jester is on foot; taking a Warhorse changes his troop type to Cavalry and removes it.",
         "Choose at most one of additional hand weapon, flail, or great weapon.",
         "The effects of I Will Taunt You Viciously a Second Time from multiple Anarchist Jesters do not stack."
       ],
-      "source": "Project-original adaptation of Jules the Jester; source profile and rules in Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 134 and 150",
+      "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 134 and 150 (Jules the Jester)",
       "status": "campaign",
-      "statusLabel": "Playtest character"
+      "statusLabel": "Laughing Masses character"
     },
     "wap-mutants": {
       "name": "Mutants",
+      "comparedTo": "Mutants in WAP Beastmen.",
       "points": "3 points per model",
       "unitSize": "20+",
       "troopType": "Infantry",
@@ -248,11 +220,12 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Upgrade one Mutant to a Mutant Leader", "cost": "+10 points" }
       ],
       "source": "Warhammer — Beastmen, Discord Archive 8th Edition, pp. 67 and 115",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-peasant-levy": {
       "name": "Peasant Levy",
+      "comparedTo": "Peasant Levy in WAP Bretonnia.",
       "points": "2 points per model",
       "unitSize": "20+",
       "troopType": "Infantry",
@@ -282,11 +255,12 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       ],
       "notes": ["Each purchased Truffle Hound is a Warbeast equipped with fangs; its profile is shown above, but it remains attached to this parent unit until Truffle Madness reveals it."],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 105, 109, and 153",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-men-at-arms": {
       "name": "Men-at-Arms",
+      "comparedTo": "Men-at-Arms in WAP Bretonnia.",
       "points": "5 points per model",
       "unitSize": "10+",
       "troopType": "Infantry",
@@ -316,11 +290,12 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       ],
       "notes": ["Each purchased Truffle Hound is a Warbeast equipped with fangs; its profile is shown above, but it remains attached to this parent unit until Truffle Madness reveals it."],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 105 and 153",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-peasant-bowmen": {
       "name": "Peasant Bowmen",
+      "comparedTo": "Peasant Bowmen in WAP Bretonnia.",
       "points": "5 points per model",
       "unitSize": "10+",
       "troopType": "Infantry",
@@ -350,14 +325,15 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       ],
       "notes": [
         "Each purchased Truffle Hound is a Warbeast equipped with fangs; its profile is shown above, but it remains attached to this parent unit until Truffle Madness reveals it.",
-        "Defensive Stakes are unavailable: their WAP rule requires them to be placed in the army's deployment zone when the unit deploys, but every unit in this army must begin in reserve."
+        "Peasant Bowmen may not take Defensive Stakes."
       ],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 105, 108, and 153",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-chaos-spawn": {
       "name": "Chaos Spawn",
+      "comparedTo": "Unmarked Chaos Spawn in WAP Beastmen.",
       "points": "50 points",
       "unitSize": "1",
       "troopType": "Monstrous Beast",
@@ -370,13 +346,14 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "equipment": ["Tentacles, claws, and teeth"],
       "specialRules": ["Fear", "Random Movement (3D6)", "Random Attacks (D6+1)", "Unbreakable"],
       "options": [],
-      "notes": ["A Monstrous Beast: it must use From Every Ruin but does not gain Skirmishers."],
+      "notes": [],
       "source": "Warhammer — Beastmen, Discord Archive 8th Edition, p. 118",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-squires": {
       "name": "Squires",
+      "comparedTo": "Squires in WAP Bretonnia.",
       "points": "7 points per model",
       "unitSize": "5+",
       "troopType": "Infantry",
@@ -398,11 +375,12 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Standard bearer", "cost": "+10 points" }
       ],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 154",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-yeomen": {
       "name": "Yeomen",
+      "comparedTo": "Yeomen in WAP Bretonnia.",
       "points": "10 points per model",
       "unitSize": "5+",
       "troopType": "Cavalry",
@@ -432,11 +410,12 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Light armour", "cost": "+1 point per model" }
       ],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, p. 155",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-forsaken": {
       "name": "Warped Ones",
+      "comparedTo": "Forsaken in WAP Warriors of Chaos.",
       "points": "15 points per model",
       "unitSize": "5+",
       "troopType": "Infantry",
@@ -454,13 +433,14 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Mark of Slaanesh (Swiftstride)", "cost": "+1 point per model" },
         { "name": "Mark of Tzeentch (6+ Ward save)", "cost": "+1 point per model" }
       ],
-      "notes": ["Core in Warriors of Chaos, but deliberately moved to Special in this army so that mandatory Core remains Mousillon's peasants and fresh Mutants.", "A unit of Warped Ones may select at most one Mark."],
+      "notes": ["Warped Ones are a Special choice in this army.", "A unit of Warped Ones may select at most one Mark."],
       "source": "Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, pp. 4 and 21",
-      "status": "referenced",
-      "statusLabel": "WAP profile basis"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-flayerkin": {
       "name": "Ruin-Crawlers",
+      "comparedTo": "Flayerkin in WAP Warriors of Chaos.",
       "points": "9 points per model",
       "unitSize": "5+",
       "troopType": "Infantry",
@@ -481,11 +461,12 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       ],
       "notes": ["From Every Ruin requires this unit to begin in reserve, so Scouts does not permit it to deploy before the battle."],
       "source": "Ravening Hordes — Warriors of Chaos, Discord Archive 8th Edition, p. 23",
-      "status": "referenced",
-      "statusLabel": "WAP profile basis"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-flagellants": {
       "name": "Raving Mob",
+      "comparedTo": "Flagellants in WAP The Empire.",
       "points": "9 points per model",
       "unitSize": "10+",
       "troopType": "Infantry",
@@ -507,11 +488,12 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Standard bearer", "cost": "+10 points" }
       ],
       "source": "Ravening Hordes — The Empire, Discord Archive 8th Edition, pp. 3 and 16",
-      "status": "referenced",
-      "statusLabel": "WAP profile basis"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-wolf-kin": {
       "name": "Wolf-Mutants",
+      "comparedTo": "Wolf-Kin in WAP Cult of Ulric.",
       "points": "9 points per model",
       "unitSize": "10+",
       "troopType": "Infantry",
@@ -538,11 +520,12 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       ],
       "notes": ["Choose at most one of great weapons or additional hand weapons."],
       "source": "Warhammer — Cult of Ulric, Discord Archive 8th Edition, pp. 40 and 57",
-      "status": "referenced",
-      "statusLabel": "WAP profile basis"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-ballista": {
       "name": "Ballista",
+      "comparedTo": "Ballista in WAP Bretonnia.",
       "points": "35 points",
       "unitSize": "1 (2 Peasant Crew)",
       "troopType": "War Machine (Bolt Thrower)",
@@ -562,13 +545,14 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Wall Warden", "cost": "+10 points", "description": "Once per game, re-roll one Artillery die or failed To Hit roll." },
         { "name": "Additional Peasant Crew", "cost": "+3 points" }
       ],
-      "notes": ["Uses Seized Engines when it arrives from reserve."],
+      "notes": [],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 118 and 157",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-mangonel": {
       "name": "Mangonel",
+      "comparedTo": "Mangonel in WAP Bretonnia.",
       "points": "85 points",
       "unitSize": "1 (3 Peasant Crew)",
       "troopType": "War Machine (Stone Thrower)",
@@ -588,13 +572,14 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Wall Warden", "cost": "+15 points", "description": "Once per game, re-roll one Artillery die or failed To Hit roll." },
         { "name": "Additional Peasant Crew", "cost": "+3 points" }
       ],
-      "notes": ["Uses Seized Engines when it arrives from reserve."],
+      "notes": [],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 118 and 157",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-field-trebuchet": {
       "name": "Field Trebuchet",
+      "comparedTo": "Field Trebuchet in WAP Bretonnia.",
       "points": "100 points",
       "unitSize": "1 (4 Peasant Crew)",
       "troopType": "War Machine (Stone Thrower)",
@@ -613,13 +598,14 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "options": [
         { "name": "Wall Warden", "cost": "+15 points", "description": "Once per game, re-roll one Artillery die or failed To Hit roll." }
       ],
-      "notes": ["Normally cannot move or pivot. Seized Engines supplies the one-time arrival placement exception."],
+      "notes": [],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 119 and 157",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-bombard": {
       "name": "Bombard",
+      "comparedTo": "Bombard in WAP Bretonnia.",
       "points": "90 points",
       "unitSize": "1 (3 Peasant Crew)",
       "troopType": "War Machine (Cannon)",
@@ -639,13 +625,14 @@ window.CAMPAIGN_ARMY_VARIANTS = {
         { "name": "Wall Warden", "cost": "+15 points", "description": "Once per game, re-roll one Artillery die or failed To Hit roll." },
         { "name": "Additional Peasant Crew", "cost": "+3 points" }
       ],
-      "notes": ["Normally cannot move or pivot. Seized Engines supplies the one-time arrival placement exception.", "Counts as two Rare choices for duplicate limits."],
+      "notes": [],
       "source": "Warhammer — Bretonnia, Discord Archive 8th Edition, pp. 120 and 157",
-      "status": "referenced",
-      "statusLabel": "WAP army-book reference"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     },
     "wap-children-of-ulric": {
       "name": "Werewolves",
+      "comparedTo": "Children of Ulric in WAP Cult of Ulric.",
       "points": "15 points per model",
       "unitSize": "3+",
       "troopType": "War Beast",
@@ -664,10 +651,10 @@ window.CAMPAIGN_ARMY_VARIANTS = {
       "options": [
         { "name": "Upgrade one Werewolf to a Werewolf Alpha", "cost": "+10 points" }
       ],
-      "notes": ["A War Beast unit: it must use From Every Ruin but does not gain Skirmishers."],
+      "notes": [],
       "source": "Warhammer — Cult of Ulric, Discord Archive 8th Edition, pp. 41 and 58",
-      "status": "referenced",
-      "statusLabel": "WAP profile basis"
+      "status": "campaign",
+      "statusLabel": "Laughing Masses unit"
     }
   }
 };

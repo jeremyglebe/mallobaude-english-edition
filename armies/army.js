@@ -143,6 +143,7 @@
     if (reference.note) notes.unshift(reference.note);
     const searchText = [
       entry.name,
+      entry.comparedTo,
       ...(entry.profiles || []).map((profile) => profile.name),
       ...(entry.specialRules || []),
       ...(entry.equipment || []),
@@ -159,6 +160,7 @@
           <span class="unit-price">${escapeHtml(entry.points || "Points not specified")}</span>
         </summary>
         <div class="unit-body">
+          ${entry.comparedTo ? `<p class="unit-comparison"><strong>As compared to:</strong> ${escapeHtml(entry.comparedTo)}</p>` : ""}
           ${notes.map((note) => `<p class="unit-note">${escapeHtml(note)}</p>`).join("")}
           <div class="unit-meta">
             <span><strong>Unit size:</strong> ${escapeHtml(entry.unitSize || "Not specified")}</span>
@@ -333,7 +335,7 @@
       <main class="army-hub">
         <p class="eyebrow">The Revolt of Mallobaude · Army-List Reference</p>
         <h1>Campaign Armies</h1>
-        <p class="intro">Compact, searchable references for the supplement's five campaign lists and clearly labelled project-original variants. Campaign rules take precedence over referenced army books; unresolved design choices remain visible for review.</p>
+        <p class="intro">Compact, searchable references for the supplement's five campaign lists and a clearly labelled optional project-created variant. Campaign rules take precedence over referenced army books.</p>
         <section class="army-card-grid" aria-label="Campaign army lists">
           ${armies.map(([id, army]) => `
             <a class="army-choice-card" href="${armyFiles[id]}">

@@ -350,6 +350,16 @@ html {
   padding: 0 0.85rem 0.9rem;
 }
 
+.unit-comparison {
+  margin: 0 0 0.7rem;
+  padding: 0.55rem 0.7rem;
+  color: #304536;
+  background: rgba(47, 74, 55, 0.1);
+  border-left: 4px solid var(--army-green);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
 .unit-note {
   margin: 0 0 0.7rem;
   padding: 0.55rem 0.7rem;
